@@ -14,7 +14,7 @@ function renderAtelier(text: string): React.ReactNode[] {
     result.push(<span key={`t-${i}`}>{part}</span>);
     if (i < parts.length - 1) {
       result.push(
-        <span key={`a-${i}`} className="font-artesano italic" style={{ color: '#C4963A' }}>
+        <span key={`a-${i}`} className="font-artesano italic" style={{ color: '#0A9396' }}>
           Atelier
         </span>
       );
@@ -48,7 +48,7 @@ export default function SectionArtesania() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(180deg, #2C2218 0%, #C4963A 40%, #1a1208 100%)',
+            background: 'linear-gradient(180deg, #003845 0%, #0A9396 40%, #001A22 100%)',
           }}
         />
         <div className="absolute inset-0 texture-artesano opacity-30 mix-blend-overlay" />
@@ -57,7 +57,7 @@ export default function SectionArtesania() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(180deg, transparent 30%, #F5F0EB 95%)',
+            background: 'linear-gradient(180deg, transparent 30%, #E8F5F2 95%)',
           }}
         />
       </motion.div>
@@ -68,15 +68,15 @@ export default function SectionArtesania() {
           <SectionLabel
             number="03"
             label="ARTESANÍA"
-            accentColor="#C4963A"
-            numberColor="#C4963A"
+            accentColor="#0A9396"
+            numberColor="#0A9396"
           />
 
           <motion.div className="mt-8">
             <AnimatedText
               text={ARTESANIA.title}
               as="h2"
-              className="font-artesano italic text-[clamp(2.5rem,6vw,5rem)] leading-[1.05] text-[#2C2218]"
+              className="font-artesano italic text-[clamp(2.5rem,6vw,5rem)] leading-[1.05] text-[#003845]"
               splitBy="word"
             />
           </motion.div>
@@ -85,7 +85,7 @@ export default function SectionArtesania() {
           <div className="relative mt-12">
             <span
               className="absolute -top-16 -left-8 font-artesano text-[20vw] leading-none select-none pointer-events-none"
-              style={{ color: '#C4963A', opacity: 0.05 }}
+              style={{ color: '#0A9396', opacity: 0.05 }}
             >
               «»
             </span>
@@ -98,7 +98,7 @@ export default function SectionArtesania() {
             >
               <motion.p
                 className="font-body text-base md:text-lg leading-relaxed relative z-10"
-                style={{ color: '#2C2218', opacity: 0.85 }}
+                style={{ color: '#003845', opacity: 0.85 }}
                 variants={fadeInUp}
               >
                 {renderAtelier(ARTESANIA.paragraphs[0])}
@@ -106,7 +106,7 @@ export default function SectionArtesania() {
 
               <motion.p
                 className="font-body text-base md:text-lg leading-relaxed mt-6 relative z-10"
-                style={{ color: '#2C2218', opacity: 0.85 }}
+                style={{ color: '#003845', opacity: 0.85 }}
                 variants={fadeInUp}
               >
                 {renderAtelier(ARTESANIA.paragraphs[1])}

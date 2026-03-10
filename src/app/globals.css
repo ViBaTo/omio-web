@@ -13,47 +13,47 @@
   --font-body: var(--font-dm-sans);
 }
 
-/* --- CSS Custom Properties: Three-World Color System --- */
+/* --- CSS Custom Properties: Color System based on #00252D --- */
 :root {
   /* Scroll-driven blend factors (set by JS, 0-1 range) */
   --blend-artesano: 1;
   --blend-ingeniero: 0;
   --blend-fabrica: 0;
 
-  /* ARTESANO palette — Warmth, wood, craft */
-  --artesano-bg: #F5F0EB;
-  --artesano-text: #2C2218;
-  --artesano-accent: #C4963A;
-  --artesano-secondary: #F5F0EB;
+  /* ARTESANO palette — Warmth, craft (light teal) */
+  --artesano-bg: #E8F5F2;
+  --artesano-text: #003845;
+  --artesano-accent: #0A9396;
+  --artesano-secondary: #E8F5F2;
 
-  /* INGENIERO palette — Precision, blueprint, cold */
-  --ingeniero-bg: #E8ECF0;
-  --ingeniero-text: #3A4F6A;
-  --ingeniero-accent: #3A4F6A;
-  --ingeniero-secondary: #F8FAFB;
+  /* INGENIERO palette — Precision, blueprint (mid teal) */
+  --ingeniero-bg: #D4EAE4;
+  --ingeniero-text: #005F73;
+  --ingeniero-accent: #005F73;
+  --ingeniero-secondary: #EDF6F9;
 
-  /* FÁBRICA palette — Power, industrial, scale */
-  --fabrica-bg: #0D0D0D;
-  --fabrica-text: #F5F0EB;
-  --fabrica-accent: #B8956A;
-  --fabrica-secondary: #C0C0C0;
+  /* FÁBRICA palette — Power, industrial (dark teal) */
+  --fabrica-bg: #00252D;
+  --fabrica-text: #E8F5F2;
+  --fabrica-accent: #94D2BD;
+  --fabrica-secondary: #48CAE4;
 
   /* Interpolated current values (updated by TextureBackground.tsx) */
-  --current-bg: #0D0D0D;
-  --current-text: #F5F0EB;
-  --current-accent: #C4963A;
-  --current-secondary: #F5F0EB;
+  --current-bg: #00252D;
+  --current-text: #E8F5F2;
+  --current-accent: #0A9396;
+  --current-secondary: #E8F5F2;
 
   /* Named colors for direct use */
-  --color-cream: #F5F0EB;
-  --color-ebony: #2C2218;
-  --color-gold: #C4963A;
-  --color-blueprint: #E8ECF0;
-  --color-steel: #3A4F6A;
-  --color-black-industrial: #0D0D0D;
-  --color-bronze: #B8956A;
-  --color-steel-polished: #C0C0C0;
-  --color-deep-black: #0A0908;
+  --color-cream: #E8F5F2;
+  --color-ebony: #003845;
+  --color-gold: #0A9396;
+  --color-blueprint: #D4EAE4;
+  --color-steel: #005F73;
+  --color-black-industrial: #00252D;
+  --color-bronze: #94D2BD;
+  --color-steel-polished: #48CAE4;
+  --color-deep-black: #001219;
 }
 
 /* --- Base Styles --- */
@@ -106,7 +106,7 @@ html {
 /* Texture 2: Blueprint dot grid (Ingeniero) */
 .texture-ingeniero {
   background-image:
-    radial-gradient(circle, #3A4F6A 0.5px, transparent 0.5px);
+    radial-gradient(circle, #005F73 0.5px, transparent 0.5px);
   background-size: 24px 24px;
   opacity: 0.12;
 }

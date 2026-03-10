@@ -45,14 +45,14 @@ export default function Preloader() {
       {isLoading && (
         <motion.div
           className="fixed inset-0 z-[60] flex flex-col items-center justify-center"
-          style={{ backgroundColor: '#0A0908' }}
+          style={{ backgroundColor: '#001219' }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
         >
           {/* Pulsing OMIO logo */}
           <motion.div
             className="font-fabrica text-[clamp(3rem,10vw,7rem)] tracking-[0.05em]"
-            style={{ color: '#F5F0EB' }}
+            style={{ color: '#E8F5F2' }}
             animate={{
               scale: [1, 1.02, 1],
               opacity: [0.6, 1, 0.6],
@@ -69,7 +69,7 @@ export default function Preloader() {
           {/* Subtitle */}
           <motion.div
             className="font-artesano italic text-sm tracking-[0.4em] mt-2"
-            style={{ color: '#C4963A' }}
+            style={{ color: '#0A9396' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.7 }}
             transition={{ delay: 0.5 }}
@@ -78,10 +78,10 @@ export default function Preloader() {
           </motion.div>
 
           {/* Progress bar */}
-          <div className="mt-12 w-48 h-[1px] bg-[#2C2218] overflow-hidden">
+          <div className="mt-12 w-48 h-[1px] bg-[#003845] overflow-hidden">
             <motion.div
               className="h-full origin-left"
-              style={{ backgroundColor: '#C4963A' }}
+              style={{ backgroundColor: '#0A9396' }}
               initial={{ scaleX: 0 }}
               animate={{ scaleX: Math.min(progress / 100, 1) }}
               transition={{ duration: 0.3 }}

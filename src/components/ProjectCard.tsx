@@ -20,7 +20,7 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
         <div className="absolute -top-16 left-0">
           <span
             className="font-ingeniero text-sm tracking-[0.3em]"
-            style={{ color: '#F5F0EB', opacity: 0.3 }}
+            style={{ color: '#E8F5F2', opacity: 0.3 }}
           >
             {String(index + 1).padStart(2, '0')}/{String(total).padStart(2, '0')}
           </span>
@@ -45,7 +45,7 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
             <div
               className="w-full h-full"
               style={{
-                background: `linear-gradient(${135 + index * 30}deg, #2C2218 0%, #B8956A 40%, #0D0D0D 100%)`,
+                background: `linear-gradient(${135 + index * 30}deg, #003845 0%, #94D2BD 40%, #00252D 100%)`,
                 filter: isHovered ? 'grayscale(0.7)' : 'grayscale(0)',
                 transition: 'filter 0.5s ease',
               }}
@@ -61,7 +61,7 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
           >
             <span
               className="font-ingeniero text-sm tracking-[0.3em] uppercase"
-              style={{ color: '#F5F0EB' }}
+              style={{ color: '#E8F5F2' }}
             >
               Descubrir →
             </span>
@@ -75,13 +75,13 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
             <div className="relative z-10">
               <p
                 className="font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2"
-                style={{ color: '#B8956A' }}
+                style={{ color: '#94D2BD' }}
               >
                 {project.category}
               </p>
               <h3
                 className="font-fabrica uppercase text-2xl md:text-4xl lg:text-5xl tracking-[0.03em]"
-                style={{ color: '#F5F0EB' }}
+                style={{ color: '#E8F5F2' }}
               >
                 {project.title}
               </h3>

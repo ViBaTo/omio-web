@@ -48,7 +48,7 @@ export default function SoundToggle() {
       <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
         <path
           d="M2 7h3l4-4v12l-4-4H2V7z"
-          stroke="var(--current-text, #F5F0EB)"
+          stroke="var(--current-text, #E8F5F2)"
           strokeWidth="1"
           strokeLinejoin="round"
         />
@@ -56,13 +56,13 @@ export default function SoundToggle() {
           <>
             <path
               d="M12 6.5a3.5 3.5 0 0 1 0 5"
-              stroke="var(--current-text, #F5F0EB)"
+              stroke="var(--current-text, #E8F5F2)"
               strokeWidth="1"
               strokeLinecap="round"
             />
             <path
               d="M14 4.5a6 6 0 0 1 0 9"
-              stroke="var(--current-text, #F5F0EB)"
+              stroke="var(--current-text, #E8F5F2)"
               strokeWidth="1"
               strokeLinecap="round"
             />
@@ -70,7 +70,7 @@ export default function SoundToggle() {
         ) : (
           <path
             d="M12 6l4 6M16 6l-4 6"
-            stroke="var(--current-text, #F5F0EB)"
+            stroke="var(--current-text, #E8F5F2)"
             strokeWidth="1"
             strokeLinecap="round"
           />

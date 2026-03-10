@@ -30,15 +30,15 @@ export default function SectionProyectos() {
   const projects = PROYECTOS.projects;
 
   return (
-    <section id="proyectos" style={{ backgroundColor: '#0D0D0D' }}>
+    <section id="proyectos" style={{ backgroundColor: '#00252D' }}>
       {/* Header area */}
       <div className="px-6 md:px-12 lg:px-24 pt-32 md:pt-48 pb-16">
         <div className="max-w-7xl mx-auto">
           <SectionLabel
             number="05"
             label="PROYECTOS"
-            accentColor="#B8956A"
-            numberColor="#C0C0C0"
+            accentColor="#94D2BD"
+            numberColor="#48CAE4"
           />
 
           <motion.div className="mt-8">
@@ -52,7 +52,7 @@ export default function SectionProyectos() {
 
           <motion.p
             className="font-body text-base md:text-lg leading-relaxed mt-10 max-w-3xl"
-            style={{ color: '#F5F0EB', opacity: 0.7 }}
+            style={{ color: '#E8F5F2', opacity: 0.7 }}
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -63,7 +63,7 @@ export default function SectionProyectos() {
 
           <motion.p
             className="font-artesano italic text-lg md:text-xl leading-relaxed mt-6 max-w-2xl"
-            style={{ color: '#B8956A' }}
+            style={{ color: '#94D2BD' }}
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"

@@ -13,7 +13,7 @@ function SVGCheckIcon() {
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="mb-4">
       <motion.path
         d="M4 16 L14 26 L28 6"
-        stroke="#3A4F6A"
+        stroke="#005F73"
         strokeWidth="1.5"
         fill="none"
         strokeLinecap="round"
@@ -35,7 +35,7 @@ export default function SectionIngenieria() {
       id="ingenieria"
       ref={sectionRef}
       className="relative min-h-screen py-32 md:py-48 px-6 md:px-12 lg:px-24"
-      style={{ backgroundColor: '#E8ECF0' }}
+      style={{ backgroundColor: '#D4EAE4' }}
     >
       {/* Blueprint dot grid overlay */}
       <div className="absolute inset-0 texture-ingeniero pointer-events-none" />
@@ -44,8 +44,8 @@ export default function SectionIngenieria() {
         <SectionLabel
           number="04"
           label="INGENIERÍA"
-          accentColor="#3A4F6A"
-          numberColor="#3A4F6A"
+          accentColor="#005F73"
+          numberColor="#005F73"
         />
 
         <motion.div className="mt-8">
@@ -59,7 +59,7 @@ export default function SectionIngenieria() {
 
         <motion.p
           className="font-body text-base md:text-lg leading-relaxed mt-10 max-w-3xl"
-          style={{ color: '#3A4F6A', opacity: 0.8 }}
+          style={{ color: '#005F73', opacity: 0.8 }}
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
@@ -84,19 +84,19 @@ export default function SectionIngenieria() {
           {INGENIERIA.blocks.map((block) => (
             <motion.div
               key={block.title}
-              className="p-8 md:p-10 border border-[#3A4F6A]/15"
+              className="p-8 md:p-10 border border-[#005F73]/15"
               variants={fadeInUp}
             >
               <SVGCheckIcon />
               <h3
                 className="font-artesano text-xl md:text-2xl"
-                style={{ color: '#2A3F5F' }}
+                style={{ color: '#005F73' }}
               >
                 {block.title}
               </h3>
               <p
                 className="font-body text-base leading-relaxed mt-4"
-                style={{ color: '#3A4F6A', opacity: 0.7 }}
+                style={{ color: '#005F73', opacity: 0.7 }}
               >
                 {block.description}
               </p>

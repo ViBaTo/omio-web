@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       className="relative py-24 px-6 md:px-12 lg:px-24"
-      style={{ backgroundColor: '#0A0908' }}
+      style={{ backgroundColor: '#001219' }}
     >
       <div className="max-w-7xl mx-auto text-center">
         {/* Logo */}
@@ -20,13 +20,13 @@ export default function Footer() {
         >
           <span
             className="font-fabrica text-4xl md:text-5xl tracking-[0.05em]"
-            style={{ color: '#F5F0EB' }}
+            style={{ color: '#E8F5F2' }}
           >
             OMIO
           </span>
           <p
             className="font-artesano italic text-sm tracking-[0.3em] mt-2"
-            style={{ color: '#C4963A' }}
+            style={{ color: '#0A9396' }}
           >
             Atelier & Design
           </p>
@@ -35,7 +35,7 @@ export default function Footer() {
         {/* Gold line */}
         <div
           className="w-24 h-[1px] mx-auto my-10"
-          style={{ backgroundColor: '#C4963A', opacity: 0.3 }}
+          style={{ backgroundColor: '#0A9396', opacity: 0.3 }}
         />
 
         {/* Nav links */}
@@ -51,7 +51,7 @@ export default function Footer() {
               key={section.id}
               href={`#${section.id}`}
               className="font-ingeniero text-[11px] tracking-[0.2em] uppercase transition-opacity hover:opacity-100"
-              style={{ color: '#F5F0EB', opacity: 0.4 }}
+              style={{ color: '#E8F5F2', opacity: 0.4 }}
               variants={fadeInUp}
             >
               {section.label.split(' ')[0]}
@@ -62,7 +62,7 @@ export default function Footer() {
         {/* Copyright */}
         <p
           className="font-ingeniero text-[10px] tracking-[0.15em] mt-16"
-          style={{ color: '#F5F0EB', opacity: 0.2 }}
+          style={{ color: '#E8F5F2', opacity: 0.2 }}
         >
           {FOOTER.copyright}
         </p>
@@ -70,7 +70,7 @@ export default function Footer() {
         {/* Easter egg */}
         <p
           className="font-body text-[10px] italic mt-4"
-          style={{ color: '#C4963A', opacity: 0.15 }}
+          style={{ color: '#0A9396', opacity: 0.15 }}
         >
           {FOOTER.easter_egg}
         </p>

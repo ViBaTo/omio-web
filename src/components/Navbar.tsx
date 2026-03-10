@@ -63,7 +63,7 @@ export default function Navbar() {
             opacity: bgOpacity,
             borderBottomWidth: 1,
             borderBottomStyle: 'solid',
-            borderBottomColor: `rgba(196, 150, 58, ${borderOpacity.get()})`,
+            borderBottomColor: `rgba(10, 147, 150, ${borderOpacity.get()})`,
           }}
         />
 
@@ -120,7 +120,7 @@ export default function Navbar() {
         {isMenuOpen && (
           <motion.div
             className="fixed inset-0 z-40 flex items-center justify-center"
-            style={{ backgroundColor: '#0A0908' }}
+            style={{ backgroundColor: '#001219' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -137,7 +137,7 @@ export default function Navbar() {
                   key={section.id}
                   href={`#${section.id}`}
                   className="font-artesano italic text-3xl tracking-wide"
-                  style={{ color: '#F5F0EB' }}
+                  style={{ color: '#E8F5F2' }}
                   variants={fadeInUp}
                   onClick={() => setIsMenuOpen(false)}
                 >

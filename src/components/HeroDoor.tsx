@@ -98,7 +98,7 @@ export default function HeroDoor() {
           style={{ scale: videoScale }}
         >
           {/* Placeholder gradient - replace with actual video */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1208] via-[#2C2218] to-[#0D0D0D]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#001A22] via-[#003845] to-[#00252D]" />
           <video
             className="absolute inset-0 w-full h-full object-cover opacity-60"
             autoPlay
@@ -112,7 +112,7 @@ export default function HeroDoor() {
             {/* <source src="/videos/hero.mp4" type="video/mp4" /> */}
           </video>
           {/* Gradient mesh overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0908] via-transparent to-[#0A0908]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#001219] via-transparent to-[#001219]/40" />
         </motion.div>
 
         {/* Layer 2: Door Panels */}
@@ -121,15 +121,14 @@ export default function HeroDoor() {
           className="absolute inset-y-0 left-0 w-1/2 z-10"
           style={{
             x: leftDoorX,
-            backgroundColor: '#0A0908',
+            backgroundColor: '#001219',
           }}
         >
           <div className="absolute inset-0 texture-artesano opacity-10" />
-          {/* Subtle wood grain on door */}
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(135deg, #1a1208 0%, #0A0908 50%, #1a1208 100%)',
+              background: 'linear-gradient(135deg, #001A22 0%, #001219 50%, #001A22 100%)',
             }}
           />
         </motion.div>
@@ -139,14 +138,14 @@ export default function HeroDoor() {
           className="absolute inset-y-0 right-0 w-1/2 z-10"
           style={{
             x: rightDoorX,
-            backgroundColor: '#0A0908',
+            backgroundColor: '#001219',
           }}
         >
           <div className="absolute inset-0 texture-artesano opacity-10" />
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(225deg, #1a1208 0%, #0A0908 50%, #1a1208 100%)',
+              background: 'linear-gradient(225deg, #001A22 0%, #001219 50%, #001A22 100%)',
             }}
           />
         </motion.div>
@@ -157,8 +156,8 @@ export default function HeroDoor() {
           style={{
             width: crackWidth,
             opacity: crackOpacity,
-            background: 'linear-gradient(180deg, transparent 0%, #C4963A 20%, #C4963A 80%, transparent 100%)',
-            boxShadow: '0 0 30px 10px rgba(196, 150, 58, 0.3)',
+            background: 'linear-gradient(180deg, transparent 0%, #0A9396 20%, #0A9396 80%, transparent 100%)',
+            boxShadow: '0 0 30px 10px rgba(10, 147, 150, 0.3)',
           }}
         />
 
@@ -170,7 +169,7 @@ export default function HeroDoor() {
           {/* OMIO */}
           <motion.h1
             className="font-fabrica text-[clamp(6rem,15vw,18rem)] leading-none tracking-[0.05em]"
-            style={{ color: '#F5F0EB' }}
+            style={{ color: '#E8F5F2' }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2.8, duration: 1 }}
@@ -181,7 +180,7 @@ export default function HeroDoor() {
           {/* ATELIER & DESIGN */}
           <motion.p
             className="font-artesano italic text-[clamp(0.8rem,2vw,1.3rem)] tracking-[0.4em] mt-2"
-            style={{ color: '#C4963A' }}
+            style={{ color: '#0A9396' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 3.2, duration: 0.8 }}
@@ -198,7 +197,7 @@ export default function HeroDoor() {
           >
             <p
               className="font-body text-sm md:text-base tracking-wide text-center max-w-md px-6"
-              style={{ color: '#F5F0EB', opacity: 0.7 }}
+              style={{ color: '#E8F5F2', opacity: 0.7 }}
             >
               <AnimatePresence mode="wait">
                 <motion.span
@@ -223,14 +222,14 @@ export default function HeroDoor() {
           animate={{ opacity: 0.5 }}
           transition={{ delay: 4.2 }}
         >
-          <span className="font-ingeniero text-[10px] tracking-[0.3em] uppercase" style={{ color: '#F5F0EB' }}>
+          <span className="font-ingeniero text-[10px] tracking-[0.3em] uppercase" style={{ color: '#E8F5F2' }}>
             Scroll to enter
           </span>
           <motion.span
             className="inline-block"
             animate={{ y: [0, 6, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            style={{ color: '#C4963A' }}
+            style={{ color: '#0A9396' }}
           >
             ↓
           </motion.span>
@@ -244,10 +243,10 @@ export default function HeroDoor() {
           animate={{ opacity: 0.4 }}
           transition={{ delay: 4.2 }}
         >
-          <p className="font-ingeniero text-[10px] tracking-[0.2em]" style={{ color: '#F5F0EB' }}>
+          <p className="font-ingeniero text-[10px] tracking-[0.2em]" style={{ color: '#E8F5F2' }}>
             Valencia, España
           </p>
-          <p className="font-ingeniero text-[10px] tracking-[0.2em] mt-1" style={{ color: '#C4963A' }}>
+          <p className="font-ingeniero text-[10px] tracking-[0.2em] mt-1" style={{ color: '#0A9396' }}>
             <LiveClock />
           </p>
         </motion.div>

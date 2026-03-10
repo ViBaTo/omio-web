@@ -162,19 +162,19 @@ export const CONTACTA = {
 // --- Color Palettes for JS interpolation ---
 export const PALETTES = {
   artesano: {
-    bg: [245, 240, 235],     // #F5F0EB
-    text: [44, 34, 24],      // #2C2218
-    accent: [196, 150, 58],  // #C4963A
+    bg: [232, 245, 242],     // #E8F5F2
+    text: [0, 56, 69],       // #003845
+    accent: [10, 147, 150],  // #0A9396
   },
   ingeniero: {
-    bg: [232, 236, 240],     // #E8ECF0
-    text: [58, 79, 106],     // #3A4F6A
-    accent: [58, 79, 106],   // #3A4F6A
+    bg: [212, 234, 228],     // #D4EAE4
+    text: [0, 95, 115],      // #005F73
+    accent: [0, 95, 115],    // #005F73
   },
   fabrica: {
-    bg: [13, 13, 13],        // #0D0D0D
-    text: [245, 240, 235],   // #F5F0EB
-    accent: [184, 149, 106], // #B8956A
+    bg: [0, 37, 45],         // #00252D
+    text: [232, 245, 242],   // #E8F5F2
+    accent: [148, 210, 189], // #94D2BD
   },
 } as const;
 

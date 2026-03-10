@@ -17,8 +17,8 @@ export default function SectionContacta() {
         <SectionLabel
           number="06"
           label="CONTACTA"
-          accentColor="#C4963A"
-          numberColor="#C4963A"
+          accentColor="#0A9396"
+          numberColor="#0A9396"
         />
 
         <motion.div className="mt-8">
@@ -40,7 +40,7 @@ export default function SectionContacta() {
             <motion.p
               key={i}
               className="font-body text-base md:text-lg leading-relaxed mt-8 first:mt-12"
-              style={{ color: '#2C2218', opacity: 0.85 }}
+              style={{ color: '#003845', opacity: 0.85 }}
               variants={fadeInUp}
             >
               {p}
@@ -59,7 +59,7 @@ export default function SectionContacta() {
           <a
             href={`mailto:${CONTACTA.contact.email}`}
             className="cta-fill inline-flex items-center justify-center px-16 py-6 font-artesano italic text-2xl md:text-3xl tracking-wide transition-colors duration-500"
-            style={{ color: '#C4963A' }}
+            style={{ color: '#0A9396' }}
             data-cursor="precision"
           >
             {CONTACTA.cta}
@@ -77,32 +77,32 @@ export default function SectionContacta() {
           <a
             href={`mailto:${CONTACTA.contact.email}`}
             className="font-ingeniero text-xs tracking-[0.15em] transition-opacity hover:opacity-100"
-            style={{ color: '#2C2218', opacity: 0.5 }}
+            style={{ color: '#003845', opacity: 0.5 }}
           >
             {CONTACTA.contact.email}
           </a>
           <span
             className="hidden md:inline font-ingeniero text-xs"
-            style={{ color: '#C4963A', opacity: 0.3 }}
+            style={{ color: '#0A9396', opacity: 0.3 }}
           >
             ·
           </span>
           <a
             href={`tel:${CONTACTA.contact.phone.replace(/\s/g, '')}`}
             className="font-ingeniero text-xs tracking-[0.15em] transition-opacity hover:opacity-100"
-            style={{ color: '#2C2218', opacity: 0.5 }}
+            style={{ color: '#003845', opacity: 0.5 }}
           >
             {CONTACTA.contact.phone}
           </a>
           <span
             className="hidden md:inline font-ingeniero text-xs"
-            style={{ color: '#C4963A', opacity: 0.3 }}
+            style={{ color: '#0A9396', opacity: 0.3 }}
           >
             ·
           </span>
           <span
             className="font-ingeniero text-xs tracking-[0.15em]"
-            style={{ color: '#2C2218', opacity: 0.5 }}
+            style={{ color: '#003845', opacity: 0.5 }}
           >
             {CONTACTA.contact.location}
           </span>
@@ -113,7 +113,7 @@ export default function SectionContacta() {
           <a
             href={CONTACTA.contact.social.instagram}
             className="font-ingeniero text-[11px] tracking-[0.2em] uppercase transition-opacity hover:opacity-100"
-            style={{ color: '#2C2218', opacity: 0.4 }}
+            style={{ color: '#003845', opacity: 0.4 }}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -122,7 +122,7 @@ export default function SectionContacta() {
           <a
             href={CONTACTA.contact.social.linkedin}
             className="font-ingeniero text-[11px] tracking-[0.2em] uppercase transition-opacity hover:opacity-100"
-            style={{ color: '#2C2218', opacity: 0.4 }}
+            style={{ color: '#003845', opacity: 0.4 }}
             target="_blank"
             rel="noopener noreferrer"
           >

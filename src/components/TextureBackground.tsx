@@ -70,9 +70,9 @@ export default function TextureBackground() {
   // Set initial values
   useEffect(() => {
     const root = document.documentElement;
-    root.style.setProperty('--current-bg', '#0D0D0D');
-    root.style.setProperty('--current-text', '#F5F0EB');
-    root.style.setProperty('--current-accent', '#C4963A');
+    root.style.setProperty('--current-bg', '#00252D');
+    root.style.setProperty('--current-text', '#E8F5F2');
+    root.style.setProperty('--current-accent', '#0A9396');
   }, []);
 
   return (

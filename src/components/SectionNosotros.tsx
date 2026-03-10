@@ -64,8 +64,8 @@ export default function SectionNosotros() {
             <SectionLabel
               number="01"
               label="NOSOTROS"
-              accentColor="#C4963A"
-              numberColor="#C4963A"
+              accentColor="#0A9396"
+              numberColor="#0A9396"
             />
 
             <motion.div className="mt-8" variants={fadeInUp}>
@@ -79,7 +79,7 @@ export default function SectionNosotros() {
 
             <motion.p
               className="font-body text-base md:text-lg leading-relaxed mt-10"
-              style={{ color: '#2C2218', opacity: 0.85 }}
+              style={{ color: '#003845', opacity: 0.85 }}
               variants={fadeInUp}
             >
               {highlightFirms(NOSOTROS.paragraphs[0], NOSOTROS.highlightedFirms)}
@@ -87,7 +87,7 @@ export default function SectionNosotros() {
 
             <motion.p
               className="font-body text-base md:text-lg leading-relaxed mt-6"
-              style={{ color: '#2C2218', opacity: 0.85 }}
+              style={{ color: '#003845', opacity: 0.85 }}
               variants={fadeInUp}
             >
               {NOSOTROS.paragraphs[1]}
@@ -115,7 +115,7 @@ export default function SectionNosotros() {
                 <div
                   className="w-full h-full"
                   style={{
-                    background: 'linear-gradient(135deg, #2C2218 0%, #C4963A 50%, #1a1208 100%)',
+                    background: 'linear-gradient(135deg, #003845 0%, #0A9396 50%, #001A22 100%)',
                   }}
                 />
               </motion.div>

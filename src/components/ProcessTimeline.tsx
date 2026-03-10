@@ -57,7 +57,7 @@ export default function ProcessTimeline() {
             <path
               ref={pathRef}
               d="M1 0 L1 1000"
-              stroke="#3A4F6A"
+              stroke="#005F73"
               strokeWidth="1"
               fill="none"
             />
@@ -76,16 +76,16 @@ export default function ProcessTimeline() {
               <div
                 className="absolute -left-5 top-1 w-4 h-4 rounded-full border-2 transition-colors duration-300"
                 style={{
-                  borderColor: '#3A4F6A',
-                  backgroundColor: activeStep >= i ? '#3A4F6A' : 'transparent',
+                  borderColor: '#005F73',
+                  backgroundColor: activeStep >= i ? '#005F73' : 'transparent',
                 }}
               />
 
               <div>
-                <p className="font-ingeniero text-[11px] tracking-[0.3em] uppercase" style={{ color: '#3A4F6A' }}>
+                <p className="font-ingeniero text-[11px] tracking-[0.3em] uppercase" style={{ color: '#005F73' }}>
                   {step.label}
                 </p>
-                <p className="font-body text-sm mt-2" style={{ color: '#3A4F6A', opacity: 0.7 }}>
+                <p className="font-body text-sm mt-2" style={{ color: '#005F73', opacity: 0.7 }}>
                   {step.description}
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function ProcessTimeline() {
         {/* Background track */}
         <path
           d={pathD}
-          stroke="#3A4F6A"
+          stroke="#005F73"
           strokeWidth="0.5"
           fill="none"
           opacity="0.2"
@@ -125,7 +125,7 @@ export default function ProcessTimeline() {
         <path
           ref={pathRef}
           d={pathD}
-          stroke="#3A4F6A"
+          stroke="#005F73"
           strokeWidth="1.5"
           fill="none"
         />
@@ -145,7 +145,7 @@ export default function ProcessTimeline() {
                   cy="60"
                   r="12"
                   fill="none"
-                  stroke="#3A4F6A"
+                  stroke="#005F73"
                   strokeWidth="0.5"
                   opacity="0.3"
                 >
@@ -169,8 +169,8 @@ export default function ProcessTimeline() {
                 cx={cx}
                 cy="60"
                 r="6"
-                fill={isActive ? '#3A4F6A' : 'transparent'}
-                stroke="#3A4F6A"
+                fill={isActive ? '#005F73' : 'transparent'}
+                stroke="#005F73"
                 strokeWidth="1.5"
                 style={{ transition: 'fill 0.3s ease' }}
               />
@@ -193,19 +193,19 @@ export default function ProcessTimeline() {
             >
               <p
                 className="font-ingeniero text-[10px] md:text-[11px] tracking-[0.15em] uppercase"
-                style={{ color: '#3A4F6A' }}
+                style={{ color: '#005F73' }}
               >
                 {step.label}
               </p>
 
               {/* Tooltip card for active step */}
               <motion.div
-                className="mt-3 px-3 py-2 border border-[#3A4F6A]/20 rounded-none"
+                className="mt-3 px-3 py-2 border border-[#005F73]/20 rounded-none"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: isCurrent ? 1 : 0, y: isCurrent ? 0 : 10 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="font-body text-xs" style={{ color: '#3A4F6A', opacity: 0.7 }}>
+                <p className="font-body text-xs" style={{ color: '#005F73', opacity: 0.7 }}>
                   {step.description}
                 </p>
               </motion.div>
