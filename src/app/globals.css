@@ -1,26 +1,257 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================
+   OMIO ATELIER & DESIGN — Global Styles
+   "Tres Mundos, Una Pieza"
+   ============================================ */
 
+/* --- Tailwind Theme Extensions --- */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-playfair: var(--font-playfair-display);
+  --font-bebas: var(--font-bebas-neue);
+  --font-jetbrains: var(--font-jetbrains-mono);
+  --font-body: var(--font-dm-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* --- CSS Custom Properties: Three-World Color System --- */
+:root {
+  /* Scroll-driven blend factors (set by JS, 0-1 range) */
+  --blend-artesano: 1;
+  --blend-ingeniero: 0;
+  --blend-fabrica: 0;
+
+  /* ARTESANO palette — Warmth, wood, craft */
+  --artesano-bg: #F5F0EB;
+  --artesano-text: #2C2218;
+  --artesano-accent: #C4963A;
+  --artesano-secondary: #F5F0EB;
+
+  /* INGENIERO palette — Precision, blueprint, cold */
+  --ingeniero-bg: #E8ECF0;
+  --ingeniero-text: #3A4F6A;
+  --ingeniero-accent: #3A4F6A;
+  --ingeniero-secondary: #F8FAFB;
+
+  /* FÁBRICA palette — Power, industrial, scale */
+  --fabrica-bg: #0D0D0D;
+  --fabrica-text: #F5F0EB;
+  --fabrica-accent: #B8956A;
+  --fabrica-secondary: #C0C0C0;
+
+  /* Interpolated current values (updated by TextureBackground.tsx) */
+  --current-bg: #0D0D0D;
+  --current-text: #F5F0EB;
+  --current-accent: #C4963A;
+  --current-secondary: #F5F0EB;
+
+  /* Named colors for direct use */
+  --color-cream: #F5F0EB;
+  --color-ebony: #2C2218;
+  --color-gold: #C4963A;
+  --color-blueprint: #E8ECF0;
+  --color-steel: #3A4F6A;
+  --color-black-industrial: #0D0D0D;
+  --color-bronze: #B8956A;
+  --color-steel-polished: #C0C0C0;
+  --color-deep-black: #0A0908;
+}
+
+/* --- Base Styles --- */
+html {
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--current-bg);
+  color: var(--current-text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.05s linear, color 0.05s linear;
+}
+
+/* Hide native scrollbar */
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom cursor — desktop only */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* No pure white anywhere */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ebony);
+}
+
+/* --- Texture Overlay Patterns (CSS-only) --- */
+
+/* Texture 1: Warm wood grain (Artesano) */
+.texture-artesano {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
+}
+
+/* Texture 2: Blueprint dot grid (Ingeniero) */
+.texture-ingeniero {
+  background-image:
+    radial-gradient(circle, #3A4F6A 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  opacity: 0.12;
+}
+
+/* Texture 3: Brushed metal (Fábrica) */
+.texture-fabrica {
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      rgba(255, 255, 255, 0.015) 1px,
+      rgba(255, 255, 255, 0.015) 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 4px,
+      rgba(255, 255, 255, 0.01) 4px,
+      rgba(255, 255, 255, 0.01) 5px
+    );
+  opacity: 0.5;
+}
+
+/* --- Typography Utility Classes --- */
+.font-artesano {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-ingeniero {
+  font-family: var(--font-jetbrains), 'Courier New', monospace;
+}
+
+.font-fabrica {
+  font-family: var(--font-bebas), 'Impact', sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* --- Section Transition Smoothing --- */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Accessibility: Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- Skip to Content (Accessibility) --- */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: var(--color-gold);
+  color: var(--color-ebony);
+  font-family: var(--font-jetbrains);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+/* --- Custom Scrollbar Indicator (right side) --- */
+.scroll-indicator {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-jetbrains);
+  font-size: 0.625rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--current-accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* --- Animated Underline for Gold Links --- */
+.gold-underline {
+  position: relative;
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+.gold-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-gold);
+  transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gold-underline.is-visible::after {
+  width: 100%;
+}
+
+/* --- CTA Button Fill Effect --- */
+.cta-fill {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-gold);
+  background: transparent;
+  transition: color 0.4s ease;
+}
+
+.cta-fill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--color-gold);
+  transition: width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
+}
+
+.cta-fill:hover::before {
+  width: 100%;
+}
+
+.cta-fill:hover {
+  color: var(--color-ebony);
 }
