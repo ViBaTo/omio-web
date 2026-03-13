@@ -45,7 +45,7 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
             <div
               className="w-full h-full"
               style={{
-                background: `linear-gradient(${135 + index * 30}deg, #003845 0%, #94D2BD 40%, #00252D 100%)`,
+                background: `linear-gradient(${135 + index * 30}deg, #263f47 0%, #94D2BD 40%, #1c3037 100%)`,
                 filter: isHovered ? 'grayscale(0.7)' : 'grayscale(0)',
                 transition: 'filter 0.5s ease',
               }}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import { SECTIONS } from '@/lib/constants';
 import { staggerContainer, fadeInUp } from '@/lib/animations';
 
@@ -12,6 +13,9 @@ export default function Navbar() {
 
   const bgOpacity = useTransform(scrollY, [0, 300], [0, 0.85]);
   const borderOpacity = useTransform(scrollY, [0, 300], [0, 0.1]);
+
+  const activeWorld = SECTIONS.find(s => s.id === activeSection)?.world;
+  const useDarkLogo = activeWorld === 'artesano' || activeWorld === 'ingeniero';
 
   // Active section detection
   useEffect(() => {
@@ -63,15 +67,32 @@ export default function Navbar() {
             opacity: bgOpacity,
             borderBottomWidth: 1,
             borderBottomStyle: 'solid',
-            borderBottomColor: `rgba(10, 147, 150, ${borderOpacity.get()})`,
+            borderBottomColor: `rgba(7, 114, 117, ${borderOpacity.get()})`,
           }}
         />
 
-        {/* Logo */}
-        <a href="#" className="relative z-10">
-          <span className="font-fabrica text-xl tracking-[0.05em]" style={{ color: 'var(--current-text)' }}>
-            OMIO
-          </span>
+        {/* Logo — crossfade between blue (light sections) and white (dark sections) */}
+        <a href="#" className="relative z-10 grid">
+          <Image
+            src="/images/loogo-blue.svg"
+            alt="OMIO - Atelier & Design"
+            width={161}
+            height={70}
+            className="h-10 md:h-12 w-auto col-start-1 row-start-1 transition-opacity duration-500"
+            style={{ opacity: useDarkLogo ? 1 : 0 }}
+            priority
+            unoptimized
+          />
+          <Image
+            src="/images/logo-white.svg"
+            alt=""
+            width={161}
+            height={70}
+            className="h-10 md:h-12 w-auto col-start-1 row-start-1 transition-opacity duration-500"
+            style={{ opacity: useDarkLogo ? 0 : 1 }}
+            priority
+            unoptimized
+          />
         </a>
 
         {/* Desktop Nav */}
@@ -120,7 +141,7 @@ export default function Navbar() {
         {isMenuOpen && (
           <motion.div
             className="fixed inset-0 z-40 flex items-center justify-center"
-            style={{ backgroundColor: '#001219' }}
+            style={{ backgroundColor: '#101e23' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

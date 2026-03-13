@@ -9,8 +9,8 @@ import type { Mesh } from 'three';
 import type { World } from '@/lib/constants';
 
 const WORLD_MATERIALS = {
-  artesano: { color: '#0A9396', roughness: 0.8, metalness: 0.1, distort: 0.25 },
-  ingeniero: { color: '#005F73', roughness: 0.3, metalness: 0.7, distort: 0.15 },
+  artesano: { color: '#077275', roughness: 0.8, metalness: 0.1, distort: 0.25 },
+  ingeniero: { color: '#35606e', roughness: 0.3, metalness: 0.7, distort: 0.15 },
   fabrica: { color: '#94D2BD', roughness: 0.15, metalness: 0.95, distort: 0.1 },
 } as const;
 

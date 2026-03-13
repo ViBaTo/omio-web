@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { SECTIONS, FOOTER } from '@/lib/constants';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
@@ -8,7 +9,7 @@ export default function Footer() {
   return (
     <footer
       className="relative py-24 px-6 md:px-12 lg:px-24"
-      style={{ backgroundColor: '#001219' }}
+      style={{ backgroundColor: '#101e23' }}
     >
       <div className="max-w-7xl mx-auto text-center">
         {/* Logo */}
@@ -18,24 +19,20 @@ export default function Footer() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <span
-            className="font-fabrica text-4xl md:text-5xl tracking-[0.05em]"
-            style={{ color: '#E8F5F2' }}
-          >
-            OMIO
-          </span>
-          <p
-            className="font-artesano italic text-sm tracking-[0.3em] mt-2"
-            style={{ color: '#0A9396' }}
-          >
-            Atelier & Design
-          </p>
+          <Image
+            src="/images/logo-white.svg"
+            alt="OMIO - Atelier & Design"
+            width={161}
+            height={70}
+            className="h-20 md:h-24 w-auto mx-auto"
+            unoptimized
+          />
         </motion.div>
 
         {/* Gold line */}
         <div
           className="w-24 h-[1px] mx-auto my-10"
-          style={{ backgroundColor: '#0A9396', opacity: 0.3 }}
+          style={{ backgroundColor: '#077275', opacity: 0.3 }}
         />
 
         {/* Nav links */}
@@ -70,7 +67,7 @@ export default function Footer() {
         {/* Easter egg */}
         <p
           className="font-body text-[10px] italic mt-4"
-          style={{ color: '#0A9396', opacity: 0.15 }}
+          style={{ color: '#077275', opacity: 0.15 }}
         >
           {FOOTER.easter_egg}
         </p>

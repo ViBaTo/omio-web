@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,14 +46,12 @@ export default function Preloader() {
       {isLoading && (
         <motion.div
           className="fixed inset-0 z-[60] flex flex-col items-center justify-center"
-          style={{ backgroundColor: '#001219' }}
+          style={{ backgroundColor: '#101e23' }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
         >
-          {/* Pulsing OMIO logo */}
+          {/* Pulsing logo */}
           <motion.div
-            className="font-fabrica text-[clamp(3rem,10vw,7rem)] tracking-[0.05em]"
-            style={{ color: '#E8F5F2' }}
             animate={{
               scale: [1, 1.02, 1],
               opacity: [0.6, 1, 0.6],
@@ -63,25 +62,22 @@ export default function Preloader() {
               ease: 'easeInOut',
             }}
           >
-            OMIO
-          </motion.div>
-
-          {/* Subtitle */}
-          <motion.div
-            className="font-artesano italic text-sm tracking-[0.4em] mt-2"
-            style={{ color: '#0A9396' }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.7 }}
-            transition={{ delay: 0.5 }}
-          >
-            ATELIER & DESIGN
+            <Image
+              src="/images/logo-white.svg"
+              alt="OMIO - Atelier & Design"
+              width={161}
+              height={70}
+              className="h-[clamp(6rem,18vw,12rem)] w-auto"
+              priority
+              unoptimized
+            />
           </motion.div>
 
           {/* Progress bar */}
-          <div className="mt-12 w-48 h-[1px] bg-[#003845] overflow-hidden">
+          <div className="mt-12 w-48 h-[1px] bg-[#263f47] overflow-hidden">
             <motion.div
               className="h-full origin-left"
-              style={{ backgroundColor: '#0A9396' }}
+              style={{ backgroundColor: '#077275' }}
               initial={{ scaleX: 0 }}
               animate={{ scaleX: Math.min(progress / 100, 1) }}
               transition={{ duration: 0.3 }}

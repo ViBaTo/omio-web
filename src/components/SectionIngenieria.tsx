@@ -13,7 +13,7 @@ function SVGCheckIcon() {
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="mb-4">
       <motion.path
         d="M4 16 L14 26 L28 6"
-        stroke="#005F73"
+        stroke="#35606e"
         strokeWidth="1.5"
         fill="none"
         strokeLinecap="round"
@@ -44,8 +44,8 @@ export default function SectionIngenieria() {
         <SectionLabel
           number="04"
           label="INGENIERÍA"
-          accentColor="#005F73"
-          numberColor="#005F73"
+          accentColor="#35606e"
+          numberColor="#35606e"
         />
 
         <motion.div className="mt-8">
@@ -59,7 +59,7 @@ export default function SectionIngenieria() {
 
         <motion.p
           className="font-body text-base md:text-lg leading-relaxed mt-10 max-w-3xl"
-          style={{ color: '#005F73', opacity: 0.8 }}
+          style={{ color: '#35606e', opacity: 0.8 }}
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
@@ -84,19 +84,19 @@ export default function SectionIngenieria() {
           {INGENIERIA.blocks.map((block) => (
             <motion.div
               key={block.title}
-              className="p-8 md:p-10 border border-[#005F73]/15"
+              className="p-8 md:p-10 border border-[#35606e]/15"
               variants={fadeInUp}
             >
               <SVGCheckIcon />
               <h3
                 className="font-artesano text-xl md:text-2xl"
-                style={{ color: '#005F73' }}
+                style={{ color: '#35606e' }}
               >
                 {block.title}
               </h3>
               <p
                 className="font-body text-base leading-relaxed mt-4"
-                style={{ color: '#005F73', opacity: 0.7 }}
+                style={{ color: '#35606e', opacity: 0.7 }}
               >
                 {block.description}
               </p>

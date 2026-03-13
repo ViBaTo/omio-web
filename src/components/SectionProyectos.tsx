@@ -30,7 +30,7 @@ export default function SectionProyectos() {
   const projects = PROYECTOS.projects;
 
   return (
-    <section id="proyectos" style={{ backgroundColor: '#00252D' }}>
+    <section id="proyectos" style={{ backgroundColor: '#1c3037' }}>
       {/* Header area */}
       <div className="px-6 md:px-12 lg:px-24 pt-32 md:pt-48 pb-16">
         <div className="max-w-7xl mx-auto">

@@ -13,7 +13,7 @@
   --font-body: var(--font-dm-sans);
 }
 
-/* --- CSS Custom Properties: Color System based on #00252D --- */
+/* --- CSS Custom Properties: Color System based on #1c3037 --- */
 :root {
   /* Scroll-driven blend factors (set by JS, 0-1 range) */
   --blend-artesano: 1;
@@ -22,38 +22,38 @@
 
   /* ARTESANO palette — Warmth, craft (light teal) */
   --artesano-bg: #E8F5F2;
-  --artesano-text: #003845;
-  --artesano-accent: #0A9396;
+  --artesano-text: #263f47;
+  --artesano-accent: #077275;
   --artesano-secondary: #E8F5F2;
 
   /* INGENIERO palette — Precision, blueprint (mid teal) */
   --ingeniero-bg: #D4EAE4;
-  --ingeniero-text: #005F73;
-  --ingeniero-accent: #005F73;
+  --ingeniero-text: #35606e;
+  --ingeniero-accent: #35606e;
   --ingeniero-secondary: #EDF6F9;
 
   /* FÁBRICA palette — Power, industrial (dark teal) */
-  --fabrica-bg: #00252D;
+  --fabrica-bg: #1c3037;
   --fabrica-text: #E8F5F2;
   --fabrica-accent: #94D2BD;
   --fabrica-secondary: #48CAE4;
 
   /* Interpolated current values (updated by TextureBackground.tsx) */
-  --current-bg: #00252D;
+  --current-bg: #1c3037;
   --current-text: #E8F5F2;
-  --current-accent: #0A9396;
+  --current-accent: #077275;
   --current-secondary: #E8F5F2;
 
   /* Named colors for direct use */
   --color-cream: #E8F5F2;
-  --color-ebony: #003845;
-  --color-gold: #0A9396;
+  --color-ebony: #263f47;
+  --color-gold: #077275;
   --color-blueprint: #D4EAE4;
-  --color-steel: #005F73;
-  --color-black-industrial: #00252D;
+  --color-steel: #35606e;
+  --color-black-industrial: #1c3037;
   --color-bronze: #94D2BD;
   --color-steel-polished: #48CAE4;
-  --color-deep-black: #001219;
+  --color-deep-black: #101e23;
 }
 
 /* --- Base Styles --- */
@@ -106,7 +106,7 @@ html {
 /* Texture 2: Blueprint dot grid (Ingeniero) */
 .texture-ingeniero {
   background-image:
-    radial-gradient(circle, #005F73 0.5px, transparent 0.5px);
+    radial-gradient(circle, #35606e 0.5px, transparent 0.5px);
   background-size: 24px 24px;
   opacity: 0.12;
 }

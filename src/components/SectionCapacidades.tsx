@@ -16,7 +16,7 @@ export default function SectionCapacidades() {
       id="capacidades"
       ref={sectionRef}
       className="relative min-h-screen py-32 md:py-48 px-6 md:px-12 lg:px-24"
-      style={{ backgroundColor: '#00252D' }}
+      style={{ backgroundColor: '#1c3037' }}
     >
       <div className="max-w-7xl mx-auto">
         <SectionLabel
@@ -120,7 +120,7 @@ function CapabilityBlock({
         animate={{ opacity: isHovered ? 0.08 : 0 }}
         transition={{ duration: 0.4 }}
         style={{
-          background: 'linear-gradient(90deg, #001A22 0%, #003845 50%, #00252D 100%)',
+          background: 'linear-gradient(90deg, #162a30 0%, #263f47 50%, #1c3037 100%)',
         }}
       />
 

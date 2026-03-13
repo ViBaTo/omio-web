@@ -20,7 +20,7 @@ export default function SectionLabel({
     <div className="relative">
       {/* Giant background number */}
       <motion.span
-        className="absolute -top-[8vw] -left-[2vw] font-ingeniero text-[30vw] leading-none select-none pointer-events-none"
+        className="absolute -top-[8vw] -left-[2vw] -z-10 font-ingeniero text-[30vw] leading-none select-none pointer-events-none"
         style={{ color: numberColor || 'var(--current-accent)', opacity: 0.05 }}
         variants={fadeIn}
         initial="hidden"

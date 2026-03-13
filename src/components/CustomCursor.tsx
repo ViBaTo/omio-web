@@ -22,10 +22,10 @@ export default function CustomCursor() {
   const isTouch = useIsTouch();
 
   const getAccentColor = useCallback((): string => {
-    if (typeof window === 'undefined') return '#0A9396';
+    if (typeof window === 'undefined') return '#077275';
     return getComputedStyle(document.documentElement)
       .getPropertyValue('--current-accent')
-      .trim() || '#0A9396';
+      .trim() || '#077275';
   }, []);
 
   useEffect(() => {
