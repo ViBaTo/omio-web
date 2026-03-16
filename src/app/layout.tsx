@@ -7,7 +7,6 @@ import Preloader from "@/components/Preloader";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
-import SoundToggle from "@/components/SoundToggle";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
 const playfair = Playfair_Display({
@@ -72,7 +71,6 @@ export default function RootLayout({
           <Footer />
           <ScrollIndicator />
           <CustomCursor />
-          <SoundToggle />
         </SmoothScroll>
       </body>
     </html>

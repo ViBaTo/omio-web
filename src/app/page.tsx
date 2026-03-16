@@ -1,10 +1,9 @@
 import HeroDoor from '@/components/HeroDoor';
-import SectionNosotros from '@/components/SectionNosotros';
-import SectionCapacidades from '@/components/SectionCapacidades';
-import SectionArtesania from '@/components/SectionArtesania';
-import SectionIngenieria from '@/components/SectionIngenieria';
-import SectionProyectos from '@/components/SectionProyectos';
-import SectionContacta from '@/components/SectionContacta';
+import HomeNosotros from '@/components/home/HomeNosotros';
+import HomeServicios from '@/components/home/HomeServicios';
+import HomeMateriales from '@/components/home/HomeMateriales';
+import HomeProyectos from '@/components/home/HomeProyectos';
+import HomeContacto from '@/components/home/HomeContacto';
 import FloatingObjectWrapper from '@/components/FloatingObjectWrapper';
 
 export default function Home() {
@@ -13,12 +12,11 @@ export default function Home() {
       <FloatingObjectWrapper />
       <main id="main-content">
         <HeroDoor />
-        <SectionNosotros />
-        <SectionCapacidades />
-        <SectionArtesania />
-        <SectionIngenieria />
-        <SectionProyectos />
-        <SectionContacta />
+        <HomeNosotros />
+        <HomeServicios />
+        <HomeMateriales />
+        <HomeProyectos />
+        <HomeContacto />
       </main>
     </>
   );

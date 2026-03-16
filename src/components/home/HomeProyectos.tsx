@@ -1,0 +1,127 @@
+'use client';
+
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { getFeaturedProjects } from '@/data/projects';
+import { fadeInUp, staggerContainer } from '@/lib/animations';
+
+export default function HomeProyectos() {
+  const projects = getFeaturedProjects();
+
+  return (
+    <section className="relative py-32 md:py-48 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#1c3037' }}>
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          className="flex items-center gap-4 mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="font-ingeniero text-sm tracking-[0.3em]" style={{ color: '#94D2BD' }}>04</span>
+          <div className="w-12 h-[1px]" style={{ backgroundColor: '#94D2BD', opacity: 0.4 }} />
+          <span className="font-ingeniero text-[11px] tracking-[0.2em] uppercase" style={{ color: '#94D2BD' }}>
+            PROYECTOS
+          </span>
+        </motion.div>
+
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+          <motion.h2
+            className="font-artesano italic text-[clamp(2rem,5vw,4rem)] leading-[1.1]"
+            style={{ color: '#E8F5F2' }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            Cada Proyecto, una Historia
+          </motion.h2>
+
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <Link
+              href="/proyectos"
+              className="inline-flex items-center gap-3 font-ingeniero text-[11px] tracking-[0.2em] uppercase group whitespace-nowrap"
+              style={{ color: '#94D2BD' }}
+            >
+              <span>Ver todos</span>
+              <span className="inline-block transition-transform group-hover:translate-x-2">→</span>
+            </Link>
+          </motion.div>
+        </div>
+
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {projects.map((project, i) => (
+            <FeaturedProjectCard key={project.slug} project={project} index={i} />
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function FeaturedProjectCard({ project, index }: { project: ReturnType<typeof getFeaturedProjects>[0]; index: number }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <motion.div variants={fadeInUp}>
+      <Link href={`/proyectos/${project.slug}`}>
+        <article
+          className="group cursor-pointer"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          data-cursor="precision"
+        >
+          <div
+            className="relative overflow-hidden aspect-[4/5]"
+            style={{ clipPath: 'polygon(3% 0%, 100% 2%, 97% 100%, 0% 97%)' }}
+          >
+            <motion.div
+              className="w-full h-full"
+              animate={{ scale: isHovered ? 1.05 : 1 }}
+              transition={{ duration: 0.6 }}
+              style={{
+                background: `linear-gradient(${135 + index * 40}deg, #263f47 0%, #94D2BD 40%, #1c3037 100%)`,
+              }}
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
+              <p className="font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: '#94D2BD' }}>
+                {project.category}
+              </p>
+              <h3 className="font-fabrica uppercase text-xl md:text-2xl tracking-[0.03em]" style={{ color: '#E8F5F2' }}>
+                {project.title}
+              </h3>
+            </div>
+
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center bg-black/20"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: isHovered ? 1 : 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <span className="font-ingeniero text-xs tracking-[0.3em] uppercase" style={{ color: '#E8F5F2' }}>
+                Descubrir →
+              </span>
+            </motion.div>
+          </div>
+
+          <p className="font-body text-sm mt-4 line-clamp-2" style={{ color: '#E8F5F2', opacity: 0.6 }}>
+            {project.shortDescription}
+          </p>
+        </article>
+      </Link>
+    </motion.div>
+  );
+}
+

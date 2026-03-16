@@ -75,10 +75,6 @@ export default function HeroDoor() {
   // Video scales down
   const videoScale = useTransform(scrollYProgress, [0, 0.4], [1.15, 1]);
 
-  // Golden crack width
-  const crackWidth = useTransform(scrollYProgress, [0, 0.05, 0.1], [2, 2, 0]);
-  const crackOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
-
   // Scroll indicator fades
   const scrollIndicatorOpacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
 
@@ -150,17 +146,6 @@ export default function HeroDoor() {
             }}
           />
         </motion.div>
-
-        {/* Golden Light Crack */}
-        <motion.div
-          className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 z-20"
-          style={{
-            width: crackWidth,
-            opacity: crackOpacity,
-            background: 'linear-gradient(180deg, transparent 0%, #077275 20%, #077275 80%, transparent 100%)',
-            boxShadow: '0 0 30px 10px rgba(7, 114, 117, 0.3)',
-          }}
-        />
 
         {/* Layer 3: Text Overlay */}
         <motion.div

@@ -20,6 +20,21 @@ export const SECTIONS: SectionDef[] = [
   { id: 'contacta', label: 'CONTACTA', number: '06', world: 'artesano' },
 ];
 
+export interface NavLink {
+  href: string;
+  label: string;
+  world: World;
+}
+
+export const NAV_PAGES: NavLink[] = [
+  { href: '/nosotros', label: 'NOSOTROS', world: 'artesano' },
+  { href: '/servicios', label: 'SERVICIOS', world: 'fabrica' },
+  { href: '/materiales', label: 'MATERIALES', world: 'artesano' },
+  { href: '/proyectos', label: 'PROYECTOS', world: 'fabrica' },
+  { href: '/proceso', label: 'PROCESO', world: 'ingeniero' },
+  { href: '/contacto', label: 'CONTACTO', world: 'artesano' },
+];
+
 // --- Hero ---
 export const HERO_PHRASES = [
   'La unión de un artesano, un ingeniero y una fábrica',
