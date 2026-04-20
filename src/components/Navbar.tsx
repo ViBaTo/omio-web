@@ -45,7 +45,7 @@ export default function Navbar() {
         <motion.div
           className="absolute inset-0 backdrop-blur-md -z-10"
           style={{
-            backgroundColor: isDarkPage ? '#1c3037' : '#E8F5F2',
+            backgroundColor: isDarkPage ? '#002A3A' : '#F3ECEB',
             opacity: bgOpacity,
           }}
         />
@@ -82,7 +82,7 @@ export default function Navbar() {
                 href={link.href}
                 className="font-ingeniero text-[11px] tracking-[0.2em] uppercase transition-opacity duration-300 hover:opacity-100"
                 style={{
-                  color: isDarkPage ? '#E8F5F2' : '#263f47',
+                  color: isDarkPage ? '#F3ECEB' : '#002A3A',
                   opacity: isActive ? 1 : 0.5,
                 }}
               >
@@ -99,17 +99,17 @@ export default function Navbar() {
         >
           <motion.span
             className="block w-6 h-[1px]"
-            style={{ backgroundColor: isDarkPage ? '#E8F5F2' : '#263f47' }}
+            style={{ backgroundColor: isDarkPage ? '#F3ECEB' : '#002A3A' }}
             animate={isMenuOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
           />
           <motion.span
             className="block w-6 h-[1px]"
-            style={{ backgroundColor: isDarkPage ? '#E8F5F2' : '#263f47' }}
+            style={{ backgroundColor: isDarkPage ? '#F3ECEB' : '#002A3A' }}
             animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
           />
           <motion.span
             className="block w-6 h-[1px]"
-            style={{ backgroundColor: isDarkPage ? '#E8F5F2' : '#263f47' }}
+            style={{ backgroundColor: isDarkPage ? '#F3ECEB' : '#002A3A' }}
             animate={isMenuOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
           />
         </button>
@@ -119,7 +119,7 @@ export default function Navbar() {
         {isMenuOpen && (
           <motion.div
             className="fixed inset-0 z-40 flex items-center justify-center"
-            style={{ backgroundColor: '#101e23' }}
+            style={{ backgroundColor: '#001A26' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -136,7 +136,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className="font-artesano italic text-3xl tracking-wide block"
-                    style={{ color: '#E8F5F2' }}
+                    style={{ color: '#F3ECEB' }}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}

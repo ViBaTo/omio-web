@@ -64,8 +64,8 @@ export default function SectionNosotros() {
             <SectionLabel
               number="01"
               label="NOSOTROS"
-              accentColor="#077275"
-              numberColor="#077275"
+              accentColor="#8C7732"
+              numberColor="#8C7732"
             />
 
             <motion.div className="mt-8" variants={fadeInUp}>
@@ -79,7 +79,7 @@ export default function SectionNosotros() {
 
             <motion.p
               className="font-body text-base md:text-lg leading-relaxed mt-10"
-              style={{ color: '#263f47', opacity: 0.85 }}
+              style={{ color: '#002A3A', opacity: 0.85 }}
               variants={fadeInUp}
             >
               {highlightFirms(NOSOTROS.paragraphs[0], NOSOTROS.highlightedFirms)}
@@ -87,7 +87,7 @@ export default function SectionNosotros() {
 
             <motion.p
               className="font-body text-base md:text-lg leading-relaxed mt-6"
-              style={{ color: '#263f47', opacity: 0.85 }}
+              style={{ color: '#002A3A', opacity: 0.85 }}
               variants={fadeInUp}
             >
               {NOSOTROS.paragraphs[1]}
@@ -99,7 +99,6 @@ export default function SectionNosotros() {
             <motion.div
               className="relative overflow-hidden"
               style={{
-                clipPath: 'polygon(8% 0%, 100% 3%, 95% 100%, 0% 97%)',
                 y: imageY,
               }}
               initial={{ opacity: 0, x: 80 }}
@@ -111,11 +110,10 @@ export default function SectionNosotros() {
                 className="aspect-[4/5] w-full"
                 style={{ scale: imageScale }}
               >
-                {/* PLACEHOLDER: Artisan workshop image */}
                 <div
-                  className="w-full h-full"
+                  className="w-full h-full bg-cover bg-center"
                   style={{
-                    background: 'linear-gradient(135deg, #263f47 0%, #077275 50%, #162a30 100%)',
+                    backgroundImage: "url('/images/artesania/IMG_1677.jpg')",
                   }}
                 />
               </motion.div>

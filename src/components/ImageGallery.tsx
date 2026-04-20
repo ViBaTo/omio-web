@@ -9,7 +9,7 @@ interface ImageGalleryProps {
   accentColor?: string;
 }
 
-export default function ImageGallery({ images, accentColor = '#077275' }: ImageGalleryProps) {
+export default function ImageGallery({ images, accentColor = '#8C7732' }: ImageGalleryProps) {
   const [selected, setSelected] = useState(0);
 
   if (images.length === 0) return null;
@@ -21,21 +21,20 @@ export default function ImageGallery({ images, accentColor = '#077275' }: ImageG
         <motion.div
           key={selected}
           className="relative w-full aspect-[16/10] overflow-hidden"
-          style={{ clipPath: 'polygon(2% 0%, 100% 1%, 98% 100%, 0% 98%)' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
         >
           <div
-            className="w-full h-full"
+            className="w-full h-full bg-cover bg-center"
             style={{
-              background: `linear-gradient(${135 + selected * 40}deg, #263f47 0%, ${accentColor} 40%, #1c3037 100%)`,
+              backgroundImage: `url(${images[selected].src})`,
             }}
           />
           {images[selected].caption && (
             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
-              <p className="font-body text-sm" style={{ color: '#E8F5F2', opacity: 0.9 }}>
+              <p className="font-body text-sm" style={{ color: '#F3ECEB', opacity: 0.9 }}>
                 {images[selected].caption}
               </p>
             </div>
@@ -57,9 +56,9 @@ export default function ImageGallery({ images, accentColor = '#077275' }: ImageG
               }}
             >
               <div
-                className="w-full h-full"
+                className="w-full h-full bg-cover bg-center"
                 style={{
-                  background: `linear-gradient(${135 + i * 40}deg, #263f47 0%, ${accentColor} 40%, #1c3037 100%)`,
+                  backgroundImage: `url(${img.src})`,
                 }}
               />
             </button>

@@ -25,15 +25,15 @@ export default function ProyectosContent() {
         world="fabrica"
       />
 
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#1c3037' }}>
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#002A3A' }}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <CategoryFilter
               categories={PROJECT_CATEGORIES}
               active={activeCategory}
               onSelect={(cat) => setActiveCategory(cat)}
-              accentColor="#94D2BD"
-              textColor="#E8F5F2"
+              accentColor="#8C7732"
+              textColor="#F3ECEB"
             />
           </div>
 
@@ -76,27 +76,26 @@ function ProjectListCard({
         >
           <div
             className="relative overflow-hidden aspect-[16/10]"
-            style={{ clipPath: 'polygon(2% 0%, 100% 1.5%, 98% 100%, 0% 98%)' }}
           >
             <motion.div
-              className="w-full h-full"
+              className="w-full h-full bg-cover bg-center"
               animate={{ scale: isHovered ? 1.05 : 1 }}
               transition={{ duration: 0.6 }}
               style={{
-                background: `linear-gradient(${135 + index * 30}deg, #263f47 0%, #94D2BD 40%, #1c3037 100%)`,
+                backgroundImage: `url(${project.heroImage})`,
               }}
             />
 
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/70 to-transparent">
               <p
                 className="font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2"
-                style={{ color: '#94D2BD' }}
+                style={{ color: '#8C7732' }}
               >
                 {project.category} · {project.location} · {project.year}
               </p>
               <h3
                 className="font-fabrica uppercase text-2xl md:text-3xl tracking-[0.03em]"
-                style={{ color: '#E8F5F2' }}
+                style={{ color: '#F3ECEB' }}
               >
                 {project.title}
               </h3>
@@ -110,7 +109,7 @@ function ProjectListCard({
             >
               <span
                 className="font-ingeniero text-sm tracking-[0.3em] uppercase"
-                style={{ color: '#E8F5F2' }}
+                style={{ color: '#F3ECEB' }}
               >
                 Descubrir historia →
               </span>
@@ -119,7 +118,7 @@ function ProjectListCard({
 
           <p
             className="font-body text-sm mt-4 line-clamp-2"
-            style={{ color: '#E8F5F2', opacity: 0.6 }}
+            style={{ color: '#F3ECEB', opacity: 0.6 }}
           >
             {project.shortDescription}
           </p>

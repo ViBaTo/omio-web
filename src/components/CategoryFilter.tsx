@@ -14,8 +14,8 @@ export default function CategoryFilter({
   categories,
   active,
   onSelect,
-  accentColor = '#077275',
-  textColor = '#263f47',
+  accentColor = '#8C7732',
+  textColor = '#002A3A',
 }: CategoryFilterProps) {
   return (
     <div className="flex flex-wrap gap-3">

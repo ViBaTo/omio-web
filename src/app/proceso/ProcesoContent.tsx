@@ -93,9 +93,9 @@ const PROCESS_DETAILED = [
 ];
 
 const WORLD_STYLES = {
-  artesano: { bg: '#E8F5F2', text: '#263f47', accent: '#077275', border: '#077275' },
-  ingeniero: { bg: '#D4EAE4', text: '#35606e', accent: '#35606e', border: '#35606e' },
-  fabrica: { bg: '#1c3037', text: '#E8F5F2', accent: '#94D2BD', border: '#94D2BD' },
+  artesano: { bg: '#F3ECEB', text: '#002A3A', accent: '#8C7732', border: '#8C7732' },
+  ingeniero: { bg: '#F3ECEB', text: '#002A3A', accent: '#002A3A', border: '#002A3A' },
+  fabrica: { bg: '#002A3A', text: '#F3ECEB', accent: '#8C7732', border: '#8C7732' },
 };
 
 export default function ProcesoContent() {
@@ -194,11 +194,11 @@ export default function ProcesoContent() {
       })}
 
       {/* CTA */}
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#D4EAE4' }}>
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#F3ECEB' }}>
         <div className="max-w-3xl mx-auto text-center">
           <motion.h2
             className="font-artesano italic text-3xl md:text-4xl leading-[1.1]"
-            style={{ color: '#35606e' }}
+            style={{ color: '#002A3A' }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -207,7 +207,7 @@ export default function ProcesoContent() {
           </motion.h2>
           <motion.p
             className="font-body text-base md:text-lg leading-relaxed mt-6"
-            style={{ color: '#35606e', opacity: 0.7 }}
+            style={{ color: '#002A3A', opacity: 0.7 }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -225,7 +225,7 @@ export default function ProcesoContent() {
             <a
               href="/contacto"
               className="cta-fill inline-flex items-center justify-center px-16 py-6 font-artesano italic text-2xl tracking-wide transition-colors duration-500"
-              style={{ color: '#35606e' }}
+              style={{ color: '#002A3A' }}
               data-cursor="precision"
             >
               Hablemos

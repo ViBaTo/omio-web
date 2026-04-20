@@ -14,9 +14,9 @@ interface PageHeroProps {
 }
 
 const WORLD_COLORS: Record<World, { bg: string; text: string; accent: string }> = {
-  artesano: { bg: '#E8F5F2', text: '#263f47', accent: '#077275' },
-  ingeniero: { bg: '#D4EAE4', text: '#35606e', accent: '#35606e' },
-  fabrica: { bg: '#1c3037', text: '#E8F5F2', accent: '#94D2BD' },
+  artesano: { bg: '#F3ECEB', text: '#002A3A', accent: '#8C7732' },
+  ingeniero: { bg: '#F3ECEB', text: '#002A3A', accent: '#002A3A' },
+  fabrica: { bg: '#002A3A', text: '#F3ECEB', accent: '#8C7732' },
 };
 
 export default function PageHero({ number, label, title, subtitle, world }: PageHeroProps) {

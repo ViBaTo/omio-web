@@ -10,7 +10,7 @@ export default function HomeNosotros() {
   return (
     <section
       className="relative py-32 md:py-48 px-6 md:px-12 lg:px-24"
-      style={{ backgroundColor: '#E8F5F2' }}
+      style={{ backgroundColor: '#F3ECEB' }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -21,11 +21,11 @@ export default function HomeNosotros() {
             viewport={{ once: true, margin: '-10%' }}
           >
             <motion.div className="flex items-center gap-4 mb-6" variants={fadeInUp}>
-              <span className="font-ingeniero text-sm tracking-[0.3em]" style={{ color: '#077275' }}>
+              <span className="font-ingeniero text-sm tracking-[0.3em]" style={{ color: '#8C7732' }}>
                 01
               </span>
-              <div className="w-12 h-[1px]" style={{ backgroundColor: '#077275', opacity: 0.4 }} />
-              <span className="font-ingeniero text-[11px] tracking-[0.2em] uppercase" style={{ color: '#077275' }}>
+              <div className="w-12 h-[1px]" style={{ backgroundColor: '#8C7732', opacity: 0.4 }} />
+              <span className="font-ingeniero text-[11px] tracking-[0.2em] uppercase" style={{ color: '#8C7732' }}>
                 NOSOTROS
               </span>
             </motion.div>
@@ -39,7 +39,7 @@ export default function HomeNosotros() {
 
             <motion.p
               className="font-body text-base md:text-lg leading-relaxed mt-8"
-              style={{ color: '#263f47', opacity: 0.85 }}
+              style={{ color: '#002A3A', opacity: 0.85 }}
               variants={fadeInUp}
             >
               {NOSOTROS.paragraphs[0].slice(0, 200)}...
@@ -49,7 +49,7 @@ export default function HomeNosotros() {
               <Link
                 href="/nosotros"
                 className="inline-flex items-center gap-3 font-ingeniero text-[11px] tracking-[0.2em] uppercase group"
-                style={{ color: '#077275' }}
+                style={{ color: '#8C7732' }}
               >
                 <span>Descubrir más</span>
                 <span className="inline-block transition-transform group-hover:translate-x-2">→</span>
@@ -59,15 +59,14 @@ export default function HomeNosotros() {
 
           <motion.div
             className="relative overflow-hidden"
-            style={{ clipPath: 'polygon(8% 0%, 100% 3%, 95% 100%, 0% 97%)' }}
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
             <div
-              className="aspect-[4/5] w-full"
-              style={{ background: 'linear-gradient(135deg, #263f47 0%, #077275 50%, #162a30 100%)' }}
+              className="aspect-[4/5] w-full bg-cover bg-center"
+              style={{ backgroundImage: "url('/images/artesania/IMG_1712.jpg')" }}
             />
             <div className="absolute inset-0 texture-artesano opacity-20 mix-blend-overlay" />
           </motion.div>

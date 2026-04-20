@@ -13,8 +13,8 @@ const CATEGORY_GRADIENTS: Record<string, string> = {
   Maderas: 'linear-gradient(135deg, #5C4033 0%, #8B6914 50%, #3E2723 100%)',
   Metales: 'linear-gradient(135deg, #37474F 0%, #B0BEC5 50%, #263238 100%)',
   Piedras: 'linear-gradient(135deg, #BDBDBD 0%, #E0E0E0 50%, #9E9E9E 100%)',
-  Textiles: 'linear-gradient(135deg, #E8F5F2 0%, #D4EAE4 50%, #B2DFDB 100%)',
-  Acabados: 'linear-gradient(135deg, #077275 0%, #94D2BD 50%, #35606e 100%)',
+  Textiles: 'linear-gradient(135deg, #F3ECEB 0%, #F3ECEB 50%, #B2DFDB 100%)',
+  Acabados: 'linear-gradient(135deg, #8C7732 0%, #8C7732 50%, #002A3A 100%)',
 };
 
 export default function MaterialCard({ material }: MaterialCardProps) {
@@ -34,11 +34,14 @@ export default function MaterialCard({ material }: MaterialCardProps) {
       >
         <div className="relative overflow-hidden aspect-[4/5]">
           <motion.div
-            className="w-full h-full"
+            className="w-full h-full bg-cover bg-center"
             animate={{ scale: isHovered ? 1.05 : 1 }}
             transition={{ duration: 0.6 }}
             style={{
-              background: CATEGORY_GRADIENTS[material.category] || CATEGORY_GRADIENTS.Acabados,
+              backgroundImage: `url(${material.image})`,
+              background: material.image
+                ? `url(${material.image}) center/cover no-repeat`
+                : CATEGORY_GRADIENTS[material.category] || CATEGORY_GRADIENTS.Acabados,
             }}
           />
           <motion.div
@@ -49,7 +52,7 @@ export default function MaterialCard({ material }: MaterialCardProps) {
           >
             <span
               className="font-ingeniero text-xs tracking-[0.3em] uppercase"
-              style={{ color: '#E8F5F2' }}
+              style={{ color: '#F3ECEB' }}
             >
               Ver detalle
             </span>
@@ -59,19 +62,19 @@ export default function MaterialCard({ material }: MaterialCardProps) {
         <div className="mt-4">
           <p
             className="font-ingeniero text-[10px] tracking-[0.2em] uppercase"
-            style={{ color: '#077275' }}
+            style={{ color: '#8C7732' }}
           >
             {material.category}
           </p>
           <h3
             className="font-artesano text-xl mt-1"
-            style={{ color: '#263f47' }}
+            style={{ color: '#002A3A' }}
           >
             {material.name}
           </h3>
           <p
             className="font-body text-sm mt-2 line-clamp-2"
-            style={{ color: '#263f47', opacity: 0.7 }}
+            style={{ color: '#002A3A', opacity: 0.7 }}
           >
             {material.description}
           </p>

@@ -46,7 +46,7 @@ export default function Preloader() {
       {isLoading && (
         <motion.div
           className="fixed inset-0 z-[60] flex flex-col items-center justify-center"
-          style={{ backgroundColor: '#101e23' }}
+          style={{ backgroundColor: '#001A26' }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
         >
@@ -74,10 +74,10 @@ export default function Preloader() {
           </motion.div>
 
           {/* Progress bar */}
-          <div className="mt-12 w-48 h-[1px] bg-[#263f47] overflow-hidden">
+          <div className="mt-12 w-48 h-[1px] bg-[#002A3A] overflow-hidden">
             <motion.div
               className="h-full origin-left"
-              style={{ backgroundColor: '#077275' }}
+              style={{ backgroundColor: '#8C7732' }}
               initial={{ scaleX: 0 }}
               animate={{ scaleX: Math.min(progress / 100, 1) }}
               transition={{ duration: 0.3 }}

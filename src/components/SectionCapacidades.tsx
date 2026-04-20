@@ -16,20 +16,20 @@ export default function SectionCapacidades() {
       id="capacidades"
       ref={sectionRef}
       className="relative min-h-screen py-32 md:py-48 px-6 md:px-12 lg:px-24"
-      style={{ backgroundColor: '#1c3037' }}
+      style={{ backgroundColor: '#002A3A' }}
     >
       <div className="max-w-7xl mx-auto">
         <SectionLabel
           number="02"
           label="CAPACIDADES INDUSTRIALES"
-          accentColor="#94D2BD"
-          numberColor="#48CAE4"
+          accentColor="#8C7732"
+          numberColor="#8C7732"
         />
 
         {/* Title — Letters fall with gravity */}
         <motion.h2
           className="font-fabrica uppercase text-[clamp(3rem,10vw,10rem)] leading-[0.9] tracking-[0.05em] mt-8"
-          style={{ color: '#E8F5F2' }}
+          style={{ color: '#F3ECEB' }}
           variants={letterReveal}
           initial="hidden"
           whileInView="visible"
@@ -49,7 +49,7 @@ export default function SectionCapacidades() {
         {/* Intro text */}
         <motion.p
           className="font-body text-base md:text-lg leading-relaxed mt-12 max-w-3xl"
-          style={{ color: '#E8F5F2', opacity: 0.7 }}
+          style={{ color: '#F3ECEB', opacity: 0.7 }}
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
@@ -82,7 +82,7 @@ export default function SectionCapacidades() {
               />
               <p
                 className="font-ingeniero text-[11px] tracking-[0.2em] uppercase mt-2"
-                style={{ color: '#94D2BD' }}
+                style={{ color: '#8C7732' }}
               >
                 {stat.label}
               </p>
@@ -107,7 +107,7 @@ function CapabilityBlock({
 
   return (
     <motion.div
-      className="relative border-t border-[#48CAE4]/20 py-8 md:py-12 group"
+      className="relative border-t border-[#8C7732]/20 py-8 md:py-12 group"
       variants={fadeInUp}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -120,7 +120,7 @@ function CapabilityBlock({
         animate={{ opacity: isHovered ? 0.08 : 0 }}
         transition={{ duration: 0.4 }}
         style={{
-          background: 'linear-gradient(90deg, #162a30 0%, #263f47 50%, #1c3037 100%)',
+          background: 'linear-gradient(90deg, #001F2C 0%, #002A3A 50%, #002A3A 100%)',
         }}
       />
 
@@ -129,7 +129,7 @@ function CapabilityBlock({
         <div className="col-span-2 md:col-span-1">
           <span
             className="font-ingeniero text-2xl md:text-4xl"
-            style={{ color: '#94D2BD' }}
+            style={{ color: '#8C7732' }}
           >
             {number}
           </span>
@@ -139,7 +139,7 @@ function CapabilityBlock({
         <div className="col-span-10 md:col-span-4">
           <h3
             className="font-fabrica uppercase text-xl md:text-3xl tracking-[0.05em]"
-            style={{ color: '#E8F5F2' }}
+            style={{ color: '#F3ECEB' }}
           >
             {title}
           </h3>
@@ -149,7 +149,7 @@ function CapabilityBlock({
         <div className="col-span-12 md:col-span-7 md:col-start-6">
           <p
             className="font-body text-base leading-relaxed"
-            style={{ color: '#E8F5F2', opacity: 0.6 }}
+            style={{ color: '#F3ECEB', opacity: 0.6 }}
           >
             {description}
           </p>

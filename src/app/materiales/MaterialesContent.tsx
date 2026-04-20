@@ -29,7 +29,7 @@ export default function MaterialesContent() {
         world="artesano"
       />
 
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#E8F5F2' }}>
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#F3ECEB' }}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <CategoryFilter
@@ -60,7 +60,7 @@ export default function MaterialesContent() {
           </motion.div>
 
           {filtered.length === 0 && (
-            <p className="font-body text-center py-24" style={{ color: '#263f47', opacity: 0.5 }}>
+            <p className="font-body text-center py-24" style={{ color: '#002A3A', opacity: 0.5 }}>
               No hay materiales en esta categoría.
             </p>
           )}

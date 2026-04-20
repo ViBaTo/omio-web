@@ -20,7 +20,7 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
         <div className="absolute -top-16 left-0">
           <span
             className="font-ingeniero text-sm tracking-[0.3em]"
-            style={{ color: '#E8F5F2', opacity: 0.3 }}
+            style={{ color: '#F3ECEB', opacity: 0.3 }}
           >
             {String(index + 1).padStart(2, '0')}/{String(total).padStart(2, '0')}
           </span>
@@ -29,9 +29,6 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
         {/* Image container with organic mask */}
         <motion.div
           className="relative overflow-hidden cursor-pointer"
-          style={{
-            clipPath: 'polygon(3% 0%, 100% 2%, 97% 100%, 0% 97%)',
-          }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           data-cursor="precision"
@@ -41,11 +38,10 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
             animate={{ scale: isHovered ? 1.03 : 1 }}
             transition={{ duration: 0.6 }}
           >
-            {/* PLACEHOLDER: Project image */}
             <div
-              className="w-full h-full"
+              className="w-full h-full bg-cover bg-center"
               style={{
-                background: `linear-gradient(${135 + index * 30}deg, #263f47 0%, #94D2BD 40%, #1c3037 100%)`,
+                backgroundImage: `url(${project.image})`,
                 filter: isHovered ? 'grayscale(0.7)' : 'grayscale(0)',
                 transition: 'filter 0.5s ease',
               }}
@@ -61,7 +57,7 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
           >
             <span
               className="font-ingeniero text-sm tracking-[0.3em] uppercase"
-              style={{ color: '#E8F5F2' }}
+              style={{ color: '#F3ECEB' }}
             >
               Descubrir →
             </span>
@@ -75,13 +71,13 @@ export default function ProjectCard({ project, index, total }: ProjectCardProps)
             <div className="relative z-10">
               <p
                 className="font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2"
-                style={{ color: '#94D2BD' }}
+                style={{ color: '#8C7732' }}
               >
                 {project.category}
               </p>
               <h3
                 className="font-fabrica uppercase text-2xl md:text-4xl lg:text-5xl tracking-[0.03em]"
-                style={{ color: '#E8F5F2' }}
+                style={{ color: '#F3ECEB' }}
               >
                 {project.title}
               </h3>

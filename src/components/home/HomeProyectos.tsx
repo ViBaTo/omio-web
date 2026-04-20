@@ -10,7 +10,7 @@ export default function HomeProyectos() {
   const projects = getFeaturedProjects();
 
   return (
-    <section className="relative py-32 md:py-48 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#1c3037' }}>
+    <section className="relative py-32 md:py-48 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#002A3A' }}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="flex items-center gap-4 mb-6"
@@ -19,9 +19,9 @@ export default function HomeProyectos() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-ingeniero text-sm tracking-[0.3em]" style={{ color: '#94D2BD' }}>04</span>
-          <div className="w-12 h-[1px]" style={{ backgroundColor: '#94D2BD', opacity: 0.4 }} />
-          <span className="font-ingeniero text-[11px] tracking-[0.2em] uppercase" style={{ color: '#94D2BD' }}>
+          <span className="font-ingeniero text-sm tracking-[0.3em]" style={{ color: '#8C7732' }}>04</span>
+          <div className="w-12 h-[1px]" style={{ backgroundColor: '#8C7732', opacity: 0.4 }} />
+          <span className="font-ingeniero text-[11px] tracking-[0.2em] uppercase" style={{ color: '#8C7732' }}>
             PROYECTOS
           </span>
         </motion.div>
@@ -29,7 +29,7 @@ export default function HomeProyectos() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <motion.h2
             className="font-artesano italic text-[clamp(2rem,5vw,4rem)] leading-[1.1]"
-            style={{ color: '#E8F5F2' }}
+            style={{ color: '#F3ECEB' }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -47,7 +47,7 @@ export default function HomeProyectos() {
             <Link
               href="/proyectos"
               className="inline-flex items-center gap-3 font-ingeniero text-[11px] tracking-[0.2em] uppercase group whitespace-nowrap"
-              style={{ color: '#94D2BD' }}
+              style={{ color: '#8C7732' }}
             >
               <span>Ver todos</span>
               <span className="inline-block transition-transform group-hover:translate-x-2">→</span>
@@ -85,21 +85,20 @@ function FeaturedProjectCard({ project, index }: { project: ReturnType<typeof ge
         >
           <div
             className="relative overflow-hidden aspect-[4/5]"
-            style={{ clipPath: 'polygon(3% 0%, 100% 2%, 97% 100%, 0% 97%)' }}
           >
             <motion.div
-              className="w-full h-full"
+              className="w-full h-full bg-cover bg-center"
               animate={{ scale: isHovered ? 1.05 : 1 }}
               transition={{ duration: 0.6 }}
               style={{
-                background: `linear-gradient(${135 + index * 40}deg, #263f47 0%, #94D2BD 40%, #1c3037 100%)`,
+                backgroundImage: `url(${project.heroImage})`,
               }}
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-              <p className="font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: '#94D2BD' }}>
+              <p className="font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: '#8C7732' }}>
                 {project.category}
               </p>
-              <h3 className="font-fabrica uppercase text-xl md:text-2xl tracking-[0.03em]" style={{ color: '#E8F5F2' }}>
+              <h3 className="font-fabrica uppercase text-xl md:text-2xl tracking-[0.03em]" style={{ color: '#F3ECEB' }}>
                 {project.title}
               </h3>
             </div>
@@ -110,13 +109,13 @@ function FeaturedProjectCard({ project, index }: { project: ReturnType<typeof ge
               animate={{ opacity: isHovered ? 1 : 0 }}
               transition={{ duration: 0.3 }}
             >
-              <span className="font-ingeniero text-xs tracking-[0.3em] uppercase" style={{ color: '#E8F5F2' }}>
+              <span className="font-ingeniero text-xs tracking-[0.3em] uppercase" style={{ color: '#F3ECEB' }}>
                 Descubrir →
               </span>
             </motion.div>
           </div>
 
-          <p className="font-body text-sm mt-4 line-clamp-2" style={{ color: '#E8F5F2', opacity: 0.6 }}>
+          <p className="font-body text-sm mt-4 line-clamp-2" style={{ color: '#F3ECEB', opacity: 0.6 }}>
             {project.shortDescription}
           </p>
         </article>

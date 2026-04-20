@@ -94,22 +94,21 @@ export default function HeroDoor() {
           className="absolute inset-0 z-0"
           style={{ scale: videoScale }}
         >
-          {/* Placeholder gradient - replace with actual video */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#162a30] via-[#263f47] to-[#1c3037]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#001F2C] via-[#002A3A] to-[#002A3A]" />
           <video
-            className="absolute inset-0 w-full h-full object-cover opacity-60"
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
             autoPlay
             muted
             loop
             playsInline
             preload="metadata"
-            poster="/images/hero-poster.jpg"
+            poster="/images/artesania/IMG_1458.jpg"
+            style={{ filter: 'grayscale(40%) contrast(1.05) brightness(0.85)' }}
           >
-            {/* PLACEHOLDER: Add video source */}
-            {/* <source src="/videos/hero.mp4" type="video/mp4" /> */}
+            <source src="/videos/comp-1.mp4" type="video/mp4" />
           </video>
           {/* Gradient mesh overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#101e23] via-transparent to-[#101e23]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#001A26] via-transparent to-[#001A26]/40" />
         </motion.div>
 
         {/* Layer 2: Door Panels */}
@@ -118,14 +117,14 @@ export default function HeroDoor() {
           className="absolute inset-y-0 left-0 w-1/2 z-10"
           style={{
             x: leftDoorX,
-            backgroundColor: '#101e23',
+            backgroundColor: '#001A26',
           }}
         >
           <div className="absolute inset-0 texture-artesano opacity-10" />
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(135deg, #162a30 0%, #101e23 50%, #162a30 100%)',
+              background: 'linear-gradient(135deg, #001F2C 0%, #001A26 50%, #001F2C 100%)',
             }}
           />
         </motion.div>
@@ -135,14 +134,14 @@ export default function HeroDoor() {
           className="absolute inset-y-0 right-0 w-1/2 z-10"
           style={{
             x: rightDoorX,
-            backgroundColor: '#101e23',
+            backgroundColor: '#001A26',
           }}
         >
           <div className="absolute inset-0 texture-artesano opacity-10" />
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(225deg, #162a30 0%, #101e23 50%, #162a30 100%)',
+              background: 'linear-gradient(225deg, #001F2C 0%, #001A26 50%, #001F2C 100%)',
             }}
           />
         </motion.div>
@@ -176,7 +175,7 @@ export default function HeroDoor() {
           >
             <p
               className="font-body text-sm md:text-base tracking-wide text-center max-w-md px-6"
-              style={{ color: '#E8F5F2', opacity: 0.7 }}
+              style={{ color: '#F3ECEB', opacity: 0.7 }}
             >
               <AnimatePresence mode="wait">
                 <motion.span
@@ -201,14 +200,14 @@ export default function HeroDoor() {
           animate={{ opacity: 0.5 }}
           transition={{ delay: 4.2 }}
         >
-          <span className="font-ingeniero text-[10px] tracking-[0.3em] uppercase" style={{ color: '#E8F5F2' }}>
+          <span className="font-ingeniero text-[10px] tracking-[0.3em] uppercase" style={{ color: '#F3ECEB' }}>
             Scroll to enter
           </span>
           <motion.span
             className="inline-block"
             animate={{ y: [0, 6, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            style={{ color: '#077275' }}
+            style={{ color: '#8C7732' }}
           >
             ↓
           </motion.span>
@@ -222,10 +221,10 @@ export default function HeroDoor() {
           animate={{ opacity: 0.4 }}
           transition={{ delay: 4.2 }}
         >
-          <p className="font-ingeniero text-[10px] tracking-[0.2em]" style={{ color: '#E8F5F2' }}>
+          <p className="font-ingeniero text-[10px] tracking-[0.2em]" style={{ color: '#F3ECEB' }}>
             Valencia, España
           </p>
-          <p className="font-ingeniero text-[10px] tracking-[0.2em] mt-1" style={{ color: '#077275' }}>
+          <p className="font-ingeniero text-[10px] tracking-[0.2em] mt-1" style={{ color: '#8C7732' }}>
             <LiveClock />
           </p>
         </motion.div>
