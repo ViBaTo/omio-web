@@ -12,7 +12,7 @@ interface BreadcrumbsProps {
   color?: string;
 }
 
-export default function Breadcrumbs({ items, color = '#263f47' }: BreadcrumbsProps) {
+export default function Breadcrumbs({ items, color = '#002A3A' }: BreadcrumbsProps) {
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-2 py-4">
       <Link

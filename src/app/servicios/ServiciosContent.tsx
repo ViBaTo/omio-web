@@ -7,9 +7,9 @@ import { fadeInUp, staggerContainer } from '@/lib/animations';
 import type { World } from '@/lib/constants';
 
 const WORLD_STYLES: Record<World, { bg: string; text: string; accent: string; border: string }> = {
-  artesano: { bg: '#E8F5F2', text: '#263f47', accent: '#077275', border: '#077275' },
-  ingeniero: { bg: '#D4EAE4', text: '#35606e', accent: '#35606e', border: '#35606e' },
-  fabrica: { bg: '#1c3037', text: '#E8F5F2', accent: '#94D2BD', border: '#94D2BD' },
+  artesano: { bg: '#F3ECEB', text: '#002A3A', accent: '#8C7732', border: '#8C7732' },
+  ingeniero: { bg: '#F3ECEB', text: '#002A3A', accent: '#002A3A', border: '#002A3A' },
+  fabrica: { bg: '#002A3A', text: '#F3ECEB', accent: '#8C7732', border: '#8C7732' },
 };
 
 export default function ServiciosContent() {

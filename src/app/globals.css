@@ -7,53 +7,53 @@
 
 /* --- Tailwind Theme Extensions --- */
 @theme inline {
-  --font-playfair: var(--font-playfair-display);
-  --font-bebas: var(--font-bebas-neue);
-  --font-jetbrains: var(--font-jetbrains-mono);
-  --font-body: var(--font-dm-sans);
+  --font-caslon: var(--font-caslon);
+  --font-cascadia: "Cascadia Code", "Cascadia Mono", "Courier New", monospace;
+  --font-lato: var(--font-lato);
+  --font-body: var(--font-lato);
 }
 
-/* --- CSS Custom Properties: Color System based on #1c3037 --- */
+/* --- CSS Custom Properties: Color System based on PANTONE 303 C / 4495 C / 11-3900 TCX --- */
 :root {
   /* Scroll-driven blend factors (set by JS, 0-1 range) */
   --blend-artesano: 1;
   --blend-ingeniero: 0;
   --blend-fabrica: 0;
 
-  /* ARTESANO palette — Warmth, craft (light teal) */
-  --artesano-bg: #E8F5F2;
-  --artesano-text: #263f47;
-  --artesano-accent: #077275;
-  --artesano-secondary: #E8F5F2;
+  /* ARTESANO palette — Warmth, craft (cream) */
+  --artesano-bg: #F3ECEB;
+  --artesano-text: #002A3A;
+  --artesano-accent: #8C7732;
+  --artesano-secondary: #F3ECEB;
 
-  /* INGENIERO palette — Precision, blueprint (mid teal) */
-  --ingeniero-bg: #D4EAE4;
-  --ingeniero-text: #35606e;
-  --ingeniero-accent: #35606e;
-  --ingeniero-secondary: #EDF6F9;
+  /* INGENIERO palette — Precision, blueprint (cream + navy) */
+  --ingeniero-bg: #F3ECEB;
+  --ingeniero-text: #002A3A;
+  --ingeniero-accent: #8C7732;
+  --ingeniero-secondary: #F3ECEB;
 
-  /* FÁBRICA palette — Power, industrial (dark teal) */
-  --fabrica-bg: #1c3037;
-  --fabrica-text: #E8F5F2;
-  --fabrica-accent: #94D2BD;
-  --fabrica-secondary: #48CAE4;
+  /* FÁBRICA palette — Power, industrial (navy) */
+  --fabrica-bg: #002A3A;
+  --fabrica-text: #F3ECEB;
+  --fabrica-accent: #8C7732;
+  --fabrica-secondary: #8C7732;
 
   /* Interpolated current values (updated by TextureBackground.tsx) */
-  --current-bg: #1c3037;
-  --current-text: #E8F5F2;
-  --current-accent: #077275;
-  --current-secondary: #E8F5F2;
+  --current-bg: #002A3A;
+  --current-text: #F3ECEB;
+  --current-accent: #8C7732;
+  --current-secondary: #F3ECEB;
 
   /* Named colors for direct use */
-  --color-cream: #E8F5F2;
-  --color-ebony: #263f47;
-  --color-gold: #077275;
-  --color-blueprint: #D4EAE4;
-  --color-steel: #35606e;
-  --color-black-industrial: #1c3037;
-  --color-bronze: #94D2BD;
-  --color-steel-polished: #48CAE4;
-  --color-deep-black: #101e23;
+  --color-cream: #F3ECEB;
+  --color-ebony: #002A3A;
+  --color-gold: #8C7732;
+  --color-blueprint: #F3ECEB;
+  --color-steel: #002A3A;
+  --color-black-industrial: #002A3A;
+  --color-bronze: #8C7732;
+  --color-steel-polished: #8C7732;
+  --color-deep-black: #001A26;
 }
 
 /* --- Base Styles --- */
@@ -66,7 +66,8 @@ html {
 body {
   background: var(--current-bg);
   color: var(--current-text);
-  font-family: var(--font-body), system-ui, sans-serif;
+  font-family: var(--font-lato), system-ui, sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
   transition: background-color 0.05s linear, color 0.05s linear;
 }
@@ -90,7 +91,7 @@ html {
 /* No pure white anywhere */
 ::selection {
   background: var(--color-gold);
-  color: var(--color-ebony);
+  color: var(--color-cream);
 }
 
 /* --- Texture Overlay Patterns (CSS-only) --- */
@@ -106,7 +107,7 @@ html {
 /* Texture 2: Blueprint dot grid (Ingeniero) */
 .texture-ingeniero {
   background-image:
-    radial-gradient(circle, #35606e 0.5px, transparent 0.5px);
+    radial-gradient(circle, #002A3A 0.5px, transparent 0.5px);
   background-size: 24px 24px;
   opacity: 0.12;
 }
@@ -118,34 +119,43 @@ html {
       0deg,
       transparent,
       transparent 1px,
-      rgba(255, 255, 255, 0.015) 1px,
-      rgba(255, 255, 255, 0.015) 2px
+      rgba(243, 236, 235, 0.015) 1px,
+      rgba(243, 236, 235, 0.015) 2px
     ),
     repeating-linear-gradient(
       90deg,
       transparent,
       transparent 4px,
-      rgba(255, 255, 255, 0.01) 4px,
-      rgba(255, 255, 255, 0.01) 5px
+      rgba(243, 236, 235, 0.01) 4px,
+      rgba(243, 236, 235, 0.01) 5px
     );
   opacity: 0.5;
 }
 
 /* --- Typography Utility Classes --- */
 .font-artesano {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-caslon), Georgia, serif;
+  font-style: italic;
 }
 
 .font-ingeniero {
-  font-family: var(--font-jetbrains), 'Courier New', monospace;
+  font-family: "Cascadia Code", "Cascadia Mono", 'Courier New', monospace;
 }
 
 .font-fabrica {
-  font-family: var(--font-bebas), 'Impact', sans-serif;
+  font-family: "Cascadia Code", "Cascadia Mono", 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .font-body {
-  font-family: var(--font-body), system-ui, sans-serif;
+  font-family: var(--font-lato), system-ui, sans-serif;
+  font-weight: 300;
+}
+
+.font-body-regular {
+  font-family: var(--font-lato), system-ui, sans-serif;
+  font-weight: 400;
 }
 
 /* --- Section Transition Smoothing --- */
@@ -175,8 +185,8 @@ section {
   z-index: 9999;
   padding: 1rem 2rem;
   background: var(--color-gold);
-  color: var(--color-ebony);
-  font-family: var(--font-jetbrains);
+  color: var(--color-cream);
+  font-family: "Cascadia Code", "Cascadia Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -196,7 +206,7 @@ section {
   z-index: 40;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  font-family: var(--font-jetbrains);
+  font-family: "Cascadia Code", "Cascadia Mono", monospace;
   font-size: 0.625rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -253,5 +263,5 @@ section {
 }
 
 .cta-fill:hover {
-  color: var(--color-ebony);
+  color: var(--color-cream);
 }

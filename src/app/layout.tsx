@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Bebas_Neue, JetBrains_Mono, DM_Sans } from "next/font/google";
+import { Libre_Caslon_Text, Lato } from "next/font/google";
+import "@fontsource/cascadia-code/400.css";
+import "@fontsource/cascadia-code/400-italic.css";
+import "@fontsource/cascadia-code/700.css";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import TextureBackground from "@/components/TextureBackground";
@@ -9,33 +12,19 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
-const playfair = Playfair_Display({
+const caslon = Libre_Caslon_Text({
   subsets: ["latin"],
-  variable: "--font-playfair-display",
+  variable: "--font-caslon",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "700"],
   style: ["normal", "italic"],
 });
 
-const bebas = Bebas_Neue({
+const lato = Lato({
   subsets: ["latin"],
-  variable: "--font-bebas-neue",
+  variable: "--font-lato",
   display: "swap",
-  weight: "400",
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-  display: "swap",
-  weight: ["400", "500", "700"],
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-  display: "swap",
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -57,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${playfair.variable} ${bebas.variable} ${jetbrains.variable} ${dmSans.variable}`}
+      className={`${caslon.variable} ${lato.variable}`}
     >
       <body className="antialiased">
         <a href="#main-content" className="skip-to-content">

@@ -10,7 +10,7 @@ export default function HomeContacto() {
   return (
     <section
       className="relative min-h-[70vh] flex items-center py-32 md:py-48 px-6 md:px-12 lg:px-24"
-      style={{ backgroundColor: '#E8F5F2' }}
+      style={{ backgroundColor: '#F3ECEB' }}
     >
       <div className="max-w-[700px] mx-auto text-center">
         <motion.div
@@ -20,9 +20,9 @@ export default function HomeContacto() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-ingeniero text-sm tracking-[0.3em]" style={{ color: '#077275' }}>05</span>
-          <div className="w-12 h-[1px]" style={{ backgroundColor: '#077275', opacity: 0.4 }} />
-          <span className="font-ingeniero text-[11px] tracking-[0.2em] uppercase" style={{ color: '#077275' }}>
+          <span className="font-ingeniero text-sm tracking-[0.3em]" style={{ color: '#8C7732' }}>05</span>
+          <div className="w-12 h-[1px]" style={{ backgroundColor: '#8C7732', opacity: 0.4 }} />
+          <span className="font-ingeniero text-[11px] tracking-[0.2em] uppercase" style={{ color: '#8C7732' }}>
             CONTACTO
           </span>
         </motion.div>
@@ -36,7 +36,7 @@ export default function HomeContacto() {
 
         <motion.p
           className="font-body text-base md:text-lg leading-relaxed mt-8"
-          style={{ color: '#263f47', opacity: 0.85 }}
+          style={{ color: '#002A3A', opacity: 0.85 }}
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
@@ -55,7 +55,7 @@ export default function HomeContacto() {
           <Link
             href="/contacto"
             className="cta-fill inline-flex items-center justify-center px-16 py-6 font-artesano italic text-2xl md:text-3xl tracking-wide transition-colors duration-500"
-            style={{ color: '#077275' }}
+            style={{ color: '#8C7732' }}
             data-cursor="precision"
           >
             {CONTACTA.cta}
@@ -69,11 +69,11 @@ export default function HomeContacto() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <span className="font-ingeniero text-xs tracking-[0.15em]" style={{ color: '#263f47', opacity: 0.5 }}>
+          <span className="font-ingeniero text-xs tracking-[0.15em]" style={{ color: '#002A3A', opacity: 0.5 }}>
             {CONTACTA.contact.email}
           </span>
-          <span className="hidden md:inline font-ingeniero text-xs" style={{ color: '#077275', opacity: 0.3 }}>·</span>
-          <span className="font-ingeniero text-xs tracking-[0.15em]" style={{ color: '#263f47', opacity: 0.5 }}>
+          <span className="hidden md:inline font-ingeniero text-xs" style={{ color: '#8C7732', opacity: 0.3 }}>·</span>
+          <span className="font-ingeniero text-xs tracking-[0.15em]" style={{ color: '#002A3A', opacity: 0.5 }}>
             {CONTACTA.contact.location}
           </span>
         </motion.div>

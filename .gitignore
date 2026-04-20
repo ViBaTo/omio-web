@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw media originals (fuentes sin optimizar, no se sirven desde la web)
+/assets_01
+/public/images/materiales
+

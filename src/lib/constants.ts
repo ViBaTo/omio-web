@@ -177,19 +177,19 @@ export const CONTACTA = {
 // --- Color Palettes for JS interpolation ---
 export const PALETTES = {
   artesano: {
-    bg: [232, 245, 242],     // #E8F5F2
-    text: [38, 63, 71],      // #263f47
-    accent: [7, 114, 117],   // #077275
+    bg: [243, 236, 235],     // #F3ECEB — PANTONE 11-3900 TCX
+    text: [0, 42, 58],       // #002A3A — PANTONE 303 C
+    accent: [140, 119, 50],  // #8C7732 — PANTONE 4495 C
   },
   ingeniero: {
-    bg: [212, 234, 228],     // #D4EAE4
-    text: [53, 96, 110],     // #35606e
-    accent: [53, 96, 110],   // #35606e
+    bg: [243, 236, 235],     // #F3ECEB
+    text: [0, 42, 58],       // #002A3A
+    accent: [140, 119, 50],  // #8C7732
   },
   fabrica: {
-    bg: [28, 48, 55],        // #1c3037
-    text: [232, 245, 242],   // #E8F5F2
-    accent: [148, 210, 189], // #94D2BD
+    bg: [0, 42, 58],         // #002A3A
+    text: [243, 236, 235],   // #F3ECEB
+    accent: [140, 119, 50],  // #8C7732
   },
 } as const;
 
@@ -201,6 +201,9 @@ export const NAV_LINKS = SECTIONS.map((s) => ({
 
 // --- Footer ---
 export const FOOTER = {
-  easter_egg: 'Hecho con la misma precisión que nuestras piezas.',
+  address: {
+    line1: "Carrer d'Ovidi Montllor, 3,",
+    line2: '46960 Aldaia, Valencia',
+  },
   copyright: `© ${new Date().getFullYear()} OMIO Atelier & Design`,
 };

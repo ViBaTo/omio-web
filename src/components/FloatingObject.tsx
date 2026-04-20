@@ -9,9 +9,9 @@ import type { Mesh } from 'three';
 import type { World } from '@/lib/constants';
 
 const WORLD_MATERIALS = {
-  artesano: { color: '#077275', roughness: 0.8, metalness: 0.1, distort: 0.25 },
-  ingeniero: { color: '#35606e', roughness: 0.3, metalness: 0.7, distort: 0.15 },
-  fabrica: { color: '#94D2BD', roughness: 0.15, metalness: 0.95, distort: 0.1 },
+  artesano: { color: '#8C7732', roughness: 0.8, metalness: 0.1, distort: 0.25 },
+  ingeniero: { color: '#002A3A', roughness: 0.3, metalness: 0.7, distort: 0.15 },
+  fabrica: { color: '#8C7732', roughness: 0.15, metalness: 0.95, distort: 0.1 },
 } as const;
 
 function lerp(a: number, b: number, t: number): number {

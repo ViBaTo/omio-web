@@ -14,7 +14,7 @@ function renderAtelier(text: string): React.ReactNode[] {
     result.push(<span key={`t-${i}`}>{part}</span>);
     if (i < parts.length - 1) {
       result.push(
-        <span key={`a-${i}`} className="font-artesano italic" style={{ color: '#077275' }}>
+        <span key={`a-${i}`} className="font-artesano italic" style={{ color: '#8C7732' }}>
           Atelier
         </span>
       );
@@ -44,11 +44,10 @@ export default function SectionArtesania() {
         className="relative w-full h-[80vh] overflow-hidden"
         style={{ y: imageY }}
       >
-        {/* PLACEHOLDER: Craftsman hands working */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
-            background: 'linear-gradient(180deg, #263f47 0%, #077275 40%, #162a30 100%)',
+            backgroundImage: "url('/images/artesania/IMG_1842.jpg')",
           }}
         />
         <div className="absolute inset-0 texture-artesano opacity-30 mix-blend-overlay" />
@@ -57,7 +56,7 @@ export default function SectionArtesania() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(180deg, transparent 30%, #E8F5F2 95%)',
+            background: 'linear-gradient(180deg, transparent 30%, #F3ECEB 95%)',
           }}
         />
       </motion.div>
@@ -68,15 +67,15 @@ export default function SectionArtesania() {
           <SectionLabel
             number="03"
             label="ARTESANÍA"
-            accentColor="#077275"
-            numberColor="#077275"
+            accentColor="#8C7732"
+            numberColor="#8C7732"
           />
 
           <motion.div className="mt-8">
             <AnimatedText
               text={ARTESANIA.title}
               as="h2"
-              className="font-artesano italic text-[clamp(2.5rem,6vw,5rem)] leading-[1.05] text-[#263f47]"
+              className="font-artesano italic text-[clamp(2.5rem,6vw,5rem)] leading-[1.05] text-[#002A3A]"
               splitBy="word"
             />
           </motion.div>
@@ -85,7 +84,7 @@ export default function SectionArtesania() {
           <div className="relative mt-12">
             <span
               className="absolute -top-16 -left-8 font-artesano text-[20vw] leading-none select-none pointer-events-none"
-              style={{ color: '#077275', opacity: 0.05 }}
+              style={{ color: '#8C7732', opacity: 0.05 }}
             >
               «»
             </span>
@@ -98,7 +97,7 @@ export default function SectionArtesania() {
             >
               <motion.p
                 className="font-body text-base md:text-lg leading-relaxed relative z-10"
-                style={{ color: '#263f47', opacity: 0.85 }}
+                style={{ color: '#002A3A', opacity: 0.85 }}
                 variants={fadeInUp}
               >
                 {renderAtelier(ARTESANIA.paragraphs[0])}
@@ -106,7 +105,7 @@ export default function SectionArtesania() {
 
               <motion.p
                 className="font-body text-base md:text-lg leading-relaxed mt-6 relative z-10"
-                style={{ color: '#263f47', opacity: 0.85 }}
+                style={{ color: '#002A3A', opacity: 0.85 }}
                 variants={fadeInUp}
               >
                 {renderAtelier(ARTESANIA.paragraphs[1])}

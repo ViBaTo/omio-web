@@ -11,8 +11,8 @@ const CATEGORY_GRADIENTS: Record<string, string> = {
   Maderas: 'linear-gradient(135deg, #5C4033 0%, #8B6914 50%, #3E2723 100%)',
   Metales: 'linear-gradient(135deg, #37474F 0%, #B0BEC5 50%, #263238 100%)',
   Piedras: 'linear-gradient(135deg, #BDBDBD 0%, #E0E0E0 50%, #9E9E9E 100%)',
-  Textiles: 'linear-gradient(135deg, #E8F5F2 0%, #D4EAE4 50%, #B2DFDB 100%)',
-  Acabados: 'linear-gradient(135deg, #077275 0%, #94D2BD 50%, #35606e 100%)',
+  Textiles: 'linear-gradient(135deg, #F3ECEB 0%, #F3ECEB 50%, #B2DFDB 100%)',
+  Acabados: 'linear-gradient(135deg, #8C7732 0%, #8C7732 50%, #002A3A 100%)',
 };
 
 interface Props {
@@ -26,7 +26,7 @@ export default function MaterialDetailContent({ material }: Props) {
 
   return (
     <main id="main-content">
-      <section className="pt-28 md:pt-36 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#E8F5F2' }}>
+      <section className="pt-28 md:pt-36 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#F3ECEB' }}>
         <div className="max-w-7xl mx-auto">
           <Breadcrumbs
             items={[
@@ -37,7 +37,7 @@ export default function MaterialDetailContent({ material }: Props) {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#E8F5F2' }}>
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24" style={{ backgroundColor: '#F3ECEB' }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Image */}
@@ -61,7 +61,7 @@ export default function MaterialDetailContent({ material }: Props) {
             >
               <motion.span
                 className="font-ingeniero text-[10px] tracking-[0.2em] uppercase"
-                style={{ color: '#077275' }}
+                style={{ color: '#8C7732' }}
                 variants={fadeInUp}
               >
                 {material.category}
@@ -69,7 +69,7 @@ export default function MaterialDetailContent({ material }: Props) {
 
               <motion.h1
                 className="font-artesano italic text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mt-2"
-                style={{ color: '#263f47' }}
+                style={{ color: '#002A3A' }}
                 variants={fadeInUp}
               >
                 {material.name}
@@ -77,7 +77,7 @@ export default function MaterialDetailContent({ material }: Props) {
 
               <motion.p
                 className="font-body text-base md:text-lg leading-relaxed mt-6"
-                style={{ color: '#263f47', opacity: 0.85 }}
+                style={{ color: '#002A3A', opacity: 0.85 }}
                 variants={fadeInUp}
               >
                 {material.longDescription}
@@ -85,19 +85,19 @@ export default function MaterialDetailContent({ material }: Props) {
 
               {/* Properties */}
               <motion.div className="mt-10" variants={fadeInUp}>
-                <h3 className="font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#077275' }}>
+                <h3 className="font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#8C7732' }}>
                   Propiedades
                 </h3>
                 <div className="space-y-0">
                   {material.properties.map((prop) => (
                     <div
                       key={prop.label}
-                      className="flex items-center justify-between py-3 border-t border-[#077275]/10"
+                      className="flex items-center justify-between py-3 border-t border-[#8C7732]/10"
                     >
-                      <span className="font-body text-sm" style={{ color: '#263f47', opacity: 0.6 }}>
+                      <span className="font-body text-sm" style={{ color: '#002A3A', opacity: 0.6 }}>
                         {prop.label}
                       </span>
-                      <span className="font-ingeniero text-sm tracking-wide" style={{ color: '#263f47' }}>
+                      <span className="font-ingeniero text-sm tracking-wide" style={{ color: '#002A3A' }}>
                         {prop.value}
                       </span>
                     </div>
@@ -107,15 +107,15 @@ export default function MaterialDetailContent({ material }: Props) {
 
               {/* Applications */}
               <motion.div className="mt-10" variants={fadeInUp}>
-                <h3 className="font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#077275' }}>
+                <h3 className="font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4" style={{ color: '#8C7732' }}>
                   Aplicaciones
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {material.applications.map((app) => (
                     <span
                       key={app}
-                      className="font-body text-xs px-3 py-1.5 border border-[#077275]/20"
-                      style={{ color: '#263f47', opacity: 0.7 }}
+                      className="font-body text-xs px-3 py-1.5 border border-[#8C7732]/20"
+                      style={{ color: '#002A3A', opacity: 0.7 }}
                     >
                       {app}
                     </span>
@@ -128,13 +128,13 @@ export default function MaterialDetailContent({ material }: Props) {
           {/* Related Projects */}
           {relatedProjects.length > 0 && (
             <motion.div
-              className="mt-24 pt-16 border-t border-[#077275]/10"
+              className="mt-24 pt-16 border-t border-[#8C7732]/10"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="font-artesano italic text-2xl md:text-3xl mb-8" style={{ color: '#263f47' }}>
+              <h2 className="font-artesano italic text-2xl md:text-3xl mb-8" style={{ color: '#002A3A' }}>
                 Proyectos con este material
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -143,14 +143,14 @@ export default function MaterialDetailContent({ material }: Props) {
                     <Link key={project.slug} href={`/proyectos/${project.slug}`} className="group">
                       <div className="relative overflow-hidden aspect-[16/10]">
                         <div
-                          className="w-full h-full transition-transform duration-700 group-hover:scale-105"
-                          style={{ background: 'linear-gradient(135deg, #263f47 0%, #94D2BD 40%, #1c3037 100%)' }}
+                          className="w-full h-full transition-transform duration-700 group-hover:scale-105 bg-cover bg-center"
+                          style={{ backgroundImage: `url(${project.heroImage})` }}
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
-                          <p className="font-ingeniero text-[10px] tracking-[0.2em] uppercase" style={{ color: '#94D2BD' }}>
+                          <p className="font-ingeniero text-[10px] tracking-[0.2em] uppercase" style={{ color: '#8C7732' }}>
                             {project.category}
                           </p>
-                          <h3 className="font-fabrica uppercase text-lg" style={{ color: '#E8F5F2' }}>
+                          <h3 className="font-fabrica uppercase text-lg" style={{ color: '#F3ECEB' }}>
                             {project.title}
                           </h3>
                         </div>
