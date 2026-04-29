@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { SECTIONS } from '@/lib/constants';
 import { useIsDesktop } from '@/lib/useMediaQuery';
 
 export default function ScrollIndicator() {
   const isDesktop = useIsDesktop();
+  const tSections = useTranslations('sections.labels');
   const [activeSection, setActiveSection] = useState('');
   const { scrollYProgress } = useScroll();
 
@@ -22,7 +24,7 @@ export default function ScrollIndicator() {
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            setActiveSection(section.label.split(' ')[0]);
+            setActiveSection(tSections(section.labelKey).split(' ')[0]);
           }
         },
         { threshold: 0.3 }
@@ -33,13 +35,12 @@ export default function ScrollIndicator() {
     });
 
     return () => observers.forEach((obs) => obs.disconnect());
-  }, []);
+  }, [tSections]);
 
   if (!isDesktop) return null;
 
   return (
     <div className="scroll-indicator" aria-hidden="true">
-      {/* Progress track */}
       <div className="fixed right-6 top-1/2 -translate-y-1/2 w-[1px] h-32 bg-[var(--current-accent)] opacity-10">
         <motion.div
           className="w-full bg-[var(--current-accent)] origin-top"
@@ -47,7 +48,6 @@ export default function ScrollIndicator() {
         />
       </div>
 
-      {/* Section name */}
       <span className="fixed right-10 top-1/2 -translate-y-1/2">
         {activeSection}
       </span>

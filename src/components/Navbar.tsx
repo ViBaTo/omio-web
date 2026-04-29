@@ -3,16 +3,19 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { Link, usePathname } from '@/i18n/navigation';
 import { NAV_PAGES } from '@/lib/constants';
 import { staggerContainer, fadeInUp } from '@/lib/animations';
+import LocaleSwitcher from './LocaleSwitcher';
 
 const DARK_PAGES = ['/servicios', '/proyectos'];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const tNav = useTranslations('nav');
+  const tCommon = useTranslations('common');
   const { scrollY } = useScroll();
 
   const bgOpacity = useTransform(scrollY, [0, 300], [0, 0.85]);
@@ -53,7 +56,7 @@ export default function Navbar() {
         <Link href="/" className="relative z-10 grid">
           <Image
             src="/images/loogo-blue.svg"
-            alt="OMIO - Atelier & Design"
+            alt={tCommon('logoAlt')}
             width={161}
             height={70}
             className="h-10 md:h-12 w-auto col-start-1 row-start-1 transition-opacity duration-500"
@@ -86,16 +89,17 @@ export default function Navbar() {
                   opacity: isActive ? 1 : 0.5,
                 }}
               >
-                {link.label}
+                {tNav(link.labelKey)}
               </Link>
             );
           })}
+          <LocaleSwitcher textColor={isDarkPage ? '#F3ECEB' : '#002A3A'} />
         </div>
 
         <button
           className="md:hidden relative z-10 w-8 h-8 flex flex-col items-center justify-center gap-1.5"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          aria-label={isMenuOpen ? tCommon('menuClose') : tCommon('menuOpen')}
         >
           <motion.span
             className="block w-6 h-[1px]"
@@ -139,10 +143,13 @@ export default function Navbar() {
                     style={{ color: '#F3ECEB' }}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {link.label}
+                    {tNav(link.labelKey)}
                   </Link>
                 </motion.div>
               ))}
+              <motion.div variants={fadeInUp} className="mt-4">
+                <LocaleSwitcher textColor="#F3ECEB" />
+              </motion.div>
             </motion.div>
           </motion.div>
         )}

@@ -1,10 +1,16 @@
 'use client';
 
 import { useRef, useEffect, useState } from 'react';
-import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
-import { INGENIERIA } from '@/lib/constants';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { useIsMobile } from '@/lib/useMediaQuery';
 import { fadeInUp } from '@/lib/animations';
+
+interface ProcessStep {
+  id: string;
+  label: string;
+  description: string;
+}
 
 export default function ProcessTimeline() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -12,21 +18,20 @@ export default function ProcessTimeline() {
   const [pathLength, setPathLength] = useState(0);
   const [activeStep, setActiveStep] = useState(0);
   const isMobile = useIsMobile();
+  const t = useTranslations('ingenieria');
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start 80%', 'end 20%'],
   });
 
-  const steps = INGENIERIA.processSteps;
+  const steps = t.raw('processSteps') as ProcessStep[];
   const stepCount = steps.length;
 
-  // Update active step based on scroll
   useMotionValueEvent(scrollYProgress, 'change', (v) => {
     const stepIdx = Math.min(Math.floor(v * stepCount), stepCount - 1);
     setActiveStep(Math.max(0, stepIdx));
 
-    // Update SVG path
     if (pathRef.current && pathLength > 0) {
       const drawLength = pathLength * (1 - v);
       pathRef.current.style.strokeDasharray = `${pathLength}`;
@@ -46,9 +51,7 @@ export default function ProcessTimeline() {
   if (isMobile) {
     return (
       <div ref={containerRef} className="relative py-16">
-        {/* Vertical timeline for mobile */}
         <div className="relative pl-8">
-          {/* Vertical line */}
           <svg
             className="absolute left-3 top-0 w-2 h-full"
             viewBox="0 0 2 1000"
@@ -72,7 +75,6 @@ export default function ProcessTimeline() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              {/* Node dot */}
               <div
                 className="absolute -left-5 top-1 w-4 h-4 rounded-full border-2 transition-colors duration-300"
                 style={{
@@ -96,12 +98,10 @@ export default function ProcessTimeline() {
     );
   }
 
-  // Desktop: Horizontal timeline
   const svgWidth = 1200;
   const svgHeight = 120;
   const nodeSpacing = svgWidth / (stepCount - 1);
 
-  // Build horizontal path through nodes
   const pathPoints = steps.map((_, i) => `${i * nodeSpacing} 60`);
   const pathD = `M ${pathPoints.join(' L ')}`;
 
@@ -112,7 +112,6 @@ export default function ProcessTimeline() {
         className="w-full"
         preserveAspectRatio="xMidYMid meet"
       >
-        {/* Background track */}
         <path
           d={pathD}
           stroke="#002A3A"
@@ -121,7 +120,6 @@ export default function ProcessTimeline() {
           opacity="0.2"
         />
 
-        {/* Animated path */}
         <path
           ref={pathRef}
           d={pathD}
@@ -130,7 +128,6 @@ export default function ProcessTimeline() {
           fill="none"
         />
 
-        {/* Nodes */}
         {steps.map((_, i) => {
           const cx = i * nodeSpacing;
           const isActive = activeStep >= i;
@@ -138,7 +135,6 @@ export default function ProcessTimeline() {
 
           return (
             <g key={i}>
-              {/* Pulse ring on active */}
               {isCurrent && (
                 <circle
                   cx={cx}
@@ -164,7 +160,6 @@ export default function ProcessTimeline() {
                 </circle>
               )}
 
-              {/* Node circle */}
               <circle
                 cx={cx}
                 cy="60"
@@ -179,7 +174,6 @@ export default function ProcessTimeline() {
         })}
       </svg>
 
-      {/* Labels below */}
       <div className="flex justify-between mt-6">
         {steps.map((step, i) => {
           const isCurrent = activeStep === i;
@@ -198,7 +192,6 @@ export default function ProcessTimeline() {
                 {step.label}
               </p>
 
-              {/* Tooltip card for active step */}
               <motion.div
                 className="mt-3 px-3 py-2 border border-[#002A3A]/20 rounded-none"
                 initial={{ opacity: 0, y: 10 }}

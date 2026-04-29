@@ -6,6 +6,7 @@ import HomeMateriales from '@/components/home/HomeMateriales';
 import HomeProyectos from '@/components/home/HomeProyectos';
 import HomeContacto from '@/components/home/HomeContacto';
 import FloatingObjectWrapper from '@/components/FloatingObjectWrapper';
+import SoundToggle from '@/components/SoundToggle';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <HomeProyectos />
         <HomeContacto />
       </main>
+      <SoundToggle />
     </>
   );
 }

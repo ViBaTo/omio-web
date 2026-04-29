@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "home": {
+      "title": "OMIO Atelier & Design — Craftsman · Engineer · Factory",
+      "description": "We merge three worlds to manufacture impossible pieces at a global scale. Strategic partner of the world's most prestigious interior design studios."
+    },
+    "nosotros": {
+      "title": "About — OMIO Atelier & Design",
+      "description": "Meet OMIO: the strategic ally of the world's most prestigious interior design studios."
+    },
+    "servicios": {
+      "title": "Services — OMIO Atelier & Design",
+      "description": "Three worlds in one: craftsman, engineer, and factory. Discover how we make the impossible real."
+    },
+    "materiales": {
+      "title": "Materials — OMIO Atelier & Design",
+      "description": "Discover our material selection: noble woods, worked metals, natural stones, and the highest quality textiles."
+    },
+    "proyectos": {
+      "title": "Projects — OMIO Atelier & Design",
+      "description": "Every project is a story. Discover our portfolio in hospitality, residential, gastronomy, and contract."
+    },
+    "proceso": {
+      "title": "Process — OMIO Atelier & Design",
+      "description": "From concept to installation: discover our step-by-step working process."
+    },
+    "contacto": {
+      "title": "Contact — OMIO Atelier & Design",
+      "description": "Let's build connections. Get in touch with OMIO to talk about your next project."
+    },
+    "openGraphTitle": "OMIO Atelier & Design",
+    "openGraphDescription": "Craftsman · Engineer · Factory — Three worlds, one piece."
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "scrollToEnter": "Scroll to enter",
+    "loading": "Loading",
+    "soundOn": "Turn sound on",
+    "soundOff": "Mute sound",
+    "discover": "Discover →",
+    "discoverStory": "Discover the story →",
+    "discoverMore": "Discover more",
+    "viewAll": "View all",
+    "seeDetail": "View detail",
+    "previous": "Previous",
+    "next": "Next",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide {n}",
+    "language": "Language",
+    "home": "Home",
+    "logoAlt": "OMIO - Atelier & Design",
+    "logoAltLong": "OMIO Atelier & Design",
+    "slidesAriaLabel": "Slides"
+  },
+  "nav": {
+    "nosotros": "ABOUT",
+    "servicios": "SERVICES",
+    "materiales": "MATERIALS",
+    "proyectos": "PROJECTS",
+    "proceso": "PROCESS",
+    "contacto": "CONTACT"
+  },
+  "footer": {
+    "addressLine1": "Carrer d'Ovidi Montllor, 3,",
+    "addressLine2": "46960 Aldaia, Valencia",
+    "copyright": "© {year} OMIO Atelier & Design"
+  },
+  "hero": {
+    "phrases": [
+      "The union of a craftsman, an engineer, and a factory",
+      "We minimize the technical risks",
+      "An end-to-end solution from prototyping to installation",
+      "A trusted partner: peace of mind and commitment"
+    ],
+    "location": "Valencia, Spain"
+  },
+  "sections": {
+    "labels": {
+      "nosotros": "ABOUT",
+      "capacidades": "INDUSTRIAL CAPABILITIES",
+      "artesania": "CRAFT",
+      "ingenieria": "ENGINEERING",
+      "proyectos": "PROJECTS",
+      "contacta": "CONTACT"
+    },
+    "atelier": "ATELIER"
+  },
+  "stats": {
+    "countries": "Countries",
+    "projects": "Projects",
+    "experience": "Years of experience"
+  },
+  "nosotros": {
+    "title": "The Ally of Your Creative Vision",
+    "paragraphs": [
+      "At OMIO ATELIER & DESIGN we don't just manufacture elements; we build the trust required for the world's most prestigious interior design studios to make the impossible real. We define ourselves as a strategic partnership that goes beyond mere functional competence to become the invaluable ally of the most renowned firms in the sector.",
+      "Our purpose is to mitigate the technical and logistical risks of every project, offering peace of mind through a proven system and a deep human connection that protects our clients' reputation."
+    ],
+    "additionalParagraph": "With more than 15 years of experience, we have been the invaluable partner of some of the most respected design and interior firms on the international scene.",
+    "valuesTitle": "Our Values",
+    "values": [
+      {
+        "title": "Trust",
+        "description": "We define ourselves as a strategic partnership that goes beyond mere functional competence. The trust of our clients is our greatest asset."
+      },
+      {
+        "title": "Excellence",
+        "description": "Every piece that leaves our workshop carries the promise of a quality that exceeds expectations. There are no shortcuts in the pursuit of perfection."
+      },
+      {
+        "title": "Commitment",
+        "description": "Our promise «We'll be there!» is not a slogan. It is a real commitment to long-term support with every client and every project."
+      },
+      {
+        "title": "Innovation",
+        "description": "We combine centuries-old craft techniques with the most advanced technology to solve challenges that others consider impossible."
+      }
+    ],
+    "teamTitle": "Our Team",
+    "teamIntro": "More than 65 professionals combining craft tradition, engineering precision, and industrial capacity.",
+    "teamRoles": [
+      { "name": "Creative Direction", "count": "3 people" },
+      { "name": "Engineering and Technical Design", "count": "8 people" },
+      { "name": "Master Craftsmen", "count": "15 people" },
+      { "name": "Production and CNC", "count": "22 people" },
+      { "name": "Logistics and Installation", "count": "12 people" },
+      { "name": "Project Management", "count": "5 people" }
+    ]
+  },
+  "capacidades": {
+    "title": "GLOBAL POWER AND SCALE",
+    "intro": "We are a factory with the capacity to take production and installation to a global scale. Unlike traditional workshops, we have the infrastructure required to handle large-scale projects and multiple units without losing quality control.",
+    "blocks": [
+      {
+        "number": "01",
+        "title": "INTERNATIONAL REACH",
+        "description": "We deploy and organize installation teams anywhere in the world."
+      },
+      {
+        "number": "02",
+        "title": "ROBUST PRODUCTION",
+        "description": "We execute the transition from design to large-scale manufacturing with full reliability."
+      },
+      {
+        "number": "03",
+        "title": "CONTINUITY COMMITMENT",
+        "description": "We guarantee long-term support with our promise: «We'll be there!» for any future contingency."
+      }
+    ]
+  },
+  "artesania": {
+    "title": "The Soul of the Atelier",
+    "paragraphs": [
+      "The heart of our company beats like an «Atelier». We understand and value pure creativity, bringing the meticulous care and sensitivity that only a craftsman can give to a unique piece.",
+      "We believe that in the high-end sector, value lies in the intangible details and the personal approach. Every element that leaves our hands keeps its craft essence, ensuring that the final result is as exclusive as the designer's original vision."
+    ],
+    "atelierToken": "Atelier"
+  },
+  "ingenieria": {
+    "title": "Precision in Complexity",
+    "intro": "Our engineering is the bridge between imagination and tangible reality. We give creativity the technical precision required to overcome the practical limits of any idea, no matter how complex.",
+    "processSteps": [
+      { "id": "diseno", "label": "DESIGN", "description": "Interpretation and analysis of the original creative concept." },
+      { "id": "ingenieria", "label": "ENGINEERING", "description": "Detailed technical development and resolution of complexities." },
+      { "id": "prototipo", "label": "PROTOTYPE", "description": "Real prototypes manufactured for validation." },
+      { "id": "validacion", "label": "VALIDATION", "description": "Client supervision and approval of the result." },
+      { "id": "produccion", "label": "PRODUCTION", "description": "Scaled manufacturing with full quality control." },
+      { "id": "instalacion", "label": "INSTALLATION", "description": "Assembly and installation at the final destination." }
+    ],
+    "blocks": [
+      {
+        "title": "Risk Mitigation",
+        "description": "We build real prototypes and pilot tests that allow the client to supervise and validate success before final production."
+      },
+      {
+        "title": "Bold Problem-Solving",
+        "description": "We anticipate and resolve technical issues before they affect the project, guaranteeing a robust and efficient system."
+      }
+    ]
+  },
+  "proyectosSection": {
+    "title": "Mastering the Complex",
+    "intro": "Our project portfolio reflects the success of merging three worlds: the craftsman, the engineer, and the factory. We specialize in high-end global contract sectors, where complexity is the norm and excellence the only option.",
+    "phrase": "Each project is a testament to our ability to talk with the client, listen to their needs, and boldly solve the most demanding challenges of contemporary design."
+  },
+  "contacta": {
+    "title": "Let's Build Connections",
+    "paragraphs": [
+      "Trust is personal. At OMIO, we seek to build emotional connections with our clients and their projects, reducing any friction through a genuine relational commitment.",
+      "If you're looking for an ally that not only understands your «what», but shares your «why», we're ready to listen."
+    ],
+    "cta": "Let's talk",
+    "email": "info@omiodesign.com",
+    "phone": "+34 960 000 000",
+    "location": "Valencia, Spain"
+  },
+  "home": {
+    "nosotros": {
+      "label": "ABOUT"
+    },
+    "servicios": {
+      "slides": [
+        { "id": "artesano", "phrase": "The union of a craftsman, an engineer, and a factory." },
+        { "id": "tranquilidad", "phrase": "We mitigate the technical and logistical risks of every project." },
+        { "id": "escala", "phrase": "From craft sensitivity to industrial power." },
+        { "id": "prototipo", "phrase": "From prototyping to installation, a single hand guides the process." },
+        { "id": "detalle", "phrase": "In the intangible detail lies the value of the high-end." },
+        { "id": "prueba", "phrase": "We anticipate what others consider impossible." },
+        { "id": "promesa", "phrase": "An invaluable partner of the world's most prestigious studios." }
+      ],
+      "ctaExplore": "Explore services"
+    },
+    "atelier": {
+      "headline": "Where the master's hand still decides.",
+      "label": "ATELIER"
+    },
+    "materiales": {
+      "label": "MATERIALS",
+      "title": "The Raw Material of the Extraordinary",
+      "intro": "We select every material with the same demand we apply to every piece. Noble woods, worked metals, natural stones, and the highest quality textiles.",
+      "cta": "View all materials",
+      "featured": [
+        { "label": "METAL", "slug": "laton-envejecido" },
+        { "label": "METAL", "slug": "acero-negro" },
+        { "label": "WOOD", "slug": "nogal-americano" },
+        { "label": "ALABASTER", "slug": "marmol-calacatta" }
+      ]
+    },
+    "proyectos": {
+      "label": "PROJECTS",
+      "title": "Every Project, a Story",
+      "viewAll": "View all"
+    },
+    "contacto": {
+      "label": "CONTACT"
+    }
+  },
+  "pages": {
+    "nosotros": {
+      "heroNumber": "01",
+      "heroLabel": "ABOUT"
+    },
+    "servicios": {
+      "heroNumber": "02",
+      "heroLabel": "SERVICES",
+      "heroTitle": "Three Worlds, One Piece",
+      "heroSubtitle": "We merge craft sensitivity, engineering precision, and industrial power to make real what others consider impossible.",
+      "capabilitiesTitle": "Capabilities"
+    },
+    "materiales": {
+      "heroNumber": "03",
+      "heroLabel": "MATERIALS",
+      "heroTitle": "The Raw Material of the Extraordinary",
+      "heroSubtitle": "We select every material with the same demand we apply to every piece. From the quarry to the workshop, from the plantation to the loom.",
+      "emptyState": "No materials in this category.",
+      "filterAll": "All",
+      "viewDetail": "View detail",
+      "propertiesTitle": "Properties",
+      "applicationsTitle": "Applications",
+      "relatedProjects": "Projects with this material",
+      "breadcrumb": "Materials",
+      "notFoundTitle": "Material not found"
+    },
+    "proyectos": {
+      "heroNumber": "04",
+      "heroLabel": "PROJECTS",
+      "heroTitle": "Every Project, a Story",
+      "heroSubtitle": "Our portfolio reflects the success of merging three worlds: the craftsman, the engineer, and the factory. We specialize in high-end global contract.",
+      "filterAll": "All",
+      "discoverStory": "Discover the story →",
+      "storyTitle": "The Story",
+      "challengeTitle": "The Challenge",
+      "solutionTitle": "The Solution",
+      "resultTitle": "The Result",
+      "phasesTitle": "Project Phases",
+      "galleryTitle": "Gallery",
+      "materialsUsedTitle": "Materials Used",
+      "previous": "Previous",
+      "next": "Next",
+      "viewAll": "View all",
+      "breadcrumb": "Projects",
+      "notFoundTitle": "Project not found"
+    },
+    "proceso": {
+      "heroNumber": "05",
+      "heroLabel": "PROCESS",
+      "heroTitle": "From Concept to Installation",
+      "heroSubtitle": "A proven six-phase system that minimizes risk and maximizes quality. Each phase is a transparency commitment to our client.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Design",
+          "subtitle": "Creative Interpretation",
+          "description": "It all begins by listening. We immerse ourselves in the designer's vision to understand it in depth. We analyze every plan, every render, every reference, looking not just for the «what» but for the «why» behind every creative decision.",
+          "details": [
+            "Briefing meetings with the design studio",
+            "Preliminary technical feasibility analysis",
+            "Material selection and initial samples",
+            "Proposal of constructive solutions"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Engineering",
+          "subtitle": "Technical Precision",
+          "description": "Our engineering team translates the creative vision into detailed technical documentation. Every piece is modeled in 3D, structurally simulated, and planned down to the last screw. This is where we anticipate and solve problems before they appear.",
+          "details": [
+            "Parametric 3D modeling of every piece",
+            "Structural simulation (FEA)",
+            "Definition of tolerances and specifications",
+            "Production and logistics planning"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Prototype",
+          "subtitle": "Real Validation",
+          "description": "We build full-scale prototypes that allow the client to touch, feel, and validate the result before committing to full production. It's our insurance against surprises: what you approve is exactly what you receive.",
+          "details": [
+            "Manufacture of 1:1 prototypes",
+            "Presentation and validation with the client",
+            "Adjustments and refinements based on feedback",
+            "Final approval for production"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Production",
+          "subtitle": "Scaled Manufacturing",
+          "description": "With the prototype approved, our workshop comes alive. 5-axis CNC, robotic lacquering lines, and the hands of our master craftsmen work in tune to produce every piece with the same quality as the prototype, multiplied by hundreds if needed.",
+          "details": [
+            "High-precision CNC milling",
+            "Manual artisan finishes",
+            "Per-unit quality control",
+            "Specialized packaging for transport"
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Logistics",
+          "subtitle": "Global Reach",
+          "description": "Our logistics department manages door-to-door transport to anywhere in the world. Each piece is individually packed with materials that guarantee its protection over journeys of thousands of kilometers.",
+          "details": [
+            "Custom individual packaging",
+            "Certified international transport",
+            "Real-time tracking",
+            "Comprehensive transport insurance"
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Installation",
+          "subtitle": "The Moment of Truth",
+          "description": "Our installation team travels to the final destination to assemble each piece with the same precision with which it was made. We don't delegate this critical step: the team that built the piece is the team that installs it.",
+          "details": [
+            "In-house installation team",
+            "Fine on-site adjustments",
+            "Final cleaning and handover",
+            "Post-installation guarantee and support"
+          ]
+        }
+      ],
+      "ctaTitle": "Have a project in mind?",
+      "ctaText": "Tell us your idea and we'll design the path to make it real together.",
+      "ctaButton": "Let's talk"
+    },
+    "contacto": {
+      "heroNumber": "06",
+      "heroLabel": "CONTACT",
+      "formNameLabel": "Name",
+      "formEmailLabel": "Email",
+      "formCompanyLabel": "Company / Studio",
+      "formProjectTypeLabel": "Project type",
+      "formMessageLabel": "Message",
+      "formSelectPlaceholder": "Select...",
+      "formSubmit": "Send message",
+      "thanksTitle": "Thank you for your message",
+      "thanksText": "We'll get back to you as soon as possible.",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "locationLabel": "Location",
+      "socialLabel": "Social media",
+      "projectTypes": {
+        "hospitality": "Hospitality",
+        "residencial": "Residential",
+        "gastronomia": "Gastronomy",
+        "contract": "Contract",
+        "otro": "Other"
+      }
+    }
+  },
+  "projectCategories": {
+    "Hospitality": "Hospitality",
+    "Residencial": "Residential",
+    "Gastronomía": "Gastronomy",
+    "Contract": "Contract"
+  },
+  "materialCategories": {
+    "Maderas": "Woods",
+    "Metales": "Metals",
+    "Piedras": "Stones",
+    "Textiles": "Textiles",
+    "Acabados": "Finishes"
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "es": "ES",
+    "en": "EN"
+  }
+}
