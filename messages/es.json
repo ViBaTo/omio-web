@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "home": {
+      "title": "OMIO Atelier & Design — Artesano · Ingeniero · Fábrica",
+      "description": "Fusionamos tres mundos para fabricar piezas imposibles a escala global. Socio estratégico de los estudios de diseño de interiores más prestigiosos del mundo."
+    },
+    "nosotros": {
+      "title": "Nosotros — OMIO Atelier & Design",
+      "description": "Conoce a OMIO: el aliado estratégico de los estudios de diseño de interiores más prestigiosos del mundo."
+    },
+    "servicios": {
+      "title": "Servicios — OMIO Atelier & Design",
+      "description": "Tres mundos fusionados: artesano, ingeniero y fábrica. Descubre cómo trabajamos para hacer realidad lo imposible."
+    },
+    "materiales": {
+      "title": "Materiales — OMIO Atelier & Design",
+      "description": "Descubre nuestra selección de materiales: maderas nobles, metales trabajados, piedras naturales y textiles de la más alta calidad."
+    },
+    "proyectos": {
+      "title": "Proyectos — OMIO Atelier & Design",
+      "description": "Cada proyecto es una historia. Descubre nuestra cartera de proyectos en hospitality, residencial, gastronomía y contract."
+    },
+    "proceso": {
+      "title": "Proceso — OMIO Atelier & Design",
+      "description": "Del concepto a la instalación: conoce nuestro proceso de trabajo paso a paso."
+    },
+    "contacto": {
+      "title": "Contacto — OMIO Atelier & Design",
+      "description": "Construyamos vínculos. Contacta con OMIO para hablar de tu próximo proyecto."
+    },
+    "openGraphTitle": "OMIO Atelier & Design",
+    "openGraphDescription": "Artesano · Ingeniero · Fábrica — Tres mundos, una pieza."
+  },
+  "common": {
+    "skipToContent": "Ir al contenido",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "scrollToEnter": "Desliza para entrar",
+    "loading": "Cargando",
+    "soundOn": "Activar sonido",
+    "soundOff": "Silenciar sonido",
+    "discover": "Descubrir →",
+    "discoverStory": "Descubrir historia →",
+    "discoverMore": "Descubrir más",
+    "viewAll": "Ver todos",
+    "seeDetail": "Ver detalle",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "previousSlide": "Slide anterior",
+    "nextSlide": "Siguiente slide",
+    "goToSlide": "Ir al slide {n}",
+    "language": "Idioma",
+    "home": "Inicio",
+    "logoAlt": "OMIO - Atelier & Design",
+    "logoAltLong": "OMIO Atelier & Design",
+    "slidesAriaLabel": "Slides"
+  },
+  "nav": {
+    "nosotros": "NOSOTROS",
+    "servicios": "SERVICIOS",
+    "materiales": "MATERIALES",
+    "proyectos": "PROYECTOS",
+    "proceso": "PROCESO",
+    "contacto": "CONTACTO"
+  },
+  "footer": {
+    "addressLine1": "Carrer d'Ovidi Montllor, 3,",
+    "addressLine2": "46960 Aldaia, Valencia",
+    "copyright": "© {year} OMIO Atelier & Design"
+  },
+  "hero": {
+    "phrases": [
+      "La unión de un artesano, un ingeniero y una fábrica",
+      "Minimizamos los riesgos técnicos",
+      "Solución integral desde el prototipado hasta la instalación",
+      "Socio de confianza, tranquilidad y compromiso"
+    ],
+    "location": "Valencia, España"
+  },
+  "sections": {
+    "labels": {
+      "nosotros": "NOSOTROS",
+      "capacidades": "CAPACIDADES INDUSTRIALES",
+      "artesania": "ARTESANÍA",
+      "ingenieria": "INGENIERÍA",
+      "proyectos": "PROYECTOS",
+      "contacta": "CONTACTA"
+    },
+    "atelier": "ATELIER"
+  },
+  "stats": {
+    "countries": "Países",
+    "projects": "Proyectos",
+    "experience": "Años de experiencia"
+  },
+  "nosotros": {
+    "title": "El Aliado de tu Visión Creativa",
+    "paragraphs": [
+      "En OMIO ATELIER & DESIGN no solo fabricamos elementos; construimos la confianza necesaria para que los estudios de diseño de interiores más prestigiosos del mundo hagan realidad lo imposible. Nos definimos como una asociación estratégica que trasciende la simple competencia funcional para convertirnos en el socio inestimable de las firmas más reconocidas del sector.",
+      "Nuestra razón de ser es mitigar los riesgos técnicos y logísticos de cada proyecto, ofreciendo tranquilidad a través de un sistema probado y una conexión humana profunda que protege la reputación de nuestros clientes."
+    ],
+    "additionalParagraph": "Con más de 15 años de trayectoria, hemos sido el socio inestimable de algunas de las firmas de diseño e interiorismo más reconocidas del panorama internacional.",
+    "valuesTitle": "Nuestros Valores",
+    "values": [
+      {
+        "title": "Confianza",
+        "description": "Nos definimos como una asociación estratégica que trasciende la simple competencia funcional. La confianza de nuestros clientes es nuestro mayor activo."
+      },
+      {
+        "title": "Excelencia",
+        "description": "Cada pieza que sale de nuestro taller lleva la promesa de una calidad que supera las expectativas. No hay atajos en la búsqueda de la perfección."
+      },
+      {
+        "title": "Compromiso",
+        "description": "Nuestra promesa «¡Ahí estaremos!» no es un eslogan. Es un compromiso real de acompañamiento a largo plazo con cada cliente y cada proyecto."
+      },
+      {
+        "title": "Innovación",
+        "description": "Combinamos técnicas artesanales centenarias con la tecnología más avanzada para resolver desafíos que otros consideran imposibles."
+      }
+    ],
+    "teamTitle": "Nuestro Equipo",
+    "teamIntro": "Más de 65 profesionales que combinan tradición artesanal, precisión ingenieril y capacidad industrial.",
+    "teamRoles": [
+      { "name": "Dirección Creativa", "count": "3 personas" },
+      { "name": "Ingeniería y Diseño Técnico", "count": "8 personas" },
+      { "name": "Maestros Artesanos", "count": "15 personas" },
+      { "name": "Producción y CNC", "count": "22 personas" },
+      { "name": "Logística e Instalación", "count": "12 personas" },
+      { "name": "Gestión de Proyectos", "count": "5 personas" }
+    ]
+  },
+  "capacidades": {
+    "title": "POTENCIA Y ESCALA GLOBAL",
+    "intro": "Somos una fábrica con la capacidad de llevar la producción y la instalación a una escala global. A diferencia de los talleres tradicionales, contamos con la infraestructura necesaria para gestionar proyectos de gran envergadura y múltiples unidades sin perder el control de calidad.",
+    "blocks": [
+      {
+        "number": "01",
+        "title": "ALCANCE INTERNACIONAL",
+        "description": "Desplazamos y organizamos equipos de instalación en cualquier parte del mundo."
+      },
+      {
+        "number": "02",
+        "title": "PRODUCCIÓN ROBUSTA",
+        "description": "Ejecutamos la transición del diseño a la fabricación a gran escala con total fiabilidad."
+      },
+      {
+        "number": "03",
+        "title": "COMPROMISO DE CONTINUIDAD",
+        "description": "Garantizamos soporte a largo plazo con nuestra promesa: «¡Ahí estaremos!» ante cualquier contingencia futura."
+      }
+    ]
+  },
+  "artesania": {
+    "title": "El Alma del Atelier",
+    "paragraphs": [
+      "El corazón de nuestra empresa late como un «Atelier». Entendemos y valoramos la creatividad pura, aportando el cuidado meticuloso y la sensibilidad que solo un artesano puede otorgar a una pieza única.",
+      "Creemos que en el sector de alta gama, el valor reside en los detalles intangibles y el enfoque personal. Cada elemento que sale de nuestras manos conserva la esencia artesanal, asegurando que el resultado final sea tan exclusivo como la visión original del diseñador."
+    ],
+    "atelierToken": "Atelier"
+  },
+  "ingenieria": {
+    "title": "Precisión en la Complejidad",
+    "intro": "Nuestra ingeniería es el puente entre la imaginación y la realidad tangible. Dotamos a la creatividad de la precisión técnica necesaria para superar las limitaciones prácticas de cualquier idea, por compleja que sea.",
+    "processSteps": [
+      { "id": "diseno", "label": "DISEÑO", "description": "Interpretación y análisis del concepto creativo original." },
+      { "id": "ingenieria", "label": "INGENIERÍA", "description": "Desarrollo técnico detallado y resolución de complejidades." },
+      { "id": "prototipo", "label": "PROTOTIPO", "description": "Fabricación de prototipos reales para validación." },
+      { "id": "validacion", "label": "VALIDACIÓN", "description": "Supervisión del cliente y aprobación del resultado." },
+      { "id": "produccion", "label": "PRODUCCIÓN", "description": "Fabricación a escala con control de calidad total." },
+      { "id": "instalacion", "label": "INSTALACIÓN", "description": "Montaje e instalación en destino final." }
+    ],
+    "blocks": [
+      {
+        "title": "Mitigación de Riesgos",
+        "description": "Realizamos prototipos y pruebas piloto reales que permiten al cliente supervisar y validar el éxito antes de la producción final."
+      },
+      {
+        "title": "Resolución Audaz",
+        "description": "Anticipamos y resolvemos problemas técnicos antes de que afecten al proyecto, garantizando un sistema robusto y eficiente."
+      }
+    ]
+  },
+  "proyectosSection": {
+    "title": "El Dominio de lo Complejo",
+    "intro": "Nuestra cartera de proyectos refleja el éxito de fusionar tres mundos: el artesano, el ingeniero y la fábrica. Nos especializamos en sectores de contract global de alta gama, donde la complejidad es la norma y la excelencia la única opción.",
+    "phrase": "Cada proyecto es un testimonio de nuestra capacidad para dialogar con el cliente, escuchar sus necesidades y resolver con audacia los desafíos más exigentes del diseño contemporáneo."
+  },
+  "contacta": {
+    "title": "Construyamos Vínculos",
+    "paragraphs": [
+      "La confianza es personal. En OMIO, buscamos establecer conexiones emocionales con nuestros clientes y sus proyectos, reduciendo cualquier fricción a través de un compromiso relacional genuino.",
+      "Si buscas un aliado que no solo entienda tu «qué», sino que comparta tu «porqué», estamos listos para escucharte."
+    ],
+    "cta": "Hablemos",
+    "email": "info@omiodesign.com",
+    "phone": "+34 960 000 000",
+    "location": "Valencia, España"
+  },
+  "home": {
+    "nosotros": {
+      "label": "NOSOTROS"
+    },
+    "servicios": {
+      "slides": [
+        { "id": "artesano", "phrase": "La unión de un artesano, un ingeniero y una fábrica." },
+        { "id": "tranquilidad", "phrase": "Mitigamos los riesgos técnicos y logísticos de cada proyecto." },
+        { "id": "escala", "phrase": "De la sensibilidad artesanal a la potencia industrial." },
+        { "id": "prototipo", "phrase": "Del prototipado a la instalación, una única mano guía el proceso." },
+        { "id": "detalle", "phrase": "En el detalle intangible reside el valor de la alta gama." },
+        { "id": "prueba", "phrase": "Anticipamos lo que otros dan por imposible." },
+        { "id": "promesa", "phrase": "Socio inestimable de los estudios más prestigiosos del mundo." }
+      ],
+      "ctaExplore": "Explorar servicios"
+    },
+    "atelier": {
+      "headline": "Donde la mano del maestro todavía decide.",
+      "label": "ATELIER"
+    },
+    "materiales": {
+      "label": "MATERIALES",
+      "title": "La Materia Prima de lo Extraordinario",
+      "intro": "Seleccionamos cada material con la misma exigencia que aplicamos a cada pieza. Maderas nobles, metales trabajados, piedras naturales y textiles de la más alta calidad.",
+      "cta": "Ver todos los materiales",
+      "featured": [
+        { "label": "METAL", "slug": "laton-envejecido" },
+        { "label": "METAL", "slug": "acero-negro" },
+        { "label": "MADERA", "slug": "nogal-americano" },
+        { "label": "ALABASTRO", "slug": "marmol-calacatta" }
+      ]
+    },
+    "proyectos": {
+      "label": "PROYECTOS",
+      "title": "Cada Proyecto, una Historia",
+      "viewAll": "Ver todos"
+    },
+    "contacto": {
+      "label": "CONTACTO"
+    }
+  },
+  "pages": {
+    "nosotros": {
+      "heroNumber": "01",
+      "heroLabel": "NOSOTROS"
+    },
+    "servicios": {
+      "heroNumber": "02",
+      "heroLabel": "SERVICIOS",
+      "heroTitle": "Tres Mundos, Una Pieza",
+      "heroSubtitle": "Fusionamos la sensibilidad artesanal, la precisión ingenieril y la potencia industrial para hacer realidad lo que otros consideran imposible.",
+      "capabilitiesTitle": "Capacidades"
+    },
+    "materiales": {
+      "heroNumber": "03",
+      "heroLabel": "MATERIALES",
+      "heroTitle": "La Materia Prima de lo Extraordinario",
+      "heroSubtitle": "Seleccionamos cada material con la misma exigencia que aplicamos a cada pieza. De la cantera al taller, de la plantación al telar.",
+      "emptyState": "No hay materiales en esta categoría.",
+      "filterAll": "Todos",
+      "viewDetail": "Ver detalle",
+      "propertiesTitle": "Propiedades",
+      "applicationsTitle": "Aplicaciones",
+      "relatedProjects": "Proyectos con este material",
+      "breadcrumb": "Materiales",
+      "notFoundTitle": "Material no encontrado"
+    },
+    "proyectos": {
+      "heroNumber": "04",
+      "heroLabel": "PROYECTOS",
+      "heroTitle": "Cada Proyecto, una Historia",
+      "heroSubtitle": "Nuestra cartera refleja el éxito de fusionar tres mundos: el artesano, el ingeniero y la fábrica. Nos especializamos en contract global de alta gama.",
+      "filterAll": "Todas",
+      "discoverStory": "Descubrir historia →",
+      "storyTitle": "La Historia",
+      "challengeTitle": "El Desafío",
+      "solutionTitle": "La Solución",
+      "resultTitle": "El Resultado",
+      "phasesTitle": "Fases del Proyecto",
+      "galleryTitle": "Galería",
+      "materialsUsedTitle": "Materiales Utilizados",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "viewAll": "Ver todos",
+      "breadcrumb": "Proyectos",
+      "notFoundTitle": "Proyecto no encontrado"
+    },
+    "proceso": {
+      "heroNumber": "05",
+      "heroLabel": "PROCESO",
+      "heroTitle": "Del Concepto a la Instalación",
+      "heroSubtitle": "Un sistema probado de seis fases que minimiza riesgos y maximiza la calidad. Cada fase es un compromiso de transparencia con nuestro cliente.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Diseño",
+          "subtitle": "Interpretación Creativa",
+          "description": "Todo comienza con la escucha. Nos sumergimos en la visión del diseñador para comprenderla a fondo. Analizamos cada plano, cada render, cada referencia, buscando no solo el «qué» sino el «porqué» detrás de cada decisión creativa.",
+          "details": [
+            "Reuniones de briefing con el estudio de diseño",
+            "Análisis de viabilidad técnica preliminar",
+            "Selección de materiales y muestras iniciales",
+            "Propuesta de soluciones constructivas"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Ingeniería",
+          "subtitle": "Precisión Técnica",
+          "description": "Nuestro equipo de ingeniería traduce la visión creativa en documentación técnica detallada. Cada pieza se modela en 3D, se simula estructuralmente y se planifica hasta el último tornillo. Es aquí donde anticipamos y resolvemos los problemas antes de que aparezcan.",
+          "details": [
+            "Modelado 3D paramétrico de cada pieza",
+            "Simulación estructural (FEA)",
+            "Definición de tolerancias y especificaciones",
+            "Planificación de producción y logística"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "Prototipo",
+          "subtitle": "Validación Real",
+          "description": "Fabricamos prototipos a escala real que permiten al cliente tocar, sentir y validar el resultado antes de comprometerse con la producción completa. Es nuestro seguro contra sorpresas: lo que apruebas es exactamente lo que recibes.",
+          "details": [
+            "Fabricación de prototipos a escala 1:1",
+            "Presentación y validación con el cliente",
+            "Ajustes y refinamientos según feedback",
+            "Aprobación final para producción"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Producción",
+          "subtitle": "Fabricación a Escala",
+          "description": "Con el prototipo aprobado, nuestro taller cobra vida. CNC de 5 ejes, líneas de lacado robotizadas y las manos de nuestros maestros artesanos trabajan en sintonía para producir cada pieza con la misma calidad que el prototipo, multiplicada por cientos si es necesario.",
+          "details": [
+            "Fresado CNC de alta precisión",
+            "Acabados artesanales manuales",
+            "Control de calidad unitario",
+            "Embalaje especializado para transporte"
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Logística",
+          "subtitle": "Alcance Global",
+          "description": "Nuestro departamento de logística gestiona el transporte puerta a puerta a cualquier rincón del mundo. Cada pieza se embala individualmente con materiales que garantizan su protección durante viajes de miles de kilómetros.",
+          "details": [
+            "Embalaje individual personalizado",
+            "Transporte internacional certificado",
+            "Seguimiento en tiempo real",
+            "Seguro integral de transporte"
+          ]
+        },
+        {
+          "number": "06",
+          "title": "Instalación",
+          "subtitle": "El Momento de la Verdad",
+          "description": "Nuestro equipo de instalación viaja al destino final para montar cada pieza con la misma precisión con la que fue fabricada. No delegamos este paso crítico: quien fabricó la pieza es quien la instala.",
+          "details": [
+            "Equipo de instalación propio",
+            "Ajuste fino in situ",
+            "Limpieza y entrega final",
+            "Garantía y soporte post-instalación"
+          ]
+        }
+      ],
+      "ctaTitle": "¿Tienes un proyecto en mente?",
+      "ctaText": "Cuéntanos tu idea y diseñaremos juntos el camino para hacerla realidad.",
+      "ctaButton": "Hablemos"
+    },
+    "contacto": {
+      "heroNumber": "06",
+      "heroLabel": "CONTACTO",
+      "formNameLabel": "Nombre",
+      "formEmailLabel": "Email",
+      "formCompanyLabel": "Empresa / Estudio",
+      "formProjectTypeLabel": "Tipo de proyecto",
+      "formMessageLabel": "Mensaje",
+      "formSelectPlaceholder": "Seleccionar...",
+      "formSubmit": "Enviar mensaje",
+      "thanksTitle": "Gracias por tu mensaje",
+      "thanksText": "Nos pondremos en contacto contigo lo antes posible.",
+      "emailLabel": "Email",
+      "phoneLabel": "Teléfono",
+      "locationLabel": "Ubicación",
+      "socialLabel": "Redes sociales",
+      "projectTypes": {
+        "hospitality": "Hospitality",
+        "residencial": "Residencial",
+        "gastronomia": "Gastronomía",
+        "contract": "Contract",
+        "otro": "Otro"
+      }
+    }
+  },
+  "projectCategories": {
+    "Hospitality": "Hospitality",
+    "Residencial": "Residencial",
+    "Gastronomía": "Gastronomía",
+    "Contract": "Contract"
+  },
+  "materialCategories": {
+    "Maderas": "Maderas",
+    "Metales": "Metales",
+    "Piedras": "Piedras",
+    "Textiles": "Textiles",
+    "Acabados": "Acabados"
+  },
+  "localeSwitcher": {
+    "label": "Idioma",
+    "es": "ES",
+    "en": "EN"
+  }
+}

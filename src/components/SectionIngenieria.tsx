@@ -2,11 +2,16 @@
 
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import SectionLabel from './SectionLabel';
 import AnimatedText from './AnimatedText';
 import ProcessTimeline from './ProcessTimeline';
-import { INGENIERIA } from '@/lib/constants';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
+
+interface Block {
+  title: string;
+  description: string;
+}
 
 function SVGCheckIcon() {
   return (
@@ -29,6 +34,10 @@ function SVGCheckIcon() {
 
 export default function SectionIngenieria() {
   const sectionRef = useRef<HTMLElement>(null);
+  const t = useTranslations('ingenieria');
+  const tSections = useTranslations('sections.labels');
+
+  const blocks = t.raw('blocks') as Block[];
 
   return (
     <section
@@ -37,20 +46,19 @@ export default function SectionIngenieria() {
       className="relative min-h-screen py-32 md:py-48 px-6 md:px-12 lg:px-24"
       style={{ backgroundColor: '#F3ECEB' }}
     >
-      {/* Blueprint dot grid overlay */}
       <div className="absolute inset-0 texture-ingeniero pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <SectionLabel
           number="04"
-          label="INGENIERÍA"
+          label={tSections('ingenieria')}
           accentColor="#002A3A"
           numberColor="#002A3A"
         />
 
         <motion.div className="mt-8">
           <AnimatedText
-            text={INGENIERIA.title}
+            text={t('title')}
             as="h2"
             className="font-artesano italic text-[clamp(2rem,5vw,4.5rem)] leading-[1.05]"
             splitBy="word"
@@ -65,15 +73,13 @@ export default function SectionIngenieria() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {INGENIERIA.intro}
+          {t('intro')}
         </motion.p>
 
-        {/* Process Timeline */}
         <div className="mt-20">
           <ProcessTimeline />
         </div>
 
-        {/* Two detail blocks */}
         <motion.div
           className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8"
           variants={staggerContainer}
@@ -81,7 +87,7 @@ export default function SectionIngenieria() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {INGENIERIA.blocks.map((block) => (
+          {blocks.map((block) => (
             <motion.div
               key={block.title}
               className="p-8 md:p-10 border border-[#002A3A]/15"

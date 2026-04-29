@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* ============================================
    OMIO ATELIER & DESIGN — Global Styles
@@ -8,7 +8,7 @@
 /* --- Tailwind Theme Extensions --- */
 @theme inline {
   --font-caslon: var(--font-caslon);
-  --font-cascadia: "Cascadia Code", "Cascadia Mono", "Courier New", monospace;
+  --font-cascadia: 'Cascadia Code', 'Cascadia Mono', 'Courier New', monospace;
   --font-lato: var(--font-lato);
   --font-body: var(--font-lato);
 }
@@ -21,39 +21,39 @@
   --blend-fabrica: 0;
 
   /* ARTESANO palette — Warmth, craft (cream) */
-  --artesano-bg: #F3ECEB;
-  --artesano-text: #002A3A;
-  --artesano-accent: #8C7732;
-  --artesano-secondary: #F3ECEB;
+  --artesano-bg: #f3eceb;
+  --artesano-text: #002a3a;
+  --artesano-accent: #8c7732;
+  --artesano-secondary: #f3eceb;
 
   /* INGENIERO palette — Precision, blueprint (cream + navy) */
-  --ingeniero-bg: #F3ECEB;
-  --ingeniero-text: #002A3A;
-  --ingeniero-accent: #8C7732;
-  --ingeniero-secondary: #F3ECEB;
+  --ingeniero-bg: #f3eceb;
+  --ingeniero-text: #002a3a;
+  --ingeniero-accent: #8c7732;
+  --ingeniero-secondary: #f3eceb;
 
   /* FÁBRICA palette — Power, industrial (navy) */
-  --fabrica-bg: #002A3A;
-  --fabrica-text: #F3ECEB;
-  --fabrica-accent: #8C7732;
-  --fabrica-secondary: #8C7732;
+  --fabrica-bg: #002a3a;
+  --fabrica-text: #f3eceb;
+  --fabrica-accent: #8c7732;
+  --fabrica-secondary: #8c7732;
 
   /* Interpolated current values (updated by TextureBackground.tsx) */
-  --current-bg: #002A3A;
-  --current-text: #F3ECEB;
-  --current-accent: #8C7732;
-  --current-secondary: #F3ECEB;
+  --current-bg: #002a3a;
+  --current-text: #f3eceb;
+  --current-accent: #8c7732;
+  --current-secondary: #f3eceb;
 
   /* Named colors for direct use */
-  --color-cream: #F3ECEB;
-  --color-ebony: #002A3A;
-  --color-gold: #8C7732;
-  --color-blueprint: #F3ECEB;
-  --color-steel: #002A3A;
-  --color-black-industrial: #002A3A;
-  --color-bronze: #8C7732;
-  --color-steel-polished: #8C7732;
-  --color-deep-black: #001A26;
+  --color-cream: #f3eceb;
+  --color-ebony: #002a3a;
+  --color-gold: #8c7732;
+  --color-blueprint: #f3eceb;
+  --color-steel: #002a3a;
+  --color-black-industrial: #002a3a;
+  --color-bronze: #8c7732;
+  --color-steel-polished: #8c7732;
+  --color-deep-black: #001a26;
 }
 
 /* --- Base Styles --- */
@@ -69,7 +69,9 @@ body {
   font-family: var(--font-lato), system-ui, sans-serif;
   font-weight: 300;
   overflow-x: hidden;
-  transition: background-color 0.05s linear, color 0.05s linear;
+  transition:
+    background-color 0.05s linear,
+    color 0.05s linear;
 }
 
 /* Hide native scrollbar */
@@ -106,8 +108,7 @@ html {
 
 /* Texture 2: Blueprint dot grid (Ingeniero) */
 .texture-ingeniero {
-  background-image:
-    radial-gradient(circle, #002A3A 0.5px, transparent 0.5px);
+  background-image: radial-gradient(circle, #002a3a 0.5px, transparent 0.5px);
   background-size: 24px 24px;
   opacity: 0.12;
 }
@@ -139,11 +140,11 @@ html {
 }
 
 .font-ingeniero {
-  font-family: "Cascadia Code", "Cascadia Mono", 'Courier New', monospace;
+  font-family: 'Cascadia Code', 'Cascadia Mono', 'Courier New', monospace;
 }
 
 .font-fabrica {
-  font-family: "Cascadia Code", "Cascadia Mono", 'Courier New', monospace;
+  font-family: 'Cascadia Code', 'Cascadia Mono', 'Courier New', monospace;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -186,7 +187,7 @@ section {
   padding: 1rem 2rem;
   background: var(--color-gold);
   color: var(--color-cream);
-  font-family: "Cascadia Code", "Cascadia Mono", monospace;
+  font-family: 'Cascadia Code', 'Cascadia Mono', monospace;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -206,7 +207,7 @@ section {
   z-index: 40;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  font-family: "Cascadia Code", "Cascadia Mono", monospace;
+  font-family: 'Cascadia Code', 'Cascadia Mono', monospace;
   font-size: 0.625rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;

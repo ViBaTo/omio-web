@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import { usePathname } from '@/i18n/navigation';
 import { PALETTES } from '@/lib/constants';
 import type { World } from '@/lib/constants';
 

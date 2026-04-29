@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 interface Crumb {
   label: string;
@@ -13,6 +14,8 @@ interface BreadcrumbsProps {
 }
 
 export default function Breadcrumbs({ items, color = '#002A3A' }: BreadcrumbsProps) {
+  const tCommon = useTranslations('common');
+
   return (
     <nav aria-label="Breadcrumb" className="flex items-center gap-2 py-4">
       <Link
@@ -20,7 +23,7 @@ export default function Breadcrumbs({ items, color = '#002A3A' }: BreadcrumbsPro
         className="font-ingeniero text-[10px] tracking-[0.2em] uppercase transition-opacity hover:opacity-100"
         style={{ color, opacity: 0.4 }}
       >
-        Inicio
+        {tCommon('home')}
       </Link>
       {items.map((crumb, i) => (
         <span key={i} className="flex items-center gap-2">
