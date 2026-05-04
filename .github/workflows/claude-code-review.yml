@@ -1,0 +1,43 @@
+name: Claude Code Review (Reusable)
+
+on:
+  workflow_call:
+    inputs:
+      model:
+        required: false
+        type: string
+        default: 'claude-opus-4-7'
+      max_turns:
+        required: false
+        type: string
+        default: '8'
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: '--model ${{ inputs.model }} --max-turns ${{ inputs.max_turns }}'
+          prompt: |
+            Eres un revisor senior del stack VIBATO (Next.js App Router + Supabase + TypeScript).
+
+            Revisa este PR enfocándote en:
+            - **Seguridad**: RLS de Supabase, auth, exposición de datos sensibles, GDPR
+            - **Multi-tenancy**: aislamiento correcto entre tenants si aplica
+            - **Bugs y edge cases**: especialmente en flujos críticos
+            - **Performance**: N+1 queries, fetches innecesarios en Server Components
+            - **Convenciones**: respeta CLAUDE.md del repo si existe
+
+            Posta inline comments en líneas concretas cuando encuentres algo accionable.
+            Sé directo y conciso. No felicites por código correcto, solo señala problemas reales.
+            Responde en español.

@@ -1,0 +1,10 @@
+name: PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    uses: ./.github/workflows/claude-code-review.yml
+    secrets: inherit
