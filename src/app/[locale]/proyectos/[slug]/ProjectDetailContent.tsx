@@ -136,6 +136,29 @@ export default function ProjectDetailContent({ project }: Props) {
               {project.longDescription}
             </motion.p>
 
+            {project.images[0] && (
+              <motion.figure className='mt-10' variants={fadeInUp}>
+                <div className='relative w-full aspect-[16/10] overflow-hidden'>
+                  <div
+                    className='w-full h-full bg-cover bg-center'
+                    style={{
+                      backgroundImage: `url(${project.images[0].src})`
+                    }}
+                    role='img'
+                    aria-label={project.images[0].alt}
+                  />
+                </div>
+                {project.images[0].caption && (
+                  <figcaption
+                    className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mt-3'
+                    style={{ color: '#8C7732' }}
+                  >
+                    {project.images[0].caption}
+                  </figcaption>
+                )}
+              </motion.figure>
+            )}
+
             <motion.div className='mt-12' variants={fadeInUp}>
               <h3
                 className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4'
@@ -149,6 +172,28 @@ export default function ProjectDetailContent({ project }: Props) {
               >
                 {project.challenge}
               </p>
+              {project.images[1] && (
+                <figure className='mt-8'>
+                  <div className='relative w-full aspect-[16/10] overflow-hidden'>
+                    <div
+                      className='w-full h-full bg-cover bg-center'
+                      style={{
+                        backgroundImage: `url(${project.images[1].src})`
+                      }}
+                      role='img'
+                      aria-label={project.images[1].alt}
+                    />
+                  </div>
+                  {project.images[1].caption && (
+                    <figcaption
+                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mt-3'
+                      style={{ color: '#8C7732' }}
+                    >
+                      {project.images[1].caption}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
             </motion.div>
 
             <motion.div className='mt-12' variants={fadeInUp}>
@@ -164,6 +209,28 @@ export default function ProjectDetailContent({ project }: Props) {
               >
                 {project.solution}
               </p>
+              {project.images[2] && (
+                <figure className='mt-8'>
+                  <div className='relative w-full aspect-[16/10] overflow-hidden'>
+                    <div
+                      className='w-full h-full bg-cover bg-center'
+                      style={{
+                        backgroundImage: `url(${project.images[2].src})`
+                      }}
+                      role='img'
+                      aria-label={project.images[2].alt}
+                    />
+                  </div>
+                  {project.images[2].caption && (
+                    <figcaption
+                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mt-3'
+                      style={{ color: '#8C7732' }}
+                    >
+                      {project.images[2].caption}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
             </motion.div>
 
             <motion.div className='mt-12' variants={fadeInUp}>
@@ -179,60 +246,29 @@ export default function ProjectDetailContent({ project }: Props) {
               >
                 {project.result}
               </p>
+              {(project.images[3] ?? project.images[0]) && (
+                <figure className='mt-8'>
+                  <div className='relative w-full aspect-[16/10] overflow-hidden'>
+                    <div
+                      className='w-full h-full bg-cover bg-center'
+                      style={{
+                        backgroundImage: `url(${(project.images[3] ?? project.images[0]).src})`
+                      }}
+                      role='img'
+                      aria-label={(project.images[3] ?? project.images[0]).alt}
+                    />
+                  </div>
+                  {(project.images[3] ?? project.images[0]).caption && (
+                    <figcaption
+                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mt-3'
+                      style={{ color: '#8C7732' }}
+                    >
+                      {(project.images[3] ?? project.images[0]).caption}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      <section
-        className='py-24 md:py-32 px-6 md:px-12 lg:px-24'
-        style={{ backgroundColor: '#F3ECEB' }}
-      >
-        <div className='absolute inset-0 texture-ingeniero pointer-events-none' />
-        <div className='max-w-7xl mx-auto relative z-10'>
-          <motion.h2
-            className='font-artesano italic text-3xl md:text-4xl leading-[1.1] mb-16'
-            style={{ color: '#002A3A' }}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            {tPage('phasesTitle')}
-          </motion.h2>
-
-          <motion.div
-            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'
-            variants={staggerContainer}
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true }}
-          >
-            {project.phases.map((phase, i) => (
-              <motion.div
-                key={phase.title}
-                className='p-6 border border-[#002A3A]/15'
-                variants={fadeInUp}
-              >
-                <span
-                  className='font-ingeniero text-3xl font-bold'
-                  style={{ color: '#002A3A', opacity: 0.2 }}
-                >
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h3
-                  className='font-artesano text-xl mt-4'
-                  style={{ color: '#002A3A' }}
-                >
-                  {phase.title}
-                </h3>
-                <p
-                  className='font-body text-sm leading-relaxed mt-3'
-                  style={{ color: '#002A3A', opacity: 0.7 }}
-                >
-                  {phase.description}
-                </p>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </section>

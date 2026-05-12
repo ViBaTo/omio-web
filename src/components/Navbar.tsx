@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
@@ -16,9 +16,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const tNav = useTranslations('nav');
   const tCommon = useTranslations('common');
-  const { scrollY } = useScroll();
-
-  const bgOpacity = useTransform(scrollY, [0, 300], [0, 0.85]);
 
   const isHome = pathname === '/';
   const isDarkPage = DARK_PAGES.includes(pathname) || pathname.startsWith('/proyectos/');
@@ -45,11 +42,11 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={isHome ? { delay: 2.5, duration: 0.8 } : { duration: 0.4 }}
       >
-        <motion.div
-          className="absolute inset-0 backdrop-blur-md -z-10"
+        <div
+          className="absolute inset-0 backdrop-blur-md -z-10 border-b"
           style={{
-            backgroundColor: isDarkPage ? '#002A3A' : '#F3ECEB',
-            opacity: bgOpacity,
+            backgroundColor: isDarkPage ? 'rgba(0, 42, 58, 0.85)' : 'rgba(243, 236, 235, 0.85)',
+            borderColor: isDarkPage ? 'rgba(243, 236, 235, 0.08)' : 'rgba(0, 42, 58, 0.08)',
           }}
         />
 

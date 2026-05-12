@@ -5,14 +5,14 @@ import { useTranslations } from 'next-intl'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
 
 const GALLERY = [
-  { src: '/images/artesania/IMG_1647.jpg', aspect: 'aspect-[4/5]' },
-  { src: '/images/artesania/IMG_1823.jpg', aspect: 'aspect-[4/5]' },
-  { src: '/images/artesania/colada.jpg', aspect: 'aspect-[4/5]' },
-  { src: '/images/artesania/IMG_1410.jpg', aspect: 'aspect-[4/5]' },
-  { src: '/images/artesania/IMG_1458.jpg', aspect: 'aspect-[4/5]' },
-  { src: '/images/artesania/IMG_2146.jpg', aspect: 'aspect-[4/5]' },
-  { src: '/images/artesania/IMG_1853.jpg', aspect: 'aspect-[4/5]' },
-  { src: '/images/artesania/IMG_1865.jpg', aspect: 'aspect-[4/5]' }
+  { src: '/images/new/03.png', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/04.png', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/05.png', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/06.png', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/07.png', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/08.png', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/09.png', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/10.png', aspect: 'aspect-[4/5]' }
 ]
 
 export default function HomeAtelier() {
@@ -67,13 +67,11 @@ export default function HomeAtelier() {
           whileInView='visible'
           viewport={{ once: true, margin: '-10%' }}
         >
-          {GALLERY.map((img, i) => (
+          {GALLERY.map(img => (
             <motion.div
               key={img.src}
               variants={fadeInUp}
-              className={`relative overflow-hidden ${img.aspect} ${
-                i % 5 === 0 ? 'md:translate-y-8' : ''
-              } ${i % 4 === 3 ? 'md:-translate-y-4' : ''}`}
+              className={`relative overflow-hidden ${img.aspect}`}
             >
               <div
                 className='w-full h-full bg-cover bg-center transition-transform duration-[1.2s] hover:scale-[1.04]'

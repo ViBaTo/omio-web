@@ -86,7 +86,7 @@ export default function HomeNosotros() {
             <div
               className='aspect-[4/5] w-full bg-cover bg-center'
               style={{
-                backgroundImage: "url('/images/artesania/IMG_1712.jpg')"
+                backgroundImage: "url('/images/new/01.png')"
               }}
             />
             <div className='absolute inset-0 texture-artesano opacity-20 mix-blend-overlay' />

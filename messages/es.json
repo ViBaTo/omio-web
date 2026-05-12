@@ -96,7 +96,7 @@
   "nosotros": {
     "title": "El Aliado de tu Visión Creativa",
     "paragraphs": [
-      "En OMIO ATELIER & DESIGN no solo fabricamos elementos; construimos la confianza necesaria para que los estudios de diseño de interiores más prestigiosos del mundo hagan realidad lo imposible. Nos definimos como una asociación estratégica que trasciende la simple competencia funcional para convertirnos en el socio inestimable de las firmas más reconocidas del sector.",
+      "En OMIO ATELIER & DESIGN no solo fabricamos elementos; construimos la confianza necesaria para que los estudios de diseño de interiores más prestigiosos del mundo —como Alexander Waterworth, AVROKO, Ken Folk y Lazaro Rosa-Violán— hagan realidad lo imposible. Nos definimos como una asociación estratégica que trasciende la simple competencia funcional para convertirnos en el socio inestimable de las firmas más reconocidas del sector.",
       "Nuestra razón de ser es mitigar los riesgos técnicos y logísticos de cada proyecto, ofreciendo tranquilidad a través de un sistema probado y una conexión humana profunda que protege la reputación de nuestros clientes."
     ],
     "additionalParagraph": "Con más de 15 años de trayectoria, hemos sido el socio inestimable de algunas de las firmas de diseño e interiorismo más reconocidas del panorama internacional.",
@@ -124,8 +124,8 @@
     "teamRoles": [
       { "name": "Dirección Creativa", "count": "3 personas" },
       { "name": "Ingeniería y Diseño Técnico", "count": "8 personas" },
-      { "name": "Maestros Artesanos", "count": "15 personas" },
-      { "name": "Producción y CNC", "count": "22 personas" },
+      { "name": "Maestros Artesanos", "count": "11 personas" },
+      { "name": "Producción y CNC", "count": "12 personas" },
       { "name": "Logística e Instalación", "count": "12 personas" },
       { "name": "Gestión de Proyectos", "count": "5 personas" }
     ]
@@ -288,7 +288,7 @@
       "heroNumber": "05",
       "heroLabel": "PROCESO",
       "heroTitle": "Del Concepto a la Instalación",
-      "heroSubtitle": "Un sistema probado de seis fases que minimiza riesgos y maximiza la calidad. Cada fase es un compromiso de transparencia con nuestro cliente.",
+      "heroSubtitle": "Un sistema probado de cinco fases que minimiza riesgos y maximiza la calidad. Cada fase es un compromiso de transparencia con nuestro cliente.",
       "steps": [
         {
           "number": "01",
@@ -316,21 +316,9 @@
         },
         {
           "number": "03",
-          "title": "Prototipo",
-          "subtitle": "Validación Real",
-          "description": "Fabricamos prototipos a escala real que permiten al cliente tocar, sentir y validar el resultado antes de comprometerse con la producción completa. Es nuestro seguro contra sorpresas: lo que apruebas es exactamente lo que recibes.",
-          "details": [
-            "Fabricación de prototipos a escala 1:1",
-            "Presentación y validación con el cliente",
-            "Ajustes y refinamientos según feedback",
-            "Aprobación final para producción"
-          ]
-        },
-        {
-          "number": "04",
           "title": "Producción",
           "subtitle": "Fabricación a Escala",
-          "description": "Con el prototipo aprobado, nuestro taller cobra vida. CNC de 5 ejes, líneas de lacado robotizadas y las manos de nuestros maestros artesanos trabajan en sintonía para producir cada pieza con la misma calidad que el prototipo, multiplicada por cientos si es necesario.",
+          "description": "Con el diseño validado, nuestro taller cobra vida. CNC de 5 ejes, líneas de lacado robotizadas y las manos de nuestros maestros artesanos trabajan en sintonía para producir cada pieza con una calidad sin concesiones, multiplicada por cientos si es necesario.",
           "details": [
             "Fresado CNC de alta precisión",
             "Acabados artesanales manuales",
@@ -339,7 +327,7 @@
           ]
         },
         {
-          "number": "05",
+          "number": "04",
           "title": "Logística",
           "subtitle": "Alcance Global",
           "description": "Nuestro departamento de logística gestiona el transporte puerta a puerta a cualquier rincón del mundo. Cada pieza se embala individualmente con materiales que garantizan su protección durante viajes de miles de kilómetros.",
@@ -351,7 +339,7 @@
           ]
         },
         {
-          "number": "06",
+          "number": "05",
           "title": "Instalación",
           "subtitle": "El Momento de la Verdad",
           "description": "Nuestro equipo de instalación viaja al destino final para montar cada pieza con la misma precisión con la que fue fabricada. No delegamos este paso crítico: quien fabricó la pieza es quien la instala.",

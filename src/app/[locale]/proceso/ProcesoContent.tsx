@@ -18,7 +18,6 @@ interface Step {
 const STEP_WORLDS: World[] = [
   'artesano',
   'ingeniero',
-  'artesano',
   'fabrica',
   'fabrica',
   'artesano',

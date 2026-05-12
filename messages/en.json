@@ -96,7 +96,7 @@
   "nosotros": {
     "title": "The Ally of Your Creative Vision",
     "paragraphs": [
-      "At OMIO ATELIER & DESIGN we don't just manufacture elements; we build the trust required for the world's most prestigious interior design studios to make the impossible real. We define ourselves as a strategic partnership that goes beyond mere functional competence to become the invaluable ally of the most renowned firms in the sector.",
+      "At OMIO ATELIER & DESIGN we don't just manufacture elements; we build the trust required for the world's most prestigious interior design studios —such as Alexander Waterworth, AVROKO, Ken Folk and Lazaro Rosa-Violán— to make the impossible real. We define ourselves as a strategic partnership that goes beyond mere functional competence to become the invaluable ally of the most renowned firms in the sector.",
       "Our purpose is to mitigate the technical and logistical risks of every project, offering peace of mind through a proven system and a deep human connection that protects our clients' reputation."
     ],
     "additionalParagraph": "With more than 15 years of experience, we have been the invaluable partner of some of the most respected design and interior firms on the international scene.",
@@ -124,8 +124,8 @@
     "teamRoles": [
       { "name": "Creative Direction", "count": "3 people" },
       { "name": "Engineering and Technical Design", "count": "8 people" },
-      { "name": "Master Craftsmen", "count": "15 people" },
-      { "name": "Production and CNC", "count": "22 people" },
+      { "name": "Master Craftsmen", "count": "11 people" },
+      { "name": "Production and CNC", "count": "12 people" },
       { "name": "Logistics and Installation", "count": "12 people" },
       { "name": "Project Management", "count": "5 people" }
     ]
@@ -288,7 +288,7 @@
       "heroNumber": "05",
       "heroLabel": "PROCESS",
       "heroTitle": "From Concept to Installation",
-      "heroSubtitle": "A proven six-phase system that minimizes risk and maximizes quality. Each phase is a transparency commitment to our client.",
+      "heroSubtitle": "A proven five-phase system that minimizes risk and maximizes quality. Each phase is a transparency commitment to our client.",
       "steps": [
         {
           "number": "01",
@@ -316,21 +316,9 @@
         },
         {
           "number": "03",
-          "title": "Prototype",
-          "subtitle": "Real Validation",
-          "description": "We build full-scale prototypes that allow the client to touch, feel, and validate the result before committing to full production. It's our insurance against surprises: what you approve is exactly what you receive.",
-          "details": [
-            "Manufacture of 1:1 prototypes",
-            "Presentation and validation with the client",
-            "Adjustments and refinements based on feedback",
-            "Final approval for production"
-          ]
-        },
-        {
-          "number": "04",
           "title": "Production",
           "subtitle": "Scaled Manufacturing",
-          "description": "With the prototype approved, our workshop comes alive. 5-axis CNC, robotic lacquering lines, and the hands of our master craftsmen work in tune to produce every piece with the same quality as the prototype, multiplied by hundreds if needed.",
+          "description": "With the design validated, our workshop comes alive. 5-axis CNC, robotic lacquering lines, and the hands of our master craftsmen work in tune to produce every piece with uncompromising quality, multiplied by hundreds if needed.",
           "details": [
             "High-precision CNC milling",
             "Manual artisan finishes",
@@ -339,7 +327,7 @@
           ]
         },
         {
-          "number": "05",
+          "number": "04",
           "title": "Logistics",
           "subtitle": "Global Reach",
           "description": "Our logistics department manages door-to-door transport to anywhere in the world. Each piece is individually packed with materials that guarantee its protection over journeys of thousands of kilometers.",
@@ -351,7 +339,7 @@
           ]
         },
         {
-          "number": "06",
+          "number": "05",
           "title": "Installation",
           "subtitle": "The Moment of Truth",
           "description": "Our installation team travels to the final destination to assemble each piece with the same precision with which it was made. We don't delegate this critical step: the team that built the piece is the team that installs it.",

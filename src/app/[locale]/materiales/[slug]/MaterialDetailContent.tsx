@@ -60,11 +60,12 @@ export default function MaterialDetailContent({ material }: Props) {
               transition={{ duration: 0.8 }}
             >
               <div
-                className='w-full h-full'
+                className='w-full h-full bg-cover bg-center'
                 style={{
-                  background:
-                    CATEGORY_GRADIENTS[material.category] ||
-                    CATEGORY_GRADIENTS.Acabados
+                  background: material.image
+                    ? `url(${material.image}) center/cover no-repeat`
+                    : CATEGORY_GRADIENTS[material.category] ||
+                      CATEGORY_GRADIENTS.Acabados
                 }}
               />
             </motion.div>
