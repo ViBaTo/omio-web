@@ -386,6 +386,29 @@
     "Gastronomía": "Gastronomy",
     "Contract": "Contract"
   },
+  "projectWorlds": {
+    "artesano": "Craftsman",
+    "ingeniero": "Engineer",
+    "fabrica": "Factory"
+  },
+  "projectActs": {
+    "brief": {
+      "number": "01",
+      "label": "THE BRIEF"
+    },
+    "engineering": {
+      "number": "02",
+      "label": "ENGINEERING"
+    },
+    "execution": {
+      "number": "03",
+      "label": "MANUFACTURING"
+    },
+    "result": {
+      "number": "04",
+      "label": "THE RESULT"
+    }
+  },
   "materialCategories": {
     "Maderas": "Woods",
     "Metales": "Metals",

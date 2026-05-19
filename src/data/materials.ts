@@ -61,7 +61,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Piezas escultóricas', en: 'Sculptural pieces' },
       { es: 'Encimeras', en: 'Countertops' },
     ],
-    projects: ['hotel-arts-barcelona'],
+    projects: [],
     featured: true,
   },
   {
@@ -92,7 +92,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Barandillas', en: 'Railings' },
       { es: 'Bases de mesa', en: 'Table bases' },
     ],
-    projects: ['four-seasons-madrid'],
+    projects: [],
     featured: true,
   },
   {
@@ -123,7 +123,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Lámparas', en: 'Lamps' },
       { es: 'Vajilla a medida', en: 'Custom tableware' },
     ],
-    projects: ['mandarin-oriental'],
+    projects: [],
     featured: false,
   },
   {
@@ -153,7 +153,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Mobiliario macizo', en: 'Solid furniture' },
       { es: 'Suelos rústicos', en: 'Rustic flooring' },
     ],
-    projects: ['residencia-dubai'],
+    projects: [],
     featured: false,
   },
   {
@@ -187,7 +187,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Separadores de espacio', en: 'Room dividers' },
       { es: 'Paneles decorativos', en: 'Decorative panels' },
     ],
-    projects: ['yacht-club-monaco'],
+    projects: [],
     featured: true,
   },
   {
@@ -221,7 +221,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Separadores', en: 'Dividers' },
       { es: 'Vitrinas', en: 'Display cases' },
     ],
-    projects: ['restaurante-dani-garcia'],
+    projects: [],
     featured: false,
   },
   {
@@ -257,7 +257,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Piezas de acento', en: 'Accent pieces' },
       { es: 'Revestimientos', en: 'Claddings' },
     ],
-    projects: ['restaurante-dani-garcia'],
+    projects: [],
     featured: false,
   },
 
@@ -287,7 +287,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Perfilería', en: 'Profiles' },
       { es: 'Lámparas', en: 'Lamps' },
     ],
-    projects: ['hotel-arts-barcelona'],
+    projects: [],
     featured: true,
   },
   {
@@ -318,7 +318,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Mobiliario de acento', en: 'Accent furniture' },
       { es: 'Iluminación', en: 'Lighting' },
     ],
-    projects: ['four-seasons-madrid'],
+    projects: [],
     featured: false,
   },
   {
@@ -352,7 +352,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Estructura', en: 'Structure' },
       { es: 'Exterior', en: 'Outdoor' },
     ],
-    projects: ['mandarin-oriental', 'yacht-club-monaco'],
+    projects: [],
     featured: false,
   },
   {
@@ -386,7 +386,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Marcos', en: 'Frames' },
       { es: 'Bases', en: 'Bases' },
     ],
-    projects: ['restaurante-dani-garcia'],
+    projects: [],
     featured: false,
   },
   {
@@ -414,7 +414,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Perfilería', en: 'Profiles' },
       { es: 'Mobiliario residencial', en: 'Residential furniture' },
     ],
-    projects: ['residencia-dubai'],
+    projects: [],
     featured: false,
   },
   {
@@ -450,7 +450,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Náutica', en: 'Marine' },
       { es: 'Estructuras ligeras', en: 'Lightweight structures' },
     ],
-    projects: ['yacht-club-monaco'],
+    projects: [],
     featured: false,
   },
 
@@ -486,7 +486,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Mesas', en: 'Tables' },
       { es: 'Baños de lujo', en: 'Luxury bathrooms' },
     ],
-    projects: ['hotel-arts-barcelona', 'residencia-dubai'],
+    projects: [],
     featured: true,
   },
   {
@@ -519,7 +519,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Mostradores', en: 'Reception desks' },
       { es: 'Piezas de acento', en: 'Accent pieces' },
     ],
-    projects: ['four-seasons-madrid'],
+    projects: [],
     featured: false,
   },
   {
@@ -550,7 +550,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Revestimientos interiores', en: 'Interior claddings' },
       { es: 'Encimeras', en: 'Countertops' },
     ],
-    projects: ['mandarin-oriental'],
+    projects: [],
     featured: false,
   },
 
@@ -589,7 +589,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Cabeceros', en: 'Headboards' },
       { es: 'Cojines', en: 'Cushions' },
     ],
-    projects: ['hotel-arts-barcelona', 'mandarin-oriental'],
+    projects: [],
     featured: true,
   },
   {
@@ -620,7 +620,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Cabeceros', en: 'Headboards' },
       { es: 'Paneles acústicos', en: 'Acoustic panels' },
     ],
-    projects: ['four-seasons-madrid'],
+    projects: [],
     featured: false,
   },
   {
@@ -654,7 +654,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Detalles de acento', en: 'Accent details' },
       { es: 'Escritorios', en: 'Desks' },
     ],
-    projects: ['restaurante-dani-garcia'],
+    projects: [],
     featured: false,
   },
   {
@@ -690,7 +690,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Cabeceros', en: 'Headboards' },
       { es: 'Cojines de lujo', en: 'Luxury cushions' },
     ],
-    projects: ['residencia-dubai'],
+    projects: [],
     featured: false,
   },
   {
@@ -723,7 +723,7 @@ const MATERIALS_RAW: MaterialI18n[] = [
       { es: 'Náutica', en: 'Marine' },
       { es: 'Cojines de terraza', en: 'Terrace cushions' },
     ],
-    projects: ['yacht-club-monaco'],
+    projects: [],
     featured: false,
   },
 ];

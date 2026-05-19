@@ -6,20 +6,21 @@ import { useLocale, useTranslations } from 'next-intl'
 import PageHero from '@/components/PageHero'
 import CategoryFilter from '@/components/CategoryFilter'
 import { Link } from '@/i18n/navigation'
-import { getProjects, PROJECT_CATEGORIES, type ProjectFull } from '@/data/projects'
+import { getProjects, PROJECT_WORLDS, type ProjectFull } from '@/data/projects'
+import type { World } from '@/lib/constants'
 import type { Locale } from '@/i18n/routing'
 import { fadeInUp } from '@/lib/animations'
 
 export default function ProyectosContent() {
   const locale = useLocale() as Locale
   const tPage = useTranslations('pages.proyectos')
-  const tCategories = useTranslations('projectCategories')
+  const tWorlds = useTranslations('projectWorlds')
 
-  const [activeCategory, setActiveCategory] = useState<string | null>(null)
+  const [activeWorld, setActiveWorld] = useState<World | null>(null)
 
   const allProjects = getProjects(locale)
-  const filtered = activeCategory
-    ? allProjects.filter((p) => p.category === activeCategory)
+  const filtered = activeWorld
+    ? allProjects.filter((p) => p.world === activeWorld)
     : allProjects
 
   return (
@@ -39,10 +40,10 @@ export default function ProyectosContent() {
         <div className='max-w-7xl mx-auto'>
           <div className='mb-12'>
             <CategoryFilter
-              categories={PROJECT_CATEGORIES}
-              active={activeCategory}
-              onSelect={(cat) => setActiveCategory(cat)}
-              labelFor={(cat) => tCategories(cat)}
+              categories={PROJECT_WORLDS}
+              active={activeWorld}
+              onSelect={(w) => setActiveWorld(w as World | null)}
+              labelFor={(w) => tWorlds(w)}
               allLabel={tPage('filterAll')}
               accentColor='#8C7732'
               textColor='#F3ECEB'
@@ -59,7 +60,7 @@ export default function ProyectosContent() {
                   key={project.slug}
                   project={project}
                   index={i}
-                  categoryLabel={tCategories(project.category)}
+                  worldLabel={tWorlds(project.world)}
                   discoverLabel={tPage('discoverStory')}
                 />
               ))}
@@ -74,12 +75,12 @@ export default function ProyectosContent() {
 function ProjectListCard({
   project,
   index,
-  categoryLabel,
+  worldLabel,
   discoverLabel,
 }: {
   project: ProjectFull
   index: number
-  categoryLabel: string
+  worldLabel: string
   discoverLabel: string
 }) {
   const [isHovered, setIsHovered] = useState(false)
@@ -115,7 +116,7 @@ function ProjectListCard({
                 className='font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2'
                 style={{ color: '#8C7732' }}
               >
-                {categoryLabel} · {project.location} · {project.year}
+                {worldLabel} · {project.location} · {project.year}
               </p>
               <h3
                 className='font-fabrica uppercase text-2xl md:text-3xl tracking-[0.03em]'
@@ -123,6 +124,14 @@ function ProjectListCard({
               >
                 {project.title}
               </h3>
+              {project.creativeDirector && (
+                <p
+                  className='font-artesano italic text-sm mt-1'
+                  style={{ color: '#F3ECEB', opacity: 0.7 }}
+                >
+                  {project.creativeDirector}
+                </p>
+              )}
             </div>
 
             <motion.div

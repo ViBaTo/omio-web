@@ -386,6 +386,29 @@
     "Gastronomía": "Gastronomía",
     "Contract": "Contract"
   },
+  "projectWorlds": {
+    "artesano": "Artesano",
+    "ingeniero": "Ingeniero",
+    "fabrica": "Fábrica"
+  },
+  "projectActs": {
+    "brief": {
+      "number": "01",
+      "label": "EL ENCARGO"
+    },
+    "engineering": {
+      "number": "02",
+      "label": "INGENIERÍA"
+    },
+    "execution": {
+      "number": "03",
+      "label": "FABRICACIÓN"
+    },
+    "result": {
+      "number": "04",
+      "label": "EL RESULTADO"
+    }
+  },
   "materialCategories": {
     "Maderas": "Maderas",
     "Metales": "Metales",
