@@ -60,7 +60,7 @@ export default function HomeServicios() {
         <div className='absolute bottom-10 left-0 right-0 z-20 flex justify-center px-6'>
           <Link
             href='/servicios'
-            className='inline-flex items-center gap-3 font-ingeniero text-[11px] tracking-[0.25em] uppercase group'
+            className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.25em] uppercase group'
             style={{ color: '#F3ECEB' }}
           >
             <span>{tHome('ctaExplore')}</span>

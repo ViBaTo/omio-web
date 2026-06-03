@@ -54,7 +54,7 @@ export default function PageHero({
             style={{ backgroundColor: colors.accent, opacity: 0.4 }}
           />
           <span
-            className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
+            className='font-ingeniero text-xs tracking-[0.2em] uppercase'
             style={{ color: colors.accent }}
           >
             {label}

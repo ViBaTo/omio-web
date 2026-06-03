@@ -10,7 +10,6 @@ import "../globals.css";
 import { routing } from "@/i18n/routing";
 import SmoothScroll from "@/components/SmoothScroll";
 import TextureBackground from "@/components/TextureBackground";
-import Preloader from "@/components/Preloader";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
@@ -85,7 +84,6 @@ export default async function LocaleLayout({
           </a>
           <SmoothScroll>
             <TextureBackground />
-            <Preloader />
             <Navbar />
             {children}
             <Footer />

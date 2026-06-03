@@ -346,6 +346,7 @@ const PROJECTS_RAW: ProjectFullI18n[] = [
           { src: '/images/projects/mercer-hotel-madrid/result-03.jpg', alt: { es: 'Vista de la escultura lumínica', en: 'Lighting sculpture view' } },
           { src: '/images/projects/mercer-hotel-madrid/result-04.jpg', alt: { es: 'Detalle de la geometría en piedra', en: 'Stone geometry detail' } },
           { src: '/images/projects/mercer-hotel-madrid/result-05.jpg', alt: { es: 'Área social', en: 'Social area' } },
+          { src: '/images/projects/mercer-hotel-madrid/result-06.jpg', alt: { es: 'Seta lumínica acabada', en: 'Finished light-canopy sculpture' }, caption: { es: 'La seta lumínica acabada', en: 'The finished light-canopy sculpture' } },
         ],
       },
     ],

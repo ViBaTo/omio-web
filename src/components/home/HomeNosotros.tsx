@@ -40,7 +40,7 @@ export default function HomeNosotros() {
                 style={{ backgroundColor: '#8C7732', opacity: 0.4 }}
               />
               <span
-                className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
+                className='font-ingeniero text-xs tracking-[0.2em] uppercase'
                 style={{ color: '#8C7732' }}
               >
                 {tHomeNosotros('label')}
@@ -55,7 +55,7 @@ export default function HomeNosotros() {
             />
 
             <motion.p
-              className='font-body text-base md:text-lg leading-relaxed mt-8'
+              className='font-body text-lg md:text-xl leading-relaxed mt-8'
               style={{ color: '#002A3A', opacity: 0.85 }}
               variants={fadeInUp}
             >
@@ -65,7 +65,7 @@ export default function HomeNosotros() {
             <motion.div className='mt-10' variants={fadeInUp}>
               <Link
                 href='/nosotros'
-                className='inline-flex items-center gap-3 font-ingeniero text-[11px] tracking-[0.2em] uppercase group'
+                className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.2em] uppercase group'
                 style={{ color: '#8C7732' }}
               >
                 <span>{tCommon('discoverMore')}</span>

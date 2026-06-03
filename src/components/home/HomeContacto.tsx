@@ -37,7 +37,7 @@ export default function HomeContacto() {
             style={{ backgroundColor: '#8C7732', opacity: 0.4 }}
           />
           <span
-            className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
+            className='font-ingeniero text-xs tracking-[0.2em] uppercase'
             style={{ color: '#8C7732' }}
           >
             {tHome('label')}
@@ -52,7 +52,7 @@ export default function HomeContacto() {
         />
 
         <motion.p
-          className='font-body text-base md:text-lg leading-relaxed mt-8'
+          className='font-body text-lg md:text-xl leading-relaxed mt-8'
           style={{ color: '#002A3A', opacity: 0.85 }}
           variants={fadeInUp}
           initial='hidden'
@@ -87,7 +87,7 @@ export default function HomeContacto() {
           viewport={{ once: true }}
         >
           <span
-            className='font-ingeniero text-xs tracking-[0.15em]'
+            className='font-ingeniero text-sm tracking-[0.15em]'
             style={{ color: '#002A3A', opacity: 0.5 }}
           >
             {email}
@@ -99,7 +99,7 @@ export default function HomeContacto() {
             ·
           </span>
           <span
-            className='font-ingeniero text-xs tracking-[0.15em]'
+            className='font-ingeniero text-sm tracking-[0.15em]'
             style={{ color: '#002A3A', opacity: 0.5 }}
           >
             {location}

@@ -40,7 +40,7 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-5 flex items-center justify-between"
         initial={isHome ? { y: -100 } : { y: 0 }}
         animate={{ y: 0 }}
-        transition={isHome ? { delay: 2.5, duration: 0.8 } : { duration: 0.4 }}
+        transition={isHome ? { delay: 0.4, duration: 0.8 } : { duration: 0.4 }}
       >
         <div
           className="absolute inset-0 backdrop-blur-md -z-10 border-b"
@@ -80,7 +80,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-ingeniero text-[11px] tracking-[0.2em] uppercase transition-opacity duration-300 hover:opacity-100"
+                className="font-ingeniero text-[13px] tracking-[0.2em] uppercase transition-opacity duration-300 hover:opacity-100"
                 style={{
                   color: isDarkPage ? '#F3ECEB' : '#002A3A',
                   opacity: isActive ? 1 : 0.5,

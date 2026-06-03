@@ -42,7 +42,7 @@ export default function HomeAtelier() {
             style={{ backgroundColor: '#8C7732', opacity: 0.4 }}
           />
           <span
-            className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
+            className='font-ingeniero text-xs tracking-[0.2em] uppercase'
             style={{ color: '#8C7732' }}
           >
             {t('label')}
@@ -50,7 +50,7 @@ export default function HomeAtelier() {
         </motion.div>
 
         <motion.h2
-          className='font-artesano italic text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.1] mb-16 max-w-3xl'
+          className='font-artesano italic text-[clamp(2rem,5vw,4rem)] leading-[1.1] mb-16 max-w-3xl'
           style={{ color: '#002A3A' }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

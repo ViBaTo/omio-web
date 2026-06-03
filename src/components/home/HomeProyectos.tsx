@@ -38,7 +38,7 @@ export default function HomeProyectos() {
             style={{ backgroundColor: '#8C7732', opacity: 0.4 }}
           />
           <span
-            className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
+            className='font-ingeniero text-xs tracking-[0.2em] uppercase'
             style={{ color: '#8C7732' }}
           >
             {t('label')}
@@ -65,7 +65,7 @@ export default function HomeProyectos() {
           >
             <Link
               href='/proyectos'
-              className='inline-flex items-center gap-3 font-ingeniero text-[11px] tracking-[0.2em] uppercase group whitespace-nowrap'
+              className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.2em] uppercase group whitespace-nowrap'
               style={{ color: '#8C7732' }}
             >
               <span>{t('viewAll')}</span>
@@ -128,13 +128,13 @@ function FeaturedProjectCard({
             />
             <div className='absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent'>
               <p
-                className='font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2'
+                className='font-ingeniero text-[11px] tracking-[0.3em] uppercase mb-2'
                 style={{ color: '#8C7732' }}
               >
                 {categoryLabel}
               </p>
               <h3
-                className='font-fabrica uppercase text-xl md:text-2xl tracking-[0.03em]'
+                className='font-fabrica uppercase text-2xl md:text-3xl tracking-[0.03em]'
                 style={{ color: '#F3ECEB' }}
               >
                 {project.title}
@@ -157,7 +157,7 @@ function FeaturedProjectCard({
           </div>
 
           <p
-            className='font-body text-sm mt-4 line-clamp-2'
+            className='font-body text-base mt-4 line-clamp-2'
             style={{ color: '#F3ECEB', opacity: 0.6 }}
           >
             {project.shortDescription}

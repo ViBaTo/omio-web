@@ -86,7 +86,7 @@ export default function ProjectDetailContent({ project }: Props) {
             />
 
             <motion.p
-              className='font-ingeniero text-[11px] tracking-[0.3em] uppercase mt-8'
+              className='font-ingeniero text-xs tracking-[0.3em] uppercase mt-8'
               style={{ color: '#8C7732' }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -164,7 +164,7 @@ export default function ProjectDetailContent({ project }: Props) {
       >
         <div className='max-w-3xl mx-auto'>
           <motion.p
-            className='font-artesano italic text-2xl md:text-3xl leading-[1.3]'
+            className='font-artesano italic text-2xl md:text-3xl leading-[1.3] text-center'
             style={{ color: '#002A3A' }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -227,13 +227,13 @@ export default function ProjectDetailContent({ project }: Props) {
                     />
                   </div>
                   <p
-                    className='font-artesano text-base mt-2'
+                    className='font-artesano text-lg mt-2'
                     style={{ color: '#002A3A' }}
                   >
                     {mat.name}
                   </p>
                   <p
-                    className='font-ingeniero text-[10px] tracking-[0.2em] uppercase'
+                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
                     style={{ color: '#8C7732' }}
                   >
                     {tMaterialCategories(mat.category)}
@@ -366,7 +366,7 @@ function ActSection({ act, number, label, worldLabel, reverse }: ActSectionProps
         >
           <motion.div className='col-span-12 md:col-span-3' variants={fadeInUp}>
             <p
-              className='font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-3'
+              className='font-ingeniero text-[11px] tracking-[0.3em] uppercase mb-3'
               style={{ color: style.accent }}
             >
               {worldLabel}
@@ -393,7 +393,7 @@ function ActSection({ act, number, label, worldLabel, reverse }: ActSectionProps
               {act.title}
             </h2>
             <p
-              className='font-body text-base md:text-lg leading-relaxed max-w-2xl'
+              className='font-body text-lg md:text-xl leading-relaxed max-w-2xl'
               style={{ color: style.text, opacity: 0.8 }}
             >
               {act.body}

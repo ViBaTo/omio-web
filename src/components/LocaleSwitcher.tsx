@@ -25,7 +25,7 @@ export default function LocaleSwitcher({ textColor = '#002A3A' }: LocaleSwitcher
 
   return (
     <div
-      className="flex items-center gap-1 font-ingeniero text-[11px] tracking-[0.2em]"
+      className="flex items-center gap-1 font-ingeniero text-[13px] tracking-[0.2em]"
       role="group"
       aria-label={t('label')}
     >

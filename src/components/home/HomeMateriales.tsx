@@ -13,7 +13,7 @@ interface FeaturedItem {
 const FEATURED_IMAGES: Record<string, string> = {
   'laton-envejecido': '/images/materials/laton-envejecido.jpg',
   'acero-negro': '/images/materials/acero-negro.jpg',
-  'nogal-americano': '/images/materials/nogal-americano.jpg',
+  'madera-recuperada': '/images/materials/madera-recuperada.jpg',
   'marmol-calacatta': '/images/materials/marmol-calacatta.jpg'
 }
 
@@ -45,7 +45,7 @@ export default function HomeMateriales() {
             style={{ backgroundColor: '#8C7732', opacity: 0.4 }}
           />
           <span
-            className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
+            className='font-ingeniero text-xs tracking-[0.2em] uppercase'
             style={{ color: '#8C7732' }}
           >
             {t('label')}
@@ -64,7 +64,7 @@ export default function HomeMateriales() {
         </motion.h2>
 
         <motion.p
-          className='font-body text-base md:text-lg leading-relaxed mb-16 max-w-3xl'
+          className='font-body text-lg md:text-xl leading-relaxed mb-16 max-w-3xl'
           style={{ color: '#002A3A', opacity: 0.7 }}
           variants={fadeInUp}
           initial='hidden'
@@ -93,7 +93,7 @@ export default function HomeMateriales() {
                     />
                   </div>
                   <p
-                    className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mt-3'
+                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mt-3'
                     style={{ color: '#8C7732' }}
                   >
                     {item.label}
@@ -113,7 +113,7 @@ export default function HomeMateriales() {
         >
           <Link
             href='/materiales'
-            className='inline-flex items-center gap-3 font-ingeniero text-[11px] tracking-[0.2em] uppercase group'
+            className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.2em] uppercase group'
             style={{ color: '#8C7732' }}
           >
             <span>{t('cta')}</span>

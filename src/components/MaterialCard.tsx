@@ -65,19 +65,19 @@ export default function MaterialCard({ material }: MaterialCardProps) {
 
         <div className='mt-4'>
           <p
-            className='font-ingeniero text-[10px] tracking-[0.2em] uppercase'
+            className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
             style={{ color: '#8C7732' }}
           >
             {tCategories(material.category)}
           </p>
           <h3
-            className='font-artesano text-xl mt-1'
+            className='font-artesano text-2xl mt-1'
             style={{ color: '#002A3A' }}
           >
             {material.name}
           </h3>
           <p
-            className='font-body text-sm mt-2 line-clamp-2'
+            className='font-body text-base mt-2 line-clamp-2'
             style={{ color: '#002A3A', opacity: 0.7 }}
           >
             {material.description}
