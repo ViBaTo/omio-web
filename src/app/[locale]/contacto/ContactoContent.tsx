@@ -45,7 +45,7 @@ export default function ContactoContent() {
         style={{ backgroundColor: '#F3ECEB' }}
       >
         <div className='max-w-7xl mx-auto'>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24'>
             <motion.div
               variants={staggerContainer}
               initial='hidden'
@@ -75,7 +75,7 @@ export default function ContactoContent() {
                 <form onSubmit={handleSubmit} className='space-y-6'>
                   <motion.div variants={fadeInUp}>
                     <label
-                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase block mb-2'
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase block mb-2'
                       style={{ color: '#8C7732' }}
                     >
                       {tPage('formNameLabel')}
@@ -87,14 +87,14 @@ export default function ContactoContent() {
                       onChange={(e) =>
                         setFormState({ ...formState, name: e.target.value })
                       }
-                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3 font-body text-base outline-none transition-colors focus:border-[#8C7732]'
+                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3.5 font-body text-base outline-none transition-colors focus:border-[#8C7732]'
                       style={{ color: '#002A3A' }}
                     />
                   </motion.div>
 
                   <motion.div variants={fadeInUp}>
                     <label
-                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase block mb-2'
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase block mb-2'
                       style={{ color: '#8C7732' }}
                     >
                       {tPage('formEmailLabel')}
@@ -106,14 +106,14 @@ export default function ContactoContent() {
                       onChange={(e) =>
                         setFormState({ ...formState, email: e.target.value })
                       }
-                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3 font-body text-base outline-none transition-colors focus:border-[#8C7732]'
+                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3.5 font-body text-base outline-none transition-colors focus:border-[#8C7732]'
                       style={{ color: '#002A3A' }}
                     />
                   </motion.div>
 
                   <motion.div variants={fadeInUp}>
                     <label
-                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase block mb-2'
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase block mb-2'
                       style={{ color: '#8C7732' }}
                     >
                       {tPage('formCompanyLabel')}
@@ -124,41 +124,50 @@ export default function ContactoContent() {
                       onChange={(e) =>
                         setFormState({ ...formState, company: e.target.value })
                       }
-                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3 font-body text-base outline-none transition-colors focus:border-[#8C7732]'
+                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3.5 font-body text-base outline-none transition-colors focus:border-[#8C7732]'
                       style={{ color: '#002A3A' }}
                     />
                   </motion.div>
 
                   <motion.div variants={fadeInUp}>
                     <label
-                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase block mb-2'
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase block mb-2'
                       style={{ color: '#8C7732' }}
                     >
                       {tPage('formProjectTypeLabel')}
                     </label>
-                    <select
-                      value={formState.projectType}
-                      onChange={(e) =>
-                        setFormState({
-                          ...formState,
-                          projectType: e.target.value
-                        })
-                      }
-                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3 font-body text-base outline-none transition-colors focus:border-[#8C7732] appearance-none'
-                      style={{ color: '#002A3A' }}
-                    >
-                      <option value=''>{tPage('formSelectPlaceholder')}</option>
-                      <option value='hospitality'>{tProjectTypes('hospitality')}</option>
-                      <option value='residencial'>{tProjectTypes('residencial')}</option>
-                      <option value='gastronomia'>{tProjectTypes('gastronomia')}</option>
-                      <option value='contract'>{tProjectTypes('contract')}</option>
-                      <option value='otro'>{tProjectTypes('otro')}</option>
-                    </select>
+                    <div className='relative'>
+                      <select
+                        value={formState.projectType}
+                        onChange={(e) =>
+                          setFormState({
+                            ...formState,
+                            projectType: e.target.value
+                          })
+                        }
+                        className='w-full bg-transparent border-b border-[#8C7732]/20 py-3.5 pr-8 font-body text-base outline-none transition-colors focus:border-[#8C7732] appearance-none'
+                        style={{ color: '#002A3A' }}
+                      >
+                        <option value=''>{tPage('formSelectPlaceholder')}</option>
+                        <option value='hospitality'>{tProjectTypes('hospitality')}</option>
+                        <option value='residencial'>{tProjectTypes('residencial')}</option>
+                        <option value='gastronomia'>{tProjectTypes('gastronomia')}</option>
+                        <option value='contract'>{tProjectTypes('contract')}</option>
+                        <option value='otro'>{tProjectTypes('otro')}</option>
+                      </select>
+                      <span
+                        className='pointer-events-none absolute right-1 top-1/2 -translate-y-1/2 font-ingeniero text-xs'
+                        style={{ color: '#8C7732' }}
+                        aria-hidden='true'
+                      >
+                        ▼
+                      </span>
+                    </div>
                   </motion.div>
 
                   <motion.div variants={fadeInUp}>
                     <label
-                      className='font-ingeniero text-[10px] tracking-[0.2em] uppercase block mb-2'
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase block mb-2'
                       style={{ color: '#8C7732' }}
                     >
                       {tPage('formMessageLabel')}
@@ -170,7 +179,7 @@ export default function ContactoContent() {
                       onChange={(e) =>
                         setFormState({ ...formState, message: e.target.value })
                       }
-                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3 font-body text-base outline-none transition-colors focus:border-[#8C7732] resize-none'
+                      className='w-full bg-transparent border-b border-[#8C7732]/20 py-3.5 font-body text-base outline-none transition-colors focus:border-[#8C7732] resize-none'
                       style={{ color: '#002A3A' }}
                     />
                   </motion.div>
@@ -206,7 +215,7 @@ export default function ContactoContent() {
               <motion.div className='mt-12 space-y-8' variants={fadeInUp}>
                 <div>
                   <h3
-                    className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mb-2'
+                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-2'
                     style={{ color: '#8C7732' }}
                   >
                     {tPage('emailLabel')}
@@ -222,7 +231,7 @@ export default function ContactoContent() {
 
                 <div>
                   <h3
-                    className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mb-2'
+                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-2'
                     style={{ color: '#8C7732' }}
                   >
                     {tPage('phoneLabel')}
@@ -238,7 +247,7 @@ export default function ContactoContent() {
 
                 <div>
                   <h3
-                    className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mb-2'
+                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-2'
                     style={{ color: '#8C7732' }}
                   >
                     {tPage('locationLabel')}
@@ -253,7 +262,7 @@ export default function ContactoContent() {
 
                 <div>
                   <h3
-                    className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mb-4'
+                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4'
                     style={{ color: '#8C7732' }}
                   >
                     {tPage('socialLabel')}
@@ -261,7 +270,7 @@ export default function ContactoContent() {
                   <div className='flex gap-8'>
                     <a
                       href='#'
-                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase transition-opacity hover:opacity-100'
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
                       style={{ color: '#002A3A', opacity: 0.5 }}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -270,7 +279,7 @@ export default function ContactoContent() {
                     </a>
                     <a
                       href='#'
-                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase transition-opacity hover:opacity-100'
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
                       style={{ color: '#002A3A', opacity: 0.5 }}
                       target='_blank'
                       rel='noopener noreferrer'
