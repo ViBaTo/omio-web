@@ -16,7 +16,11 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      touchMultiplier: 2,
+      // En táctil dejamos el scroll nativo del navegador (sin smoothing) para
+      // evitar el "overshoot" del momentum duplicado. touchMultiplier 1 = 1:1.
+      smoothWheel: true,
+      syncTouch: false,
+      touchMultiplier: 1,
       infinite: false,
     });
 

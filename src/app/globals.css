@@ -83,8 +83,8 @@ html {
   scrollbar-width: none;
 }
 
-/* Custom cursor — desktop only */
-@media (pointer: fine) {
+/* Custom cursor — solo punteros finos CON hover real (evita híbridos/táctiles) */
+@media (pointer: fine) and (hover: hover) {
   * {
     cursor: none !important;
   }
