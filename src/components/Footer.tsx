@@ -54,7 +54,7 @@ export default function Footer() {
         </motion.address>
 
         <p
-          className='font-ingeniero text-[10px] tracking-[0.15em] mt-12'
+          className='font-ingeniero text-[11px] tracking-[0.15em] mt-12'
           style={{ color: '#F3ECEB', opacity: 0.25 }}
         >
           {tFooter('copyright', { year })}
