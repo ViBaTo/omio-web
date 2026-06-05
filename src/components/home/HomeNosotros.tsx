@@ -14,11 +14,11 @@ export default function HomeNosotros() {
 
   return (
     <section
-      className='relative py-32 md:py-48 px-6 md:px-12 lg:px-24'
+      className='relative py-20 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24'
       style={{ backgroundColor: '#F3ECEB' }}
     >
       <div className='max-w-7xl mx-auto'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center'>
           <motion.div
             variants={staggerContainer}
             initial='hidden'
@@ -65,7 +65,7 @@ export default function HomeNosotros() {
             <motion.div className='mt-10' variants={fadeInUp}>
               <Link
                 href='/nosotros'
-                className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.2em] uppercase group'
+                className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.2em] uppercase group min-h-11'
                 style={{ color: '#8C7732' }}
               >
                 <span>{tCommon('discoverMore')}</span>

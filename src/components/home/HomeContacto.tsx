@@ -15,7 +15,7 @@ export default function HomeContacto() {
 
   return (
     <section
-      className='relative min-h-[70vh] flex items-center py-32 md:py-48 px-6 md:px-12 lg:px-24'
+      className='relative min-h-[60vh] md:min-h-[70vh] flex items-center py-20 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24'
       style={{ backgroundColor: '#F3ECEB' }}
     >
       <div className='max-w-[700px] mx-auto text-center'>
@@ -71,7 +71,7 @@ export default function HomeContacto() {
         >
           <Link
             href='/contacto'
-            className='cta-fill inline-flex items-center justify-center px-16 py-6 font-artesano italic text-2xl md:text-3xl tracking-wide transition-colors duration-500'
+            className='cta-fill inline-flex items-center justify-center px-8 md:px-16 py-4 md:py-6 font-artesano italic text-xl md:text-3xl tracking-wide transition-colors duration-500'
             style={{ color: '#8C7732' }}
             data-cursor='precision'
           >
