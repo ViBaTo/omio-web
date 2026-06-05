@@ -61,6 +61,10 @@ html {
   scroll-behavior: auto; /* Lenis handles smooth scroll */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Contiene desbordes horizontales de las animaciones de entrada (x:±N) sin
+     crear un contenedor de scroll: 'clip' no rompe position:sticky ni el
+     scroll-driven de Framer Motion (a diferencia de overflow:hidden). */
+  overflow-x: clip;
 }
 
 body {
