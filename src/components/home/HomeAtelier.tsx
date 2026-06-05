@@ -20,7 +20,7 @@ export default function HomeAtelier() {
 
   return (
     <section
-      className='relative py-32 md:py-48 px-6 md:px-12 lg:px-24'
+      className='relative py-20 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24'
       style={{ backgroundColor: '#F3ECEB' }}
     >
       <div className='max-w-7xl mx-auto'>

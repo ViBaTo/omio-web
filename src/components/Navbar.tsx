@@ -94,7 +94,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden relative z-10 w-8 h-8 flex flex-col items-center justify-center gap-1.5"
+          className="md:hidden relative z-10 -mr-2 w-11 h-11 flex flex-col items-center justify-center gap-1.5"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? tCommon('menuClose') : tCommon('menuOpen')}
         >

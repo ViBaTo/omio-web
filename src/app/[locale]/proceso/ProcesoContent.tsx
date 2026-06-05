@@ -71,7 +71,7 @@ export default function ProcesoContent() {
               <div className='absolute inset-0 texture-ingeniero pointer-events-none' />
             )}
             <div className='max-w-7xl mx-auto relative z-10'>
-              <div className='grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start'>
+              <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start'>
                 <div className='lg:col-span-4'>
                   <motion.span
                     className='font-ingeniero text-[8rem] md:text-[10rem] font-bold leading-none block'
@@ -180,7 +180,7 @@ export default function ProcesoContent() {
           >
             <Link
               href='/contacto'
-              className='cta-fill inline-flex items-center justify-center px-16 py-6 font-artesano italic text-2xl tracking-wide transition-colors duration-500'
+              className='cta-fill inline-flex items-center justify-center px-8 md:px-16 py-4 md:py-6 font-artesano italic text-xl md:text-2xl tracking-wide transition-colors duration-500'
               style={{ color: '#002A3A' }}
               data-cursor='precision'
             >

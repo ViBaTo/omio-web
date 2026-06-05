@@ -79,7 +79,7 @@ export default function SoundToggle() {
 
   return (
     <motion.button
-      className="fixed bottom-6 right-6 z-50 w-10 h-10 flex items-center justify-center"
+      className="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-50 w-11 h-11 flex items-center justify-center"
       onClick={toggle}
       aria-label={isPlaying ? 'Silenciar sonido' : 'Activar sonido'}
       initial={{ opacity: 0 }}

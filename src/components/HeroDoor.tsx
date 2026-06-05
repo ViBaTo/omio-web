@@ -70,7 +70,7 @@ export default function HeroDoor() {
         transition={{ delay: 1.6 }}
       >
         <span
-          className='font-ingeniero text-[10px] tracking-[0.3em] uppercase'
+          className='font-ingeniero text-[11px] tracking-[0.3em] uppercase'
           style={{ color: '#F3ECEB' }}
         >
           Scroll to enter
@@ -93,13 +93,13 @@ export default function HeroDoor() {
         transition={{ delay: 1.6 }}
       >
         <p
-          className='font-ingeniero text-[10px] tracking-[0.2em]'
+          className='font-ingeniero text-[11px] tracking-[0.2em]'
           style={{ color: '#F3ECEB' }}
         >
           Valencia, España
         </p>
         <p
-          className='font-ingeniero text-[10px] tracking-[0.2em] mt-1'
+          className='font-ingeniero text-[11px] tracking-[0.2em] mt-1'
           style={{ color: '#8C7732' }}
         >
           <LiveClock />

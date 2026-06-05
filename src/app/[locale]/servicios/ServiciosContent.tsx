@@ -54,12 +54,12 @@ export default function ServiciosContent() {
         return (
           <section
             key={service.slug}
-            className='py-24 md:py-32 px-6 md:px-12 lg:px-24'
+            className='py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-24'
             style={{ backgroundColor: styles.bg }}
           >
             <div className='max-w-7xl mx-auto'>
               <div
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-start ${isEven ? '' : 'lg:direction-rtl'}`}
+                className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start'
               >
                 <motion.div
                   className={isEven ? '' : 'lg:order-2'}

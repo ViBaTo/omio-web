@@ -33,7 +33,7 @@ export default function PageHero({
 
   return (
     <section
-      className='relative min-h-[60vh] flex items-end pb-16 md:pb-24 pt-32 md:pt-40 px-6 md:px-12 lg:px-24'
+      className='relative min-h-[50vh] md:min-h-[60vh] flex items-end pb-12 md:pb-24 pt-28 md:pt-40 px-6 md:px-12 lg:px-24'
       style={{ backgroundColor: colors.bg }}
     >
       <div className='max-w-7xl mx-auto w-full'>

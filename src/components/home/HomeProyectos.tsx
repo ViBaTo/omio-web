@@ -16,7 +16,7 @@ export default function HomeProyectos() {
 
   return (
     <section
-      className='relative py-32 md:py-48 px-6 md:px-12 lg:px-24'
+      className='relative py-20 md:py-32 lg:py-48 px-6 md:px-12 lg:px-24'
       style={{ backgroundColor: '#002A3A' }}
     >
       <div className='max-w-7xl mx-auto'>
@@ -65,7 +65,7 @@ export default function HomeProyectos() {
           >
             <Link
               href='/proyectos'
-              className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.2em] uppercase group whitespace-nowrap'
+              className='inline-flex items-center gap-3 font-ingeniero text-xs tracking-[0.2em] uppercase group whitespace-nowrap min-h-11'
               style={{ color: '#8C7732' }}
             >
               <span>{t('viewAll')}</span>

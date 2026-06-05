@@ -52,7 +52,7 @@ export default function MaterialDetailContent({ material }: Props) {
         style={{ backgroundColor: '#F3ECEB' }}
       >
         <div className='max-w-7xl mx-auto'>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-16'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16'>
             <motion.div
               className='relative overflow-hidden aspect-[4/5]'
               initial={{ opacity: 0, x: -40 }}
@@ -76,7 +76,7 @@ export default function MaterialDetailContent({ material }: Props) {
               animate='visible'
             >
               <motion.span
-                className='font-ingeniero text-[10px] tracking-[0.2em] uppercase'
+                className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
                 style={{ color: '#8C7732' }}
                 variants={fadeInUp}
               >
@@ -181,7 +181,7 @@ export default function MaterialDetailContent({ material }: Props) {
                       />
                       <div className='absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent'>
                         <p
-                          className='font-ingeniero text-[10px] tracking-[0.2em] uppercase'
+                          className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
                           style={{ color: '#8C7732' }}
                         >
                           {tProjectCategories(project.category)}
