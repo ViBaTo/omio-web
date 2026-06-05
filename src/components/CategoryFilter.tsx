@@ -42,7 +42,7 @@ export default function CategoryFilter({
         <motion.button
           key={cat}
           onClick={() => onSelect(cat)}
-          className='font-ingeniero text-[11px] tracking-[0.2em] uppercase px-5 py-2.5 border transition-all duration-300'
+          className='font-ingeniero text-[11px] tracking-[0.2em] uppercase px-5 py-3 min-h-11 inline-flex items-center border transition-all duration-300'
           style={{
             borderColor: active === cat ? accentColor : `${textColor}20`,
             backgroundColor: active === cat ? accentColor : 'transparent',
