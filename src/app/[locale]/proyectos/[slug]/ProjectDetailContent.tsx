@@ -61,7 +61,7 @@ export default function ProjectDetailContent({ project }: Props) {
     <main id='main-content'>
       {/* ─────────── ACT 0: HERO ─────────── */}
       <section
-        className='relative min-h-[80vh] flex items-end'
+        className='relative min-h-[70vh] md:min-h-[80vh] flex items-end'
         style={{ backgroundColor: '#002A3A' }}
       >
         <div className='absolute inset-0'>
@@ -136,7 +136,7 @@ export default function ProjectDetailContent({ project }: Props) {
           className='py-10 px-6 md:px-12 lg:px-24'
           style={{ backgroundColor: '#001F2C' }}
         >
-          <div className='max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-12 md:gap-20'>
+          <div className='max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-20'>
             {project.stats.map((stat) => (
               <div key={stat.label} className='text-center'>
                 <p
@@ -146,7 +146,7 @@ export default function ProjectDetailContent({ project }: Props) {
                   {stat.value}
                 </p>
                 <p
-                  className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mt-1'
+                  className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mt-1'
                   style={{ color: '#F3ECEB', opacity: 0.4 }}
                 >
                   {stat.label}
@@ -250,7 +250,7 @@ export default function ProjectDetailContent({ project }: Props) {
         className='py-16 px-6 md:px-12 lg:px-24'
         style={{ backgroundColor: '#002A3A' }}
       >
-        <div className='max-w-7xl mx-auto flex items-center justify-between'>
+        <div className='max-w-7xl mx-auto flex items-center justify-between gap-4'>
           {prev ? (
             <Link
               href={`/proyectos/${prev.slug}`}
@@ -264,13 +264,13 @@ export default function ProjectDetailContent({ project }: Props) {
               </span>
               <div>
                 <p
-                  className='font-ingeniero text-[10px] tracking-[0.2em] uppercase'
+                  className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
                   style={{ color: '#F3ECEB', opacity: 0.4 }}
                 >
                   {tPage('previous')}
                 </p>
                 <p
-                  className='font-artesano italic text-lg md:text-xl'
+                  className='font-artesano italic text-base md:text-xl line-clamp-1 max-w-[38vw] md:max-w-none'
                   style={{ color: '#F3ECEB' }}
                 >
                   {prev.title}
@@ -296,13 +296,13 @@ export default function ProjectDetailContent({ project }: Props) {
             >
               <div>
                 <p
-                  className='font-ingeniero text-[10px] tracking-[0.2em] uppercase'
+                  className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'
                   style={{ color: '#F3ECEB', opacity: 0.4 }}
                 >
                   {tPage('next')}
                 </p>
                 <p
-                  className='font-artesano italic text-lg md:text-xl'
+                  className='font-artesano italic text-base md:text-xl line-clamp-1 max-w-[38vw] md:max-w-none'
                   style={{ color: '#F3ECEB' }}
                 >
                   {next.title}
@@ -448,7 +448,7 @@ function ActImageGrid({
         />
         {images[0].caption && (
           <figcaption
-            className='font-ingeniero text-[10px] tracking-[0.2em] uppercase mt-3'
+            className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mt-3'
             style={{ color: accent }}
           >
             {images[0].caption}
