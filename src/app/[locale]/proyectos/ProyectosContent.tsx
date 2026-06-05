@@ -113,7 +113,7 @@ function ProjectListCard({
 
             <div className='absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/70 to-transparent'>
               <p
-                className='font-ingeniero text-[10px] tracking-[0.3em] uppercase mb-2'
+                className='font-ingeniero text-[11px] tracking-[0.3em] uppercase mb-2'
                 style={{ color: '#8C7732' }}
               >
                 {worldLabel} · {project.location} · {project.year}
