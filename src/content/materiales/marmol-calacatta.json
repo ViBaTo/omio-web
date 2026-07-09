@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Mármol Calacatta",
+    "en": "Calacatta Marble"
+  },
+  "category": "Piedras",
+  "description": {
+    "es": "El mármol más exclusivo del mundo, con vetas doradas sobre fondo blanco.",
+    "en": "The world's most exclusive marble, with golden veins over a white background."
+  },
+  "longDescription": {
+    "es": "El mármol Calacatta, extraído exclusivamente de las canteras de Carrara, es sinónimo de lujo absoluto. Sus vetas doradas y grises sobre un fondo blanco puro lo hacen inconfundible. En OMIO lo utilizamos con máximo respeto, seleccionando cada plancha personalmente en cantera para garantizar la continuidad del veteado.",
+    "en": "Calacatta marble, extracted exclusively from the Carrara quarries, is a synonym of absolute luxury. Its golden and gray veins over a pure white background make it unmistakable. At OMIO we use it with the utmost respect, personally selecting every slab in the quarry to guarantee continuity of the veining."
+  },
+  "image": "/images/materials/marmol-calacatta.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Carrara, Italia",
+        "en": "Carrara, Italy"
+      }
+    },
+    {
+      "label": {
+        "es": "Tipo",
+        "en": "Type"
+      },
+      "value": {
+        "es": "Mármol metamórfico",
+        "en": "Metamorphic marble"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Pulido, apomazado, bruto",
+        "en": "Polished, honed, raw"
+      }
+    },
+    {
+      "label": {
+        "es": "Selección",
+        "en": "Selection"
+      },
+      "value": {
+        "es": "En cantera, por plancha",
+        "en": "In quarry, per slab"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Encimeras",
+      "en": "Countertops"
+    },
+    {
+      "es": "Revestimientos",
+      "en": "Claddings"
+    },
+    {
+      "es": "Mesas",
+      "en": "Tables"
+    },
+    {
+      "es": "Baños de lujo",
+      "en": "Luxury bathrooms"
+    }
+  ],
+  "projects": [],
+  "featured": true
+}

@@ -49,5 +49,7 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
+  // Excluimos `keystatic` (panel de administración) además de api/_next, para
+  // que next-intl no le añada prefijo de idioma ni lo redirija.
+  matcher: ['/((?!api|keystatic|_next|_vercel|.*\\..*).*)'],
 };

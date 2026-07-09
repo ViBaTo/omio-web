@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Cristal Templado",
+    "en": "Tempered Glass"
+  },
+  "category": "Acabados",
+  "description": {
+    "es": "Cristal templado de alta transparencia, ligero y resistente a impactos.",
+    "en": "High-transparency tempered glass, light and impact-resistant."
+  },
+  "longDescription": {
+    "es": "El cristal templado que utilizamos se fabrica en hornos especializados que multiplican por cinco la resistencia mecánica del vidrio convencional. Su canto extra-clear, libre del característico tono verdoso, permite trabajar con paneles de gran formato sin perder transparencia. Lo combinamos con metales y maderas para crear piezas en las que la luz es un material más del proyecto.",
+    "en": "The tempered glass we use is produced in specialized kilns that multiply the mechanical strength of conventional glass by five. Its extra-clear edge, free of the typical greenish tint, allows us to work with large-format panels without losing transparency. We combine it with metals and woods to create pieces where light becomes another material of the project."
+  },
+  "image": "/images/materials/16.png",
+  "properties": [
+    {
+      "label": {
+        "es": "Tipo",
+        "en": "Type"
+      },
+      "value": {
+        "es": "Templado extra-clear",
+        "en": "Extra-clear tempered"
+      }
+    },
+    {
+      "label": {
+        "es": "Resistencia",
+        "en": "Resistance"
+      },
+      "value": {
+        "es": "5x vidrio convencional",
+        "en": "5x conventional glass"
+      }
+    },
+    {
+      "label": {
+        "es": "Espesores",
+        "en": "Thicknesses"
+      },
+      "value": {
+        "es": "6 - 19 mm",
+        "en": "6 - 19 mm"
+      }
+    },
+    {
+      "label": {
+        "es": "Reciclabilidad",
+        "en": "Recyclability"
+      },
+      "value": {
+        "es": "100%",
+        "en": "100%"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Cerramientos",
+      "en": "Glazed enclosures"
+    },
+    {
+      "es": "Mesas y sobres",
+      "en": "Tabletops"
+    },
+    {
+      "es": "Separadores",
+      "en": "Dividers"
+    },
+    {
+      "es": "Vitrinas",
+      "en": "Display cases"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

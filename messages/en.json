@@ -122,12 +122,30 @@
     "teamTitle": "Our Team",
     "teamIntro": "More than 65 professionals combining craft tradition, engineering precision, and industrial capacity.",
     "teamRoles": [
-      { "name": "Creative Direction", "count": "3 people" },
-      { "name": "Engineering and Technical Design", "count": "8 people" },
-      { "name": "Master Craftsmen", "count": "11 people" },
-      { "name": "Production and CNC", "count": "12 people" },
-      { "name": "Logistics and Installation", "count": "12 people" },
-      { "name": "Project Management", "count": "5 people" }
+      {
+        "name": "Creative Direction",
+        "count": "3 people"
+      },
+      {
+        "name": "Engineering and Technical Design",
+        "count": "8 people"
+      },
+      {
+        "name": "Master Craftsmen",
+        "count": "11 people"
+      },
+      {
+        "name": "Production and CNC",
+        "count": "12 people"
+      },
+      {
+        "name": "Logistics and Installation",
+        "count": "12 people"
+      },
+      {
+        "name": "Project Management",
+        "count": "5 people"
+      }
     ]
   },
   "capacidades": {
@@ -163,12 +181,36 @@
     "title": "Precision in Complexity",
     "intro": "Our engineering is the bridge between imagination and tangible reality. We give creativity the technical precision required to overcome the practical limits of any idea, no matter how complex.",
     "processSteps": [
-      { "id": "diseno", "label": "DESIGN", "description": "Interpretation and analysis of the original creative concept." },
-      { "id": "ingenieria", "label": "ENGINEERING", "description": "Detailed technical development and resolution of complexities." },
-      { "id": "prototipo", "label": "PROTOTYPE", "description": "Real prototypes manufactured for validation." },
-      { "id": "validacion", "label": "VALIDATION", "description": "Client supervision and approval of the result." },
-      { "id": "produccion", "label": "PRODUCTION", "description": "Scaled manufacturing with full quality control." },
-      { "id": "instalacion", "label": "INSTALLATION", "description": "Assembly and installation at the final destination." }
+      {
+        "id": "diseno",
+        "label": "DESIGN",
+        "description": "Interpretation and analysis of the original creative concept."
+      },
+      {
+        "id": "ingenieria",
+        "label": "ENGINEERING",
+        "description": "Detailed technical development and resolution of complexities."
+      },
+      {
+        "id": "prototipo",
+        "label": "PROTOTYPE",
+        "description": "Real prototypes manufactured for validation."
+      },
+      {
+        "id": "validacion",
+        "label": "VALIDATION",
+        "description": "Client supervision and approval of the result."
+      },
+      {
+        "id": "produccion",
+        "label": "PRODUCTION",
+        "description": "Scaled manufacturing with full quality control."
+      },
+      {
+        "id": "instalacion",
+        "label": "INSTALLATION",
+        "description": "Assembly and installation at the final destination."
+      }
     ],
     "blocks": [
       {
@@ -203,13 +245,34 @@
     },
     "servicios": {
       "slides": [
-        { "id": "artesano", "phrase": "The union of a craftsman, an engineer, and a factory." },
-        { "id": "tranquilidad", "phrase": "We mitigate the technical and logistical risks of every project." },
-        { "id": "escala", "phrase": "From craft sensitivity to industrial power." },
-        { "id": "prototipo", "phrase": "From prototyping to installation, a single hand guides the process." },
-        { "id": "detalle", "phrase": "In the intangible detail lies the value of the high-end." },
-        { "id": "prueba", "phrase": "We anticipate what others consider impossible." },
-        { "id": "promesa", "phrase": "An invaluable partner of the world's most prestigious studios." }
+        {
+          "id": "artesano",
+          "phrase": "The union of a craftsman, an engineer, and a factory."
+        },
+        {
+          "id": "tranquilidad",
+          "phrase": "We mitigate the technical and logistical risks of every project."
+        },
+        {
+          "id": "escala",
+          "phrase": "From craft sensitivity to industrial power."
+        },
+        {
+          "id": "prototipo",
+          "phrase": "From prototyping to installation, a single hand guides the process."
+        },
+        {
+          "id": "detalle",
+          "phrase": "In the intangible detail lies the value of the high-end."
+        },
+        {
+          "id": "prueba",
+          "phrase": "We anticipate what others consider impossible."
+        },
+        {
+          "id": "promesa",
+          "phrase": "An invaluable partner of the world's most prestigious studios."
+        }
       ],
       "ctaExplore": "Explore services"
     },
@@ -223,10 +286,22 @@
       "intro": "We select every material with the same demand we apply to every piece. Noble woods, worked metals, natural stones, and the highest quality textiles.",
       "cta": "View all materials",
       "featured": [
-        { "label": "METAL", "slug": "laton-envejecido" },
-        { "label": "METAL", "slug": "acero-negro" },
-        { "label": "WOOD", "slug": "madera-recuperada" },
-        { "label": "ALABASTER", "slug": "marmol-calacatta" }
+        {
+          "label": "METAL",
+          "slug": "laton-envejecido"
+        },
+        {
+          "label": "METAL",
+          "slug": "acero-negro"
+        },
+        {
+          "label": "WOOD",
+          "slug": "madera-recuperada"
+        },
+        {
+          "label": "ALABASTER",
+          "slug": "marmol-calacatta"
+        }
       ]
     },
     "proyectos": {

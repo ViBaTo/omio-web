@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Cuero Natural",
+    "en": "Natural Leather"
+  },
+  "category": "Textiles",
+  "description": {
+    "es": "Cuero de curtición vegetal, con pátina que mejora con el uso.",
+    "en": "Vegetable-tanned leather with a patina that improves with use."
+  },
+  "longDescription": {
+    "es": "Trabajamos exclusivamente con cuero de curtición vegetal, un proceso tradicional que utiliza extractos de corteza de árbol en lugar de cromo. Este cuero desarrolla una pátina rica con el uso, volviéndose más bello con el tiempo. Cada pieza es única y cuenta la historia de su uso.",
+    "en": "We exclusively work with vegetable-tanned leather, a traditional process that uses tree bark extracts instead of chromium. This leather develops a rich patina with use, becoming more beautiful over time. Every piece is unique and tells the story of its use."
+  },
+  "image": "/images/materials/cuero-natural.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Curtición",
+        "en": "Tanning"
+      },
+      "value": {
+        "es": "Vegetal (sin cromo)",
+        "en": "Vegetable (chromium-free)"
+      }
+    },
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Toscana, Italia",
+        "en": "Tuscany, Italy"
+      }
+    },
+    {
+      "label": {
+        "es": "Espesor",
+        "en": "Thickness"
+      },
+      "value": {
+        "es": "1.2 - 1.4 mm",
+        "en": "1.2 - 1.4 mm"
+      }
+    },
+    {
+      "label": {
+        "es": "Pátina",
+        "en": "Patina"
+      },
+      "value": {
+        "es": "Evoluciona con el uso",
+        "en": "Evolves with use"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Asientos",
+      "en": "Seats"
+    },
+    {
+      "es": "Tiradores",
+      "en": "Handles"
+    },
+    {
+      "es": "Detalles de acento",
+      "en": "Accent details"
+    },
+    {
+      "es": "Escritorios",
+      "en": "Desks"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

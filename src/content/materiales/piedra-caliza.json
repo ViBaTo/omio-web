@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Piedra Caliza",
+    "en": "Limestone"
+  },
+  "category": "Piedras",
+  "description": {
+    "es": "Piedra natural de tacto suave y aspecto sereno, ideal para espacios de calma.",
+    "en": "Natural stone with a soft touch and serene look, ideal for calm spaces."
+  },
+  "longDescription": {
+    "es": "La piedra caliza que utilizamos proviene de canteras seleccionadas del Mediterráneo. Su textura porosa y su gama de tonos neutros —desde el blanco hueso hasta el gris perla— la hacen perfecta para crear ambientes de serenidad. Su tacto suave y cálido contrasta con la frialdad de otros materiales pétreos.",
+    "en": "The limestone we use comes from selected Mediterranean quarries. Its porous texture and its range of neutral tones —from bone white to pearl gray— make it perfect for creating serene atmospheres. Its soft and warm touch contrasts with the coldness of other stone materials."
+  },
+  "image": "/images/materials/piedra-caliza.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Mediterráneo",
+        "en": "Mediterranean"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Apomazado, bush-hammered",
+        "en": "Honed, bush-hammered"
+      }
+    },
+    {
+      "label": {
+        "es": "Tacto",
+        "en": "Touch"
+      },
+      "value": {
+        "es": "Suave y cálido",
+        "en": "Soft and warm"
+      }
+    },
+    {
+      "label": {
+        "es": "Uso",
+        "en": "Use"
+      },
+      "value": {
+        "es": "Interior",
+        "en": "Interior"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Spas",
+      "en": "Spas"
+    },
+    {
+      "es": "Baños",
+      "en": "Bathrooms"
+    },
+    {
+      "es": "Revestimientos interiores",
+      "en": "Interior claddings"
+    },
+    {
+      "es": "Encimeras",
+      "en": "Countertops"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

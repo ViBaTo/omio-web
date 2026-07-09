@@ -1,0 +1,272 @@
+{
+  "title": {
+    "es": "Grand Hotel Centenari",
+    "en": "Grand Hotel Centenari"
+  },
+  "category": "Hospitality",
+  "client": "Marriott Autograph Collection",
+  "creativeDirector": "ERRE Arquitectura",
+  "location": {
+    "es": "Valencia, España",
+    "en": "Valencia, Spain"
+  },
+  "year": 2024,
+  "world": "fabrica",
+  "shortDescription": {
+    "es": "Lobby, restaurante y áreas de hospitality del Marriott Autograph Collection en Valencia: una traducción al Art Decó valenciano a escala industrial.",
+    "en": "Lobby, restaurant and hospitality areas of Marriott Autograph Collection in Valencia: a Valencian Art Deco translation at industrial scale."
+  },
+  "longDescription": {
+    "es": "La intervención en el Grand Hotel Centenari — Marriott Autograph Collection en Valencia representa un ejercicio integral de arquitectura interior bespoke. El proyecto se centró en la transformación del lobby, el restaurante y las áreas de hospitality mediante elementos arquitectónicos a medida inspirados en el patrimonio Art Decó de Valencia y la elegancia de los años 20. El objetivo: una experiencia sensorial donde artesanía, materialidad e identidad arquitectónica coexisten sin fisuras.",
+    "en": "The intervention for Grand Hotel Centenari — Marriott Autograph Collection in Valencia represents a comprehensive exercise in bespoke interior architecture. The project focused on the transformation of the lobby, restaurant and hospitality areas through custom-designed architectural elements inspired by Valencia’s Art Deco heritage and the elegance of the 1920s. The objective: a sensory experience where craftsmanship, materiality and architectural identity coexist seamlessly."
+  },
+  "heroImage": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__hero.jpg",
+  "featured": true,
+  "acts": [
+    {
+      "id": "brief",
+      "world": "artesano",
+      "title": {
+        "es": "El encargo",
+        "en": "The brief"
+      },
+      "body": {
+        "es": "A partir de la dirección creativa de ERRE Arquitectura, el brief pedía un entorno de hospitality sofisticado definido por geometrías curvas, materiales nobles y elementos decorativos a medida. El lenguaje combinaba acabados cálidos en madera, detalles en latón, iluminación escultórica y composiciones geométricas para reforzar la elegancia atemporal de la identidad Autograph Collection. Nuestro papel: traducir la visión conceptual en soluciones técnicas viables preservando la precisión estética de cada componente.",
+        "en": "From ERRE Arquitectura’s creative direction, the brief required a sophisticated hospitality environment defined by curved geometries, noble materials and custom-made decorative elements. The design language combined warm wood finishes, brass details, sculptural lighting and geometric compositions to reinforce the timeless elegance of the Autograph Collection identity. Our role: to translate the conceptual vision into technically feasible solutions while preserving the aesthetic precision of every bespoke component."
+      },
+      "images": [
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__brief-01.png",
+          "alt": {
+            "es": "Concepto Art Decó del estudio",
+            "en": "Studio Art Deco concept"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__brief-02.png",
+          "alt": {
+            "es": "Render del lobby propuesto",
+            "en": "Proposed lobby render"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "world": "ingeniero",
+      "title": {
+        "es": "Ingeniería y desarrollo técnico",
+        "en": "Engineering & technical development"
+      },
+      "body": {
+        "es": "Fase fundamental para resolver la complejidad de los elementos arquitectónicos bespoke: barra a medida, columnas monumentales, estructuras de iluminación suspendidas, expositores de botellas, celosías decorativas y sistemas de paneles integrados. Transformamos las propuestas conceptuales en planos de fabricación detallados, soluciones constructivas y modelos 3D precisos. Estudios técnicos rigurosos y prototipado garantizaron viabilidad estructural, coherencia material y precisión de fabricación, con especial atención a la integración entre iluminación, metalistería, ebanistería y acabados arquitectónicos.",
+        "en": "A fundamental phase for resolving the complexity of the bespoke architectural elements developed throughout the project: custom bar counter, monumental columns, suspended lighting structures, bottle displays, decorative screens and integrated paneling systems. We transformed the conceptual proposals into detailed fabrication drawings, constructive solutions and precise 3D models. Rigorous technical studies and prototyping ensured structural viability, material coherence and manufacturing precision — with special attention to the integration between lighting, metalwork, woodwork and architectural finishes."
+      },
+      "images": [
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-01.png",
+          "alt": {
+            "es": "Modelo 3D de columna monumental",
+            "en": "Monumental column 3D model"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-02.png",
+          "alt": {
+            "es": "Planos del bar counter a medida",
+            "en": "Bespoke bar counter drawings"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-03.png",
+          "alt": {
+            "es": "Estructura de iluminación suspendida",
+            "en": "Suspended lighting structure"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "world": "fabrica",
+      "title": {
+        "es": "Fabricación e instalación",
+        "en": "Manufacturing & installation"
+      },
+      "body": {
+        "es": "Producción meticulosa en taller y montaje on-site coordinado con seis gremios. Cada componente bespoke se integró en la arquitectura del edificio histórico garantizando precisión, funcionalidad y continuidad estética.",
+        "en": "Meticulous workshop production and on-site assembly coordinated with six trades. Every bespoke component was integrated into the historic building’s architecture ensuring precision, functionality and aesthetic continuity."
+      },
+      "images": [
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-01.jpg",
+          "alt": {
+            "es": "Producción de columnas en taller",
+            "en": "Columns manufacturing in workshop"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-02.jpg",
+          "alt": {
+            "es": "Montaje del bar counter",
+            "en": "Bar counter assembly"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-03.jpg",
+          "alt": {
+            "es": "Instalación de iluminación",
+            "en": "Lighting installation"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-04.jpg",
+          "alt": {
+            "es": "Ajuste fino on-site",
+            "en": "On-site fine adjustments"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "world": "artesano",
+      "title": {
+        "es": "El resultado",
+        "en": "The final result"
+      },
+      "body": {
+        "es": "Una experiencia espacial de hospitality donde ingeniería y artesanía se funden. La ejecución entrega una atmósfera de nivel internacional fiel a la visión original mientras eleva la identidad del Grand Hotel Centenari — Marriott Autograph Collection.",
+        "en": "A hospitality spatial experience where engineering and craftsmanship merge. The execution delivers a world-class atmosphere faithful to the original design vision while elevating the identity of Grand Hotel Centenari — Marriott Autograph Collection."
+      },
+      "images": [
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-02.jpg",
+          "alt": {
+            "es": "Lobby finalizado",
+            "en": "Completed lobby"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-03.jpg",
+          "alt": {
+            "es": "Detalle del bar counter",
+            "en": "Bar counter detail"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-04.jpg",
+          "alt": {
+            "es": "Restaurante en operación",
+            "en": "Restaurant in operation"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-05.jpg",
+          "alt": {
+            "es": "Columnas Art Decó iluminadas",
+            "en": "Illuminated Art Deco columns"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-06.jpg",
+          "alt": {
+            "es": "Área social",
+            "en": "Social area"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-07.jpg",
+          "alt": {
+            "es": "Vista nocturna",
+            "en": "Night view"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "materials": [],
+  "stats": [
+    {
+      "label": {
+        "es": "Áreas intervenidas",
+        "en": "Areas intervened"
+      },
+      "value": "3"
+    },
+    {
+      "label": {
+        "es": "Estudio creativo",
+        "en": "Creative studio"
+      },
+      "value": "ERRE Arq."
+    },
+    {
+      "label": {
+        "es": "Colección",
+        "en": "Collection"
+      },
+      "value": "Autograph"
+    }
+  ]
+}

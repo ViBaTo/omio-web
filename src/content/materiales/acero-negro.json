@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Acero al Carbono Negro",
+    "en": "Black Carbon Steel"
+  },
+  "category": "Metales",
+  "description": {
+    "es": "Acero con acabado negro mate para estructuras de carácter industrial refinado.",
+    "en": "Steel with a matte black finish for refined industrial structures."
+  },
+  "longDescription": {
+    "es": "El acero al carbono con acabado en negro mate aporta presencia y definición estructural sin competir con los materiales nobles que lo rodean. Lo utilizamos como esqueleto visible en mesas, estanterías y estructuras donde queremos celebrar la honestidad constructiva.",
+    "en": "Carbon steel with a matte black finish adds presence and structural definition without competing with the noble materials around it. We use it as visible skeleton in tables, shelves, and structures where we want to celebrate constructive honesty."
+  },
+  "image": "/images/materials/acero-negro.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Pintura epoxi negro mate",
+        "en": "Matte black epoxy paint"
+      }
+    },
+    {
+      "label": {
+        "es": "Espesor",
+        "en": "Thickness"
+      },
+      "value": {
+        "es": "Variable según proyecto",
+        "en": "Variable per project"
+      }
+    },
+    {
+      "label": {
+        "es": "Protección",
+        "en": "Protection"
+      },
+      "value": {
+        "es": "Anti-corrosión",
+        "en": "Anti-corrosion"
+      }
+    },
+    {
+      "label": {
+        "es": "Tacto",
+        "en": "Touch"
+      },
+      "value": {
+        "es": "Suave, aterciopelado",
+        "en": "Soft, velvety"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Estructuras de mesa",
+      "en": "Table structures"
+    },
+    {
+      "es": "Estanterías",
+      "en": "Shelving"
+    },
+    {
+      "es": "Marcos",
+      "en": "Frames"
+    },
+    {
+      "es": "Bases",
+      "en": "Bases"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

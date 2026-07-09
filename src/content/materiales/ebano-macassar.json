@@ -1,0 +1,74 @@
+{
+  "name": {
+    "es": "Pino Macizo",
+    "en": "Solid Pine"
+  },
+  "category": "Maderas",
+  "description": {
+    "es": "Madera maciza de pino con nudos vistos y tonos miel, de carácter honesto.",
+    "en": "Solid pine wood with visible knots and honey tones, of honest character."
+  },
+  "longDescription": {
+    "es": "El pino macizo es una madera honesta y abundante, perfecta para piezas estructurales y mobiliario de carácter rústico-contemporáneo. Trabajamos con tablones gruesos provenientes de bosques certificados PEFC del norte de Europa. Sus nudos vistos, su grano abierto y sus tonos miel son parte intrínseca de su belleza, no defectos a ocultar.",
+    "en": "Solid pine is an honest, abundant wood, perfect for structural pieces and rustic-contemporary furniture. We work with thick beams from PEFC-certified forests in northern Europe. Its visible knots, open grain, and honey tones are an intrinsic part of its beauty, not defects to hide."
+  },
+  "image": "/images/materials/14.png",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Norte de Europa",
+        "en": "Northern Europe"
+      }
+    },
+    {
+      "label": {
+        "es": "Certificación",
+        "en": "Certification"
+      },
+      "value": {
+        "es": "PEFC",
+        "en": "PEFC"
+      }
+    },
+    {
+      "label": {
+        "es": "Densidad",
+        "en": "Density"
+      },
+      "value": {
+        "es": "510 kg/m³",
+        "en": "510 kg/m³"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Aceite natural",
+        "en": "Natural oil"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Vigas estructurales",
+      "en": "Structural beams"
+    },
+    {
+      "es": "Mobiliario macizo",
+      "en": "Solid furniture"
+    },
+    {
+      "es": "Suelos rústicos",
+      "en": "Rustic flooring"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

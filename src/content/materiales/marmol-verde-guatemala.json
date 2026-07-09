@@ -1,0 +1,74 @@
+{
+  "name": {
+    "es": "Mármol Verde Guatemala",
+    "en": "Verde Guatemala Marble"
+  },
+  "category": "Piedras",
+  "description": {
+    "es": "Mármol de tonos verdes profundos con vetas blancas, de gran dramatismo visual.",
+    "en": "Marble with deep green tones and white veins, of great visual drama."
+  },
+  "longDescription": {
+    "es": "El Verde Guatemala es un mármol de serpentina que cautiva por su color verde intenso y sus vetas blancas irregulares. Cada plancha es una composición abstracta natural. Lo utilizamos en barras de bar, mostradores y piezas de acento donde se busca un impacto visual potente y sofisticado.",
+    "en": "Verde Guatemala is a serpentine marble that captivates with its intense green color and irregular white veins. Every slab is a natural abstract composition. We use it on bar counters, reception desks, and accent pieces where a powerful and sophisticated visual impact is sought."
+  },
+  "image": "/images/materials/marmol-verde-guatemala.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "India",
+        "en": "India"
+      }
+    },
+    {
+      "label": {
+        "es": "Tipo",
+        "en": "Type"
+      },
+      "value": {
+        "es": "Serpentina",
+        "en": "Serpentine"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Pulido alto brillo",
+        "en": "High-gloss polished"
+      }
+    },
+    {
+      "label": {
+        "es": "Carácter",
+        "en": "Character"
+      },
+      "value": {
+        "es": "Altamente decorativo",
+        "en": "Highly decorative"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Barras de bar",
+      "en": "Bar counters"
+    },
+    {
+      "es": "Mostradores",
+      "en": "Reception desks"
+    },
+    {
+      "es": "Piezas de acento",
+      "en": "Accent pieces"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

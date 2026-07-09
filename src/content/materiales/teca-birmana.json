@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Mimbre Trenzado",
+    "en": "Woven Wicker"
+  },
+  "category": "Textiles",
+  "description": {
+    "es": "Fibra natural trenzada a mano, de tacto cálido y formas escultóricas.",
+    "en": "Natural fiber hand-woven into warm-touch, sculptural shapes."
+  },
+  "longDescription": {
+    "es": "El mimbre trenzado es una fibra vegetal trabajada artesanalmente desde hace siglos en el Mediterráneo. En OMIO colaboramos con maestros cesteros que tejen a mano cada estructura, adaptando el patrón al diseño de la pieza final. Su flexibilidad permite formas curvas imposibles para otros materiales, y su carácter ligero y orgánico aporta calidez a los espacios más sofisticados.",
+    "en": "Woven wicker is a plant fiber that has been handcrafted in the Mediterranean for centuries. At OMIO we collaborate with master basket-weavers who weave every structure by hand, adapting the pattern to the design of the final piece. Its flexibility allows curved shapes impossible for other materials, and its light, organic character brings warmth to the most sophisticated spaces."
+  },
+  "image": "/images/materials/15.png",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Mediterráneo",
+        "en": "Mediterranean"
+      }
+    },
+    {
+      "label": {
+        "es": "Proceso",
+        "en": "Process"
+      },
+      "value": {
+        "es": "Trenzado a mano",
+        "en": "Hand-woven"
+      }
+    },
+    {
+      "label": {
+        "es": "Tratamiento",
+        "en": "Treatment"
+      },
+      "value": {
+        "es": "Aceite natural",
+        "en": "Natural oil"
+      }
+    },
+    {
+      "label": {
+        "es": "Sostenibilidad",
+        "en": "Sustainability"
+      },
+      "value": {
+        "es": "Fibra renovable",
+        "en": "Renewable fiber"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Lámparas escultóricas",
+      "en": "Sculptural lamps"
+    },
+    {
+      "es": "Sillas y butacas",
+      "en": "Chairs and armchairs"
+    },
+    {
+      "es": "Separadores de espacio",
+      "en": "Room dividers"
+    },
+    {
+      "es": "Paneles decorativos",
+      "en": "Decorative panels"
+    }
+  ],
+  "projects": [],
+  "featured": true
+}

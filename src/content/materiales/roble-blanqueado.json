@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Cerámica Artesanal",
+    "en": "Artisan Ceramic"
+  },
+  "category": "Acabados",
+  "description": {
+    "es": "Cerámica modelada y cocida a mano, con texturas vivas y tonos crudos.",
+    "en": "Hand-shaped, hand-fired ceramic with living textures and raw tones."
+  },
+  "longDescription": {
+    "es": "Trabajamos con talleres ceramistas del Mediterráneo que mantienen vivas técnicas centenarias de modelado y cocción a leña. Cada pieza se forma a mano, lo que da lugar a variaciones sutiles de espesor, color y textura imposibles de replicar industrialmente. El resultado es una superficie blanca rota, ligeramente porosa, que envejece con dignidad y aporta calidez táctil a los espacios contemporáneos.",
+    "en": "We work with ceramist workshops in the Mediterranean that keep centuries-old shaping and wood-fired techniques alive. Each piece is hand-formed, leading to subtle variations in thickness, color, and texture that cannot be replicated industrially. The result is a broken-white, slightly porous surface that ages with dignity and brings tactile warmth to contemporary spaces."
+  },
+  "image": "/images/materials/13.png",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Mediterráneo",
+        "en": "Mediterranean"
+      }
+    },
+    {
+      "label": {
+        "es": "Proceso",
+        "en": "Process"
+      },
+      "value": {
+        "es": "Modelado a mano",
+        "en": "Hand-shaped"
+      }
+    },
+    {
+      "label": {
+        "es": "Cocción",
+        "en": "Firing"
+      },
+      "value": {
+        "es": "Horno de leña",
+        "en": "Wood-fired kiln"
+      }
+    },
+    {
+      "label": {
+        "es": "Carácter",
+        "en": "Character"
+      },
+      "value": {
+        "es": "Pieza única",
+        "en": "Unique piece"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Paneles decorativos",
+      "en": "Decorative panels"
+    },
+    {
+      "es": "Revestimientos murales",
+      "en": "Wall surfaces"
+    },
+    {
+      "es": "Lámparas",
+      "en": "Lamps"
+    },
+    {
+      "es": "Vajilla a medida",
+      "en": "Custom tableware"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

@@ -1,0 +1,261 @@
+{
+  "title": {
+    "es": "Mercer Hotel Madrid",
+    "en": "Mercer Hotel Madrid"
+  },
+  "category": "Hospitality",
+  "client": "Mercer Hotel",
+  "creativeDirector": "Andreu Carulla",
+  "location": {
+    "es": "Madrid, España",
+    "en": "Madrid, Spain"
+  },
+  "year": 2024,
+  "world": "ingeniero",
+  "shortDescription": {
+    "es": "Una escultura lumínica monumental y un mostrador de recepción en piedra geométrica para el Mercer de Madrid: arquitectura interior bespoke firmada por Andreu Carulla.",
+    "en": "A monumental lighting sculpture and a geometric stone reception desk for Mercer Madrid: bespoke interior architecture signed by Andreu Carulla."
+  },
+  "longDescription": {
+    "es": "La intervención en el Mercer Hotel de Madrid representa un ejercicio integral de arquitectura interior bespoke. El proyecto se centró en las áreas sociales públicas, donde estructuras contemporáneas se integraron dentro de un contexto arquitectónico histórico. El objetivo: crear una experiencia sensorial sofisticada a través de la fusión sin costuras entre patrimonio y artesanía de alta gama.",
+    "en": "The intervention for the Mercer Hotel in Madrid represents a comprehensive exercise in bespoke interior architecture. The project focused on the public social areas, where contemporary structures were integrated within a historical architectural context. The objective: to create a sophisticated sensory experience through the seamless fusion of heritage and high-end craftsmanship."
+  },
+  "heroImage": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__hero.png",
+  "featured": true,
+  "acts": [
+    {
+      "id": "brief",
+      "world": "artesano",
+      "title": {
+        "es": "El encargo",
+        "en": "The brief"
+      },
+      "body": {
+        "es": "A partir de la visión conceptual de Andreu Carulla, el brief requería materializar una atmósfera minimalista pero impactante. El diseño pedía materiales nobles aplicados en formas geométricas de gran escala. Nuestro papel fue transformar los moodboards y renders iniciales en una vía técnica que asegurase funcionalidad e integridad estructural.",
+        "en": "Based on Andreu Carulla’s conceptual vision, the brief required the materialization of a minimalist yet impactful atmosphere. The design called for noble materials applied in large-scale geometric forms. Our role was to transform these initial moodboards and renders into a technical path that ensured functionality and structural integrity."
+      },
+      "images": [
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__brief-01.png",
+          "alt": {
+            "es": "Concepto minimalista del proyecto",
+            "en": "Minimalist project concept"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__brief-02.jpg",
+          "alt": {
+            "es": "Render de la escultura lumínica",
+            "en": "Lighting sculpture render"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "world": "ingeniero",
+      "title": {
+        "es": "Ingeniería y desarrollo técnico",
+        "en": "Engineering & technical development"
+      },
+      "body": {
+        "es": "Fase crítica para resolver la complejidad de la escultura lumínica monumental y el mostrador geométrico de piedra. Tradujimos los bocetos conceptuales a modelos 3D precisos y planos de fabricación. Realizamos estudios de viabilidad rigurosos para alinear los volúmenes masivos de piedra del mostrador, mientras la estructura interna de la instalación lumínica central se diseñó para garantizar seguridad y ligereza estética a partes iguales.",
+        "en": "This phase was critical for resolving the complexity of the monumental lighting sculpture and the geometric stone front desk. We translated the conceptual sketches into precise 3D models and fabrication drawings. Rigorous viability studies were performed to align the massive stone volumes of the reception desk, while the internal framework of the central light installation was engineered to guarantee both safety and aesthetic lightness."
+      },
+      "images": [
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-01.png",
+          "alt": {
+            "es": "Modelo 3D del mostrador en piedra",
+            "en": "Stone reception desk 3D model"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-02.png",
+          "alt": {
+            "es": "Estructura interna de la escultura lumínica",
+            "en": "Lighting sculpture internal framework"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-03.png",
+          "alt": {
+            "es": "Despiece geométrico de piedra",
+            "en": "Geometric stone exploded view"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "world": "fabrica",
+      "title": {
+        "es": "Fabricación e instalación",
+        "en": "Manufacturing & installation"
+      },
+      "body": {
+        "es": "Fabricación meticulosa de los volúmenes pétreos y montaje on-site de la instalación lumínica central. Cada pieza se integró respetando el patrimonio del edificio mientras entrega una realidad tangible fiel a la visión de diseño original.",
+        "en": "Meticulous manufacturing of the stone volumes and on-site assembly of the central lighting installation. Every piece was integrated while honouring the building’s heritage, delivering a tangible reality faithful to the original design vision."
+      },
+      "images": [
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-01.jpg",
+          "alt": {
+            "es": "Producción de los bloques de piedra",
+            "en": "Stone blocks production"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-02.jpg",
+          "alt": {
+            "es": "Montaje del mostrador",
+            "en": "Desk assembly"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-03.jpg",
+          "alt": {
+            "es": "Instalación de la escultura lumínica",
+            "en": "Lighting sculpture installation"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-04.jpg",
+          "alt": {
+            "es": "Ajustes on-site",
+            "en": "On-site adjustments"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "world": "artesano",
+      "title": {
+        "es": "El resultado",
+        "en": "The final result"
+      },
+      "body": {
+        "es": "Un espacio de hospitality donde ingeniería y estética convergen. La barra a medida y la iluminación arquitectónica se integran con éxito, honrando el patrimonio del edificio mientras entregan una realidad tangible fiel a la visión de diseño original.",
+        "en": "A hospitality space where engineering and aesthetics converge. The bespoke bar counter and the architectural lighting were successfully integrated. The execution honours the building’s heritage while delivering a tangible reality faithful to the original design vision."
+      },
+      "images": [
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-02.jpg",
+          "alt": {
+            "es": "Mostrador de recepción finalizado",
+            "en": "Completed reception desk"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-03.jpg",
+          "alt": {
+            "es": "Vista de la escultura lumínica",
+            "en": "Lighting sculpture view"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-04.jpg",
+          "alt": {
+            "es": "Detalle de la geometría en piedra",
+            "en": "Stone geometry detail"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-05.jpg",
+          "alt": {
+            "es": "Área social",
+            "en": "Social area"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-06.jpg",
+          "alt": {
+            "es": "Seta lumínica acabada",
+            "en": "Finished light-canopy sculpture"
+          },
+          "caption": {
+            "es": "La seta lumínica acabada",
+            "en": "The finished light-canopy sculpture"
+          }
+        }
+      ]
+    }
+  ],
+  "materials": [],
+  "stats": [
+    {
+      "label": {
+        "es": "Piezas singulares",
+        "en": "Signature pieces"
+      },
+      "value": "2"
+    },
+    {
+      "label": {
+        "es": "Diseño",
+        "en": "Design"
+      },
+      "value": "A. Carulla"
+    },
+    {
+      "label": {
+        "es": "Tipología",
+        "en": "Typology"
+      },
+      "value": "Hospitality"
+    }
+  ]
+}

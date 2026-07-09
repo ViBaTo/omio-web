@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Lino Natural",
+    "en": "Natural Linen"
+  },
+  "category": "Textiles",
+  "description": {
+    "es": "Fibra natural de tacto fresco y aspecto orgánico, cultivada sin pesticidas.",
+    "en": "A natural fiber with a fresh touch and organic look, grown without pesticides."
+  },
+  "longDescription": {
+    "es": "El lino es la fibra textil más antigua y sostenible. Trabajamos con lino europeo certificado MASTERS OF LINEN, cultivado sin irrigación ni pesticidas. Su textura ligeramente irregular y su caída natural aportan calidez orgánica a las tapicerías y complementan la madera y la piedra.",
+    "en": "Linen is the oldest and most sustainable textile fiber. We work with European linen certified MASTERS OF LINEN, grown without irrigation or pesticides. Its slightly irregular texture and natural drape bring organic warmth to upholstery and complement wood and stone."
+  },
+  "image": "/images/materials/lino-natural.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Certificación",
+        "en": "Certification"
+      },
+      "value": {
+        "es": "Masters of Linen",
+        "en": "Masters of Linen"
+      }
+    },
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Europa (Francia/Bélgica)",
+        "en": "Europe (France/Belgium)"
+      }
+    },
+    {
+      "label": {
+        "es": "Sostenibilidad",
+        "en": "Sustainability"
+      },
+      "value": {
+        "es": "Sin pesticidas, sin riego",
+        "en": "No pesticides, no irrigation"
+      }
+    },
+    {
+      "label": {
+        "es": "Tacto",
+        "en": "Touch"
+      },
+      "value": {
+        "es": "Fresco, orgánico",
+        "en": "Fresh, organic"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Tapicería",
+      "en": "Upholstery"
+    },
+    {
+      "es": "Cortinas",
+      "en": "Curtains"
+    },
+    {
+      "es": "Cabeceros",
+      "en": "Headboards"
+    },
+    {
+      "es": "Cojines",
+      "en": "Cushions"
+    }
+  ],
+  "projects": [],
+  "featured": true
+}

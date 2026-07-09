@@ -1,0 +1,26 @@
+{
+  "title": {
+    "es": "Construyamos Vínculos",
+    "en": "Let's Build Connections"
+  },
+  "paragraphs": [
+    {
+      "es": "La confianza es personal. En OMIO, buscamos establecer conexiones emocionales con nuestros clientes y sus proyectos, reduciendo cualquier fricción a través de un compromiso relacional genuino.",
+      "en": "Trust is personal. At OMIO, we seek to build emotional connections with our clients and their projects, reducing any friction through a genuine relational commitment."
+    },
+    {
+      "es": "Si buscas un aliado que no solo entienda tu «qué», sino que comparta tu «porqué», estamos listos para escucharte.",
+      "en": "If you're looking for an ally that not only understands your «what», but shares your «why», we're ready to listen."
+    }
+  ],
+  "cta": {
+    "es": "Hablemos",
+    "en": "Let's talk"
+  },
+  "email": "info@omiodesign.com",
+  "phone": "+34 960 000 000",
+  "location": {
+    "es": "Valencia, España",
+    "en": "Valencia, Spain"
+  }
+}

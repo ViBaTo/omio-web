@@ -1,0 +1,250 @@
+{
+  "title": {
+    "es": "Amazónico Monte-Carlo",
+    "en": "Amazónico Monte-Carlo"
+  },
+  "category": "Hospitality",
+  "client": "Amazónico",
+  "creativeDirector": "Lázaro Rosa-Violán",
+  "location": {
+    "es": "Monte-Carlo, Mónaco",
+    "en": "Monte-Carlo, Monaco"
+  },
+  "year": 2024,
+  "world": "artesano",
+  "shortDescription": {
+    "es": "Pérgolas escultóricas, aves suspendidas y piezas arquitectónicas artesanales que materializan la jungla de Lázaro Rosa-Violán en la Riviera.",
+    "en": "Sculptural pergolas, suspended birds and handcrafted architectural pieces that bring Lázaro Rosa-Violán’s jungle to the Riviera."
+  },
+  "longDescription": {
+    "es": "La intervención en Amazónico Monte-Carlo se concibió como un ejercicio bespoke de arquitectura y decoración dentro de un entorno de hospitality de alta gama. El proyecto reforzó la identidad inmersiva del restaurante a través de elementos artesanales de gran escala inspirados en los paisajes tropicales y la biodiversidad exótica. El objetivo: una atmósfera sensorial donde diseño, artesanía y storytelling coexisten sin costuras.",
+    "en": "The intervention for Amazónico Monte-Carlo was conceived as a bespoke architectural and decorative exercise within a high-end hospitality environment. The project enhanced the restaurant’s immersive identity through large-scale handcrafted elements inspired by tropical landscapes and exotic biodiversity. The objective: a sensory atmosphere where design, craftsmanship and storytelling coexist seamlessly."
+  },
+  "heroImage": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__hero.jpg",
+  "featured": true,
+  "acts": [
+    {
+      "id": "brief",
+      "world": "artesano",
+      "title": {
+        "es": "El encargo",
+        "en": "The brief"
+      },
+      "body": {
+        "es": "A partir de la dirección creativa de Lázaro Rosa-Violán, el brief pedía elementos arquitectónicos escultóricos y altamente expresivos que reforzaran el lenguaje visual icónico del restaurante. Texturas naturales, geometrías orgánicas y acabados artesanales se combinaron para generar un entorno selvático inmersivo. Nuestro papel: traducir el concepto en soluciones técnicas viables sin perder la integridad artística de cada pieza.",
+        "en": "From Lázaro Rosa-Violán’s creative direction, the brief required sculptural and highly expressive architectural features that would reinforce the restaurant’s iconic visual language. Natural textures, organic geometries and artisan finishes were combined to generate an immersive jungle-inspired environment. Our role: to transform the conceptual designs into technically feasible solutions while preserving the artistic integrity of every element."
+      },
+      "images": [
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__brief-01.jpg",
+          "alt": {
+            "es": "Moodboard del concepto Amazónico",
+            "en": "Amazónico concept moodboard"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__brief-02.jpg",
+          "alt": {
+            "es": "Render conceptual del estudio creativo",
+            "en": "Creative studio conceptual render"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "world": "ingeniero",
+      "title": {
+        "es": "Ingeniería y desarrollo técnico",
+        "en": "Engineering & technical development"
+      },
+      "body": {
+        "es": "Esta fase fue clave para resolver la complejidad de las pérgolas a medida, las aves suspendidas y las piezas arquitectónicas decorativas integradas en el espacio. Tradujimos las propuestas conceptuales a modelos 3D detallados y planos de fabricación. Realizamos estudios técnicos exhaustivos para garantizar la viabilidad estructural de las pérgolas y la integración segura de los elementos suspendidos, con especial atención al comportamiento del material, la distribución de cargas y los sistemas de instalación.",
+        "en": "This phase was essential for resolving the complexity of the custom pergolas, suspended bird sculptures and decorative architectural pieces integrated throughout the space. We translated the conceptual proposals into detailed 3D models and fabrication drawings. Extensive technical studies were carried out to ensure the structural viability of the pergolas and the secure integration of the suspended decorative elements, with special attention to material behaviour, load distribution and installation systems."
+      },
+      "images": [
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-01.png",
+          "alt": {
+            "es": "Modelo 3D de la pérgola escultórica",
+            "en": "Sculptural pergola 3D model"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-02.png",
+          "alt": {
+            "es": "Despiece técnico de las aves suspendidas",
+            "en": "Suspended birds technical exploded view"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-03.png",
+          "alt": {
+            "es": "Planos de fabricación",
+            "en": "Fabrication drawings"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "world": "fabrica",
+      "title": {
+        "es": "Fabricación e instalación",
+        "en": "Manufacturing & installation"
+      },
+      "body": {
+        "es": "Fabricación precisa en nuestro taller y montaje meticuloso en sala. Coordinamos pérgolas escultóricas, aves talladas y detalles arquitectónicos para integrarlos en el funcionamiento del restaurante sin interrumpir la operativa del hotel.",
+        "en": "Precise manufacturing in our workshop and meticulous on-site assembly. We coordinated sculptural pergolas, carved birds and architectural details to integrate them into the restaurant without disrupting hotel operations."
+      },
+      "images": [
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-01.jpg",
+          "alt": {
+            "es": "Fabricación en taller",
+            "en": "Workshop manufacturing"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-02.jpg",
+          "alt": {
+            "es": "Montaje on-site",
+            "en": "On-site assembly"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-03.jpg",
+          "alt": {
+            "es": "Instalación de pérgola",
+            "en": "Pergola installation"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-04.jpg",
+          "alt": {
+            "es": "Acabados artesanales in situ",
+            "en": "On-site artisan finishing"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "world": "artesano",
+      "title": {
+        "es": "El resultado",
+        "en": "The final result"
+      },
+      "body": {
+        "es": "Un entorno de hospitality donde artesanía e ingeniería se funden con naturalidad. Las pérgolas a medida, los pájaros escultóricos y los detalles arquitectónicos elevan la identidad espacial de Monte-Carlo manteniéndose fieles al universo Amazónico.",
+        "en": "A hospitality environment where craftsmanship and engineering merge naturally. The bespoke pergolas, sculptural birds and architectural details elevate the spatial identity of Monte-Carlo while staying faithful to the Amazónico universe."
+      },
+      "images": [
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-01.png",
+          "alt": {
+            "es": "Vista general del comedor",
+            "en": "Dining room overview"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-02.jpg",
+          "alt": {
+            "es": "Detalle de aves suspendidas",
+            "en": "Suspended birds detail"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-03.jpg",
+          "alt": {
+            "es": "Pérgola escultórica finalizada",
+            "en": "Completed sculptural pergola"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        },
+        {
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-04.jpg",
+          "alt": {
+            "es": "Atmósfera del restaurante",
+            "en": "Restaurant atmosphere"
+          },
+          "caption": {
+            "es": "",
+            "en": ""
+          }
+        }
+      ]
+    }
+  ],
+  "materials": [],
+  "stats": [
+    {
+      "label": {
+        "es": "Piezas escultóricas",
+        "en": "Sculptural pieces"
+      },
+      "value": "40+"
+    },
+    {
+      "label": {
+        "es": "Dirección creativa",
+        "en": "Creative direction"
+      },
+      "value": "L. Rosa-Violán"
+    },
+    {
+      "label": {
+        "es": "Ubicación",
+        "en": "Location"
+      },
+      "value": "Monte-Carlo"
+    }
+  ]
+}
