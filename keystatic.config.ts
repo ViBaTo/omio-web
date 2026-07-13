@@ -21,8 +21,15 @@ function i18nText(
   );
 }
 
+// En desarrollo (`pnpm dev`) el panel edita en local: escribe directamente los
+// ficheros de src/content. En producción el storage es Keystatic Cloud: login
+// por email y cada edición se convierte en un commit al repo (Railway
+// redespliega solo). El project key es un identificador público, no un secreto.
+const isDev = process.env.NODE_ENV === 'development';
+
 export default config({
-  storage: { kind: 'local' },
+  storage: isDev ? { kind: 'local' } : { kind: 'cloud' },
+  cloud: { project: 'omio/omio-web' },
   ui: {
     brand: { name: 'OMIO' },
     navigation: {
