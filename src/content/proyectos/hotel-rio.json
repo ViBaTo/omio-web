@@ -1,14 +1,21 @@
 {
   "slug": "Hotel Río",
   "title": {
-    "es": "Hotel río"
+    "es": "Hotel río",
+    "en": "Hotel rio"
   },
   "category": "Hospitality",
-  "location": {},
-  "year": 2024,
-  "world": "artesano",
-  "shortDescription": {},
+  "location": {
+    "es": "Río de Janeiro"
+  },
+  "year": 2046,
+  "world": "ingeniero",
+  "shortDescription": {
+    "es": "El mejor hotel de rio",
+    "en": "el emjor hotel de rio"
+  },
   "longDescription": {},
+  "heroImage": "/images/projects/hotel-rio/heroImage.png",
   "featured": false,
   "acts": [],
   "materials": [],
