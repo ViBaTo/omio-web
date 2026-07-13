@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Latón Envejecido",
+    "en": "Aged Brass"
+  },
+  "category": "Metales",
+  "description": {
+    "es": "Latón con pátina controlada que aporta calidez y carácter artesanal.",
+    "en": "Brass with a controlled patina that brings warmth and craft character."
+  },
+  "longDescription": {
+    "es": "El latón envejecido es uno de nuestros materiales insignia. Aplicamos técnicas de patinado controlado que aceleran el proceso natural de oxidación, consiguiendo tonos que van del dorado cálido al bronce profundo. Cada pieza desarrolla una pátina única que evoluciona con el tiempo.",
+    "en": "Aged brass is one of our signature materials. We apply controlled patination techniques that accelerate the natural oxidation process, achieving tones that range from warm gold to deep bronze. Every piece develops a unique patina that evolves over time."
+  },
+  "image": "/images/materials/laton-envejecido.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Composición",
+        "en": "Composition"
+      },
+      "value": {
+        "es": "Cu 65% / Zn 35%",
+        "en": "Cu 65% / Zn 35%"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Patinado artesanal",
+        "en": "Artisan patina"
+      }
+    },
+    {
+      "label": {
+        "es": "Sellado",
+        "en": "Sealing"
+      },
+      "value": {
+        "es": "Cera microcristalina",
+        "en": "Microcrystalline wax"
+      }
+    },
+    {
+      "label": {
+        "es": "Evolución",
+        "en": "Evolution"
+      },
+      "value": {
+        "es": "Pátina viva",
+        "en": "Living patina"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Tiradores",
+      "en": "Handles"
+    },
+    {
+      "es": "Detalles decorativos",
+      "en": "Decorative details"
+    },
+    {
+      "es": "Perfilería",
+      "en": "Profiles"
+    },
+    {
+      "es": "Lámparas",
+      "en": "Lamps"
+    }
+  ],
+  "projects": [],
+  "featured": true
+}

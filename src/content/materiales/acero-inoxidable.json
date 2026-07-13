@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Acero Inoxidable",
+    "en": "Stainless Steel"
+  },
+  "category": "Metales",
+  "description": {
+    "es": "Acero de grado alimentario y naval para aplicaciones de máxima exigencia.",
+    "en": "Food-grade and marine-grade steel for the most demanding applications."
+  },
+  "longDescription": {
+    "es": "Trabajamos con acero inoxidable AISI 316L, el estándar para entornos marinos y alimentarios. Su resistencia a la corrosión y su versatilidad de acabados (satinado, espejo, cepillado) lo convierten en un material fundamental para proyectos de contract y exterior.",
+    "en": "We work with AISI 316L stainless steel, the standard for marine and food environments. Its corrosion resistance and finish versatility (satin, mirror, brushed) make it a fundamental material for contract and outdoor projects."
+  },
+  "image": "/images/materials/acero-inoxidable.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Grado",
+        "en": "Grade"
+      },
+      "value": {
+        "es": "AISI 316L",
+        "en": "AISI 316L"
+      }
+    },
+    {
+      "label": {
+        "es": "Resistencia",
+        "en": "Resistance"
+      },
+      "value": {
+        "es": "Marina y alimentaria",
+        "en": "Marine and food-grade"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabados",
+        "en": "Finishes"
+      },
+      "value": {
+        "es": "Satinado, espejo, cepillado",
+        "en": "Satin, mirror, brushed"
+      }
+    },
+    {
+      "label": {
+        "es": "Reciclabilidad",
+        "en": "Recyclability"
+      },
+      "value": {
+        "es": "100%",
+        "en": "100%"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Mobiliario náutico",
+      "en": "Marine furniture"
+    },
+    {
+      "es": "Cocinas profesionales",
+      "en": "Professional kitchens"
+    },
+    {
+      "es": "Estructura",
+      "en": "Structure"
+    },
+    {
+      "es": "Exterior",
+      "en": "Outdoor"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

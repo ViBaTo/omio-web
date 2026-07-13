@@ -122,12 +122,30 @@
     "teamTitle": "Nuestro Equipo",
     "teamIntro": "Más de 65 profesionales que combinan tradición artesanal, precisión ingenieril y capacidad industrial.",
     "teamRoles": [
-      { "name": "Dirección Creativa", "count": "3 personas" },
-      { "name": "Ingeniería y Diseño Técnico", "count": "8 personas" },
-      { "name": "Maestros Artesanos", "count": "11 personas" },
-      { "name": "Producción y CNC", "count": "12 personas" },
-      { "name": "Logística e Instalación", "count": "12 personas" },
-      { "name": "Gestión de Proyectos", "count": "5 personas" }
+      {
+        "name": "Dirección Creativa",
+        "count": "3 personas"
+      },
+      {
+        "name": "Ingeniería y Diseño Técnico",
+        "count": "8 personas"
+      },
+      {
+        "name": "Maestros Artesanos",
+        "count": "11 personas"
+      },
+      {
+        "name": "Producción y CNC",
+        "count": "12 personas"
+      },
+      {
+        "name": "Logística e Instalación",
+        "count": "12 personas"
+      },
+      {
+        "name": "Gestión de Proyectos",
+        "count": "5 personas"
+      }
     ]
   },
   "capacidades": {
@@ -163,12 +181,36 @@
     "title": "Precisión en la Complejidad",
     "intro": "Nuestra ingeniería es el puente entre la imaginación y la realidad tangible. Dotamos a la creatividad de la precisión técnica necesaria para superar las limitaciones prácticas de cualquier idea, por compleja que sea.",
     "processSteps": [
-      { "id": "diseno", "label": "DISEÑO", "description": "Interpretación y análisis del concepto creativo original." },
-      { "id": "ingenieria", "label": "INGENIERÍA", "description": "Desarrollo técnico detallado y resolución de complejidades." },
-      { "id": "prototipo", "label": "PROTOTIPO", "description": "Fabricación de prototipos reales para validación." },
-      { "id": "validacion", "label": "VALIDACIÓN", "description": "Supervisión del cliente y aprobación del resultado." },
-      { "id": "produccion", "label": "PRODUCCIÓN", "description": "Fabricación a escala con control de calidad total." },
-      { "id": "instalacion", "label": "INSTALACIÓN", "description": "Montaje e instalación en destino final." }
+      {
+        "id": "diseno",
+        "label": "DISEÑO",
+        "description": "Interpretación y análisis del concepto creativo original."
+      },
+      {
+        "id": "ingenieria",
+        "label": "INGENIERÍA",
+        "description": "Desarrollo técnico detallado y resolución de complejidades."
+      },
+      {
+        "id": "prototipo",
+        "label": "PROTOTIPO",
+        "description": "Fabricación de prototipos reales para validación."
+      },
+      {
+        "id": "validacion",
+        "label": "VALIDACIÓN",
+        "description": "Supervisión del cliente y aprobación del resultado."
+      },
+      {
+        "id": "produccion",
+        "label": "PRODUCCIÓN",
+        "description": "Fabricación a escala con control de calidad total."
+      },
+      {
+        "id": "instalacion",
+        "label": "INSTALACIÓN",
+        "description": "Montaje e instalación en destino final."
+      }
     ],
     "blocks": [
       {
@@ -203,13 +245,34 @@
     },
     "servicios": {
       "slides": [
-        { "id": "artesano", "phrase": "La unión de un artesano, un ingeniero y una fábrica." },
-        { "id": "tranquilidad", "phrase": "Mitigamos los riesgos técnicos y logísticos de cada proyecto." },
-        { "id": "escala", "phrase": "De la sensibilidad artesanal a la potencia industrial." },
-        { "id": "prototipo", "phrase": "Del prototipado a la instalación, una única mano guía el proceso." },
-        { "id": "detalle", "phrase": "En el detalle intangible reside el valor de la alta gama." },
-        { "id": "prueba", "phrase": "Anticipamos lo que otros dan por imposible." },
-        { "id": "promesa", "phrase": "Socio inestimable de los estudios más prestigiosos del mundo." }
+        {
+          "id": "artesano",
+          "phrase": "La unión de un artesano, un ingeniero y una fábrica."
+        },
+        {
+          "id": "tranquilidad",
+          "phrase": "Mitigamos los riesgos técnicos y logísticos de cada proyecto."
+        },
+        {
+          "id": "escala",
+          "phrase": "De la sensibilidad artesanal a la potencia industrial."
+        },
+        {
+          "id": "prototipo",
+          "phrase": "Del prototipado a la instalación, una única mano guía el proceso."
+        },
+        {
+          "id": "detalle",
+          "phrase": "En el detalle intangible reside el valor de la alta gama."
+        },
+        {
+          "id": "prueba",
+          "phrase": "Anticipamos lo que otros dan por imposible."
+        },
+        {
+          "id": "promesa",
+          "phrase": "Socio inestimable de los estudios más prestigiosos del mundo."
+        }
       ],
       "ctaExplore": "Explorar servicios"
     },
@@ -223,10 +286,22 @@
       "intro": "Seleccionamos cada material con la misma exigencia que aplicamos a cada pieza. Maderas nobles, metales trabajados, piedras naturales y textiles de la más alta calidad.",
       "cta": "Ver todos los materiales",
       "featured": [
-        { "label": "METAL", "slug": "laton-envejecido" },
-        { "label": "METAL", "slug": "acero-negro" },
-        { "label": "MADERA", "slug": "madera-recuperada" },
-        { "label": "ALABASTRO", "slug": "marmol-calacatta" }
+        {
+          "label": "METAL",
+          "slug": "laton-envejecido"
+        },
+        {
+          "label": "METAL",
+          "slug": "acero-negro"
+        },
+        {
+          "label": "MADERA",
+          "slug": "madera-recuperada"
+        },
+        {
+          "label": "ALABASTRO",
+          "slug": "marmol-calacatta"
+        }
       ]
     },
     "proyectos": {

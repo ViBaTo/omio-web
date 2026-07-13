@@ -1,0 +1,74 @@
+{
+  "name": {
+    "es": "Madera Recuperada",
+    "en": "Reclaimed Wood"
+  },
+  "category": "Maderas",
+  "description": {
+    "es": "Maderas rescatadas de embarcaciones, edificios y estructuras históricas.",
+    "en": "Wood reclaimed from boats, buildings, and historic structures."
+  },
+  "longDescription": {
+    "es": "Nuestra madera recuperada proviene de barcos pesqueros retirados, vigas de edificios históricos y estructuras portuarias del Mediterráneo. Cada pieza lleva consigo décadas de historia y una pátina imposible de replicar. Aplicamos un riguroso proceso de selección, saneamiento y estabilización que preserva el carácter original.",
+    "en": "Our reclaimed wood comes from retired fishing boats, beams of historic buildings, and harbor structures of the Mediterranean. Every piece carries decades of history and a patina that is impossible to replicate. We apply a rigorous process of selection, sanitization, and stabilization that preserves the original character."
+  },
+  "image": "/images/materials/madera-recuperada.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Puertos del Mediterráneo",
+        "en": "Mediterranean harbors"
+      }
+    },
+    {
+      "label": {
+        "es": "Proceso",
+        "en": "Process"
+      },
+      "value": {
+        "es": "Selección, saneamiento, estabilización",
+        "en": "Selection, sanitization, stabilization"
+      }
+    },
+    {
+      "label": {
+        "es": "Carácter",
+        "en": "Character"
+      },
+      "value": {
+        "es": "Irrepetible",
+        "en": "Unrepeatable"
+      }
+    },
+    {
+      "label": {
+        "es": "Sostenibilidad",
+        "en": "Sustainability"
+      },
+      "value": {
+        "es": "Economía circular",
+        "en": "Circular economy"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Mesas de restaurante",
+      "en": "Restaurant tables"
+    },
+    {
+      "es": "Piezas de acento",
+      "en": "Accent pieces"
+    },
+    {
+      "es": "Revestimientos",
+      "en": "Claddings"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

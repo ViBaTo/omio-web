@@ -1,0 +1,56 @@
+{
+  "world": "artesano",
+  "icon": "artesano",
+  "title": {
+    "es": "El Artesano",
+    "en": "The Craftsman"
+  },
+  "tagline": {
+    "es": "El Alma del Atelier",
+    "en": "The Soul of the Atelier"
+  },
+  "description": {
+    "es": "El corazón de nuestra empresa late como un Atelier. Entendemos y valoramos la creatividad pura, aportando el cuidado meticuloso y la sensibilidad que solo un artesano puede otorgar a una pieza única.",
+    "en": "The heart of our company beats like an Atelier. We understand and value pure creativity, bringing the meticulous care and sensitivity that only a craftsman can give to a unique piece."
+  },
+  "details": [
+    {
+      "es": "En el sector de alta gama, el valor reside en los detalles intangibles y el enfoque personal.",
+      "en": "In the high-end sector, value lies in the intangible details and the personal approach."
+    },
+    {
+      "es": "Cada elemento que sale de nuestras manos conserva la esencia artesanal, asegurando que el resultado final sea tan exclusivo como la visión original del diseñador.",
+      "en": "Every element that leaves our hands keeps its craft essence, ensuring that the final result is as exclusive as the designer's original vision."
+    },
+    {
+      "es": "Nuestros artesanos son maestros con décadas de experiencia en técnicas tradicionales: marquetería, tallado, torneado, lacado a muñequilla y tapicería artesanal.",
+      "en": "Our craftsmen are masters with decades of experience in traditional techniques: marquetry, carving, turning, hand-rubbed lacquering, and artisan upholstery."
+    }
+  ],
+  "capabilities": [
+    {
+      "es": "Marquetería y taracea",
+      "en": "Marquetry and inlay"
+    },
+    {
+      "es": "Tallado y torneado manual",
+      "en": "Manual carving and turning"
+    },
+    {
+      "es": "Lacado artesanal a muñequilla",
+      "en": "Hand-rubbed artisan lacquer"
+    },
+    {
+      "es": "Tapicería de alta costura",
+      "en": "Couture upholstery"
+    },
+    {
+      "es": "Acabados a mano",
+      "en": "Hand finishes"
+    },
+    {
+      "es": "Restauración de piezas históricas",
+      "en": "Restoration of historical pieces"
+    }
+  ]
+}

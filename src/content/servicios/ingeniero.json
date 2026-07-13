@@ -1,0 +1,56 @@
+{
+  "world": "ingeniero",
+  "icon": "ingeniero",
+  "title": {
+    "es": "El Ingeniero",
+    "en": "The Engineer"
+  },
+  "tagline": {
+    "es": "Precisión en la Complejidad",
+    "en": "Precision in Complexity"
+  },
+  "description": {
+    "es": "Nuestra ingeniería es el puente entre la imaginación y la realidad tangible. Dotamos a la creatividad de la precisión técnica necesaria para superar las limitaciones prácticas de cualquier idea, por compleja que sea.",
+    "en": "Our engineering is the bridge between imagination and tangible reality. We give creativity the technical precision required to overcome the practical limits of any idea, no matter how complex."
+  },
+  "details": [
+    {
+      "es": "Realizamos prototipos y pruebas piloto reales que permiten al cliente supervisar y validar el éxito antes de la producción final.",
+      "en": "We build real prototypes and pilot tests that allow the client to supervise and validate success before final production."
+    },
+    {
+      "es": "Anticipamos y resolvemos problemas técnicos antes de que afecten al proyecto, garantizando un sistema robusto y eficiente.",
+      "en": "We anticipate and resolve technical issues before they affect the project, guaranteeing a robust and efficient system."
+    },
+    {
+      "es": "Nuestro equipo de ingeniería utiliza las herramientas más avanzadas de diseño paramétrico, simulación estructural y modelado 3D para resolver los desafíos más complejos.",
+      "en": "Our engineering team uses the most advanced parametric design, structural simulation, and 3D modeling tools to solve the most complex challenges."
+    }
+  ],
+  "capabilities": [
+    {
+      "es": "Diseño paramétrico y modelado 3D",
+      "en": "Parametric design and 3D modeling"
+    },
+    {
+      "es": "Simulación estructural (FEA)",
+      "en": "Structural simulation (FEA)"
+    },
+    {
+      "es": "Prototipado rápido",
+      "en": "Rapid prototyping"
+    },
+    {
+      "es": "Ingeniería de producción",
+      "en": "Production engineering"
+    },
+    {
+      "es": "Control de tolerancias",
+      "en": "Tolerance control"
+    },
+    {
+      "es": "Documentación técnica completa",
+      "en": "Comprehensive technical documentation"
+    }
+  ]
+}

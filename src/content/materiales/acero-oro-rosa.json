@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Acero con Acabado Oro Rosa",
+    "en": "Rose Gold Finish Steel"
+  },
+  "category": "Metales",
+  "description": {
+    "es": "Acero inoxidable con recubrimiento PVD en tono oro rosa.",
+    "en": "Stainless steel with a rose gold PVD coating."
+  },
+  "longDescription": {
+    "es": "El acabado oro rosa se consigue mediante deposición física de vapor (PVD) sobre acero inoxidable, creando una capa extremadamente resistente de color cálido y sofisticado. Es un acabado que aporta lujo contemporáneo sin la frialdad del cromo ni la obviedad del dorado.",
+    "en": "The rose gold finish is achieved through physical vapor deposition (PVD) on stainless steel, creating an extremely resistant layer of warm, sophisticated color. It is a finish that brings contemporary luxury without the coldness of chrome or the obviousness of gold."
+  },
+  "image": "/images/materials/acero-oro-rosa.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Base",
+        "en": "Base"
+      },
+      "value": {
+        "es": "Acero inoxidable 316L",
+        "en": "Stainless steel 316L"
+      }
+    },
+    {
+      "label": {
+        "es": "Recubrimiento",
+        "en": "Coating"
+      },
+      "value": {
+        "es": "PVD oro rosa",
+        "en": "Rose gold PVD"
+      }
+    },
+    {
+      "label": {
+        "es": "Dureza",
+        "en": "Hardness"
+      },
+      "value": {
+        "es": "2.000 HV",
+        "en": "2,000 HV"
+      }
+    },
+    {
+      "label": {
+        "es": "Durabilidad",
+        "en": "Durability"
+      },
+      "value": {
+        "es": "Permanente",
+        "en": "Permanent"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Detalles de lujo",
+      "en": "Luxury details"
+    },
+    {
+      "es": "Tiradores",
+      "en": "Handles"
+    },
+    {
+      "es": "Perfilería",
+      "en": "Profiles"
+    },
+    {
+      "es": "Mobiliario residencial",
+      "en": "Residential furniture"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

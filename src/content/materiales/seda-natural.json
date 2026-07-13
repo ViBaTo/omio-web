@@ -1,0 +1,74 @@
+{
+  "name": {
+    "es": "Seda Natural",
+    "en": "Natural Silk"
+  },
+  "category": "Textiles",
+  "description": {
+    "es": "Seda de morera para aplicaciones decorativas de máximo lujo.",
+    "en": "Mulberry silk for the most luxurious decorative applications."
+  },
+  "longDescription": {
+    "es": "La seda natural que utilizamos proviene de talleres artesanales de India que mantienen las técnicas tradicionales de tejido. Su brillo inimitable y su tacto incomparable la reservamos para proyectos residenciales de ultra-lujo donde cada detalle debe ser extraordinario.",
+    "en": "The natural silk we use comes from artisan workshops in India that keep traditional weaving techniques alive. Its inimitable shine and incomparable touch are reserved for ultra-luxury residential projects where every detail must be extraordinary."
+  },
+  "image": "/images/materials/seda-natural.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Tipo",
+        "en": "Type"
+      },
+      "value": {
+        "es": "Seda de morera",
+        "en": "Mulberry silk"
+      }
+    },
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "India (tejido artesanal)",
+        "en": "India (artisan weaving)"
+      }
+    },
+    {
+      "label": {
+        "es": "Uso",
+        "en": "Use"
+      },
+      "value": {
+        "es": "Decorativo / Interior controlado",
+        "en": "Decorative / Controlled interior"
+      }
+    },
+    {
+      "label": {
+        "es": "Brillo",
+        "en": "Shine"
+      },
+      "value": {
+        "es": "Natural, incomparable",
+        "en": "Natural, incomparable"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Paneles decorativos",
+      "en": "Decorative panels"
+    },
+    {
+      "es": "Cabeceros",
+      "en": "Headboards"
+    },
+    {
+      "es": "Cojines de lujo",
+      "en": "Luxury cushions"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

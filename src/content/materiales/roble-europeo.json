@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Acero en Bruto",
+    "en": "Raw Steel"
+  },
+  "category": "Metales",
+  "description": {
+    "es": "Barras de acero forjado con carácter industrial y trazabilidad artesanal.",
+    "en": "Forged steel bars with industrial character and artisan traceability."
+  },
+  "longDescription": {
+    "es": "El acero en bruto que utilizamos proviene de pequeñas forjas que mantienen métodos tradicionales de laminado. Cada barra conserva las marcas del proceso —la numeración manual del calibre, las improntas del rodillo, el tono ligeramente azulado del temple— como una firma del oficio. Lo combinamos con maderas y piedras nobles para crear contrastes contundentes y honestos.",
+    "en": "The raw steel we use comes from small forges that keep traditional rolling methods alive. Every bar preserves the marks of the process —the hand-written gauge number, the roller imprints, the slightly bluish tone of the temper— as a signature of the craft. We combine it with noble woods and stones to create bold, honest contrasts."
+  },
+  "image": "/images/materials/12.png",
+  "properties": [
+    {
+      "label": {
+        "es": "Composición",
+        "en": "Composition"
+      },
+      "value": {
+        "es": "Acero al carbono",
+        "en": "Carbon steel"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Bruto laminado",
+        "en": "Mill-rolled raw"
+      }
+    },
+    {
+      "label": {
+        "es": "Tratamiento",
+        "en": "Treatment"
+      },
+      "value": {
+        "es": "Encerado anti-óxido",
+        "en": "Anti-rust waxing"
+      }
+    },
+    {
+      "label": {
+        "es": "Reciclabilidad",
+        "en": "Recyclability"
+      },
+      "value": {
+        "es": "100%",
+        "en": "100%"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Estructuras vistas",
+      "en": "Exposed structures"
+    },
+    {
+      "es": "Mobiliario industrial",
+      "en": "Industrial furniture"
+    },
+    {
+      "es": "Barandillas",
+      "en": "Railings"
+    },
+    {
+      "es": "Bases de mesa",
+      "en": "Table bases"
+    }
+  ],
+  "projects": [],
+  "featured": true
+}

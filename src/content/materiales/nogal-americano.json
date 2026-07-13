@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Piedra Arenisca",
+    "en": "Sandstone"
+  },
+  "category": "Piedras",
+  "description": {
+    "es": "Piedra sedimentaria de tonos arena con formas erosionadas y carácter escultórico.",
+    "en": "Sedimentary stone in sandy tones with eroded forms and sculptural character."
+  },
+  "longDescription": {
+    "es": "La piedra arenisca es una piedra sedimentaria que cautiva por sus formas suavemente erosionadas y su gama cromática que va del crema al ocre dorado. En OMIO la trabajamos en bloque y la esculpimos a mano para crear superficies de gran impacto visual. Su textura ligeramente rugosa y su capacidad para reflejar la luz cambian a lo largo del día, dotando a los espacios de una atmósfera viva y orgánica.",
+    "en": "Sandstone is a sedimentary stone that captivates with its softly eroded forms and chromatic range from cream to golden ochre. At OMIO we work it in block and hand-sculpt it to create surfaces of great visual impact. Its slightly rough texture and its ability to reflect light shift throughout the day, giving spaces a living, organic atmosphere."
+  },
+  "image": "/images/materials/11.png",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Mediterráneo",
+        "en": "Mediterranean"
+      }
+    },
+    {
+      "label": {
+        "es": "Tipo",
+        "en": "Type"
+      },
+      "value": {
+        "es": "Piedra sedimentaria",
+        "en": "Sedimentary stone"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Esculpido a mano, bush-hammered",
+        "en": "Hand-sculpted, bush-hammered"
+      }
+    },
+    {
+      "label": {
+        "es": "Densidad",
+        "en": "Density"
+      },
+      "value": {
+        "es": "2.200 kg/m³",
+        "en": "2,200 kg/m³"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Revestimientos murales",
+      "en": "Wall claddings"
+    },
+    {
+      "es": "Fachadas",
+      "en": "Façades"
+    },
+    {
+      "es": "Piezas escultóricas",
+      "en": "Sculptural pieces"
+    },
+    {
+      "es": "Encimeras",
+      "en": "Countertops"
+    }
+  ],
+  "projects": [],
+  "featured": true
+}

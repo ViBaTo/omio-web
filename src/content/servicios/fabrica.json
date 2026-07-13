@@ -1,0 +1,56 @@
+{
+  "world": "fabrica",
+  "icon": "fabrica",
+  "title": {
+    "es": "La Fábrica",
+    "en": "The Factory"
+  },
+  "tagline": {
+    "es": "Potencia y Escala Global",
+    "en": "Global Power and Scale"
+  },
+  "description": {
+    "es": "Somos una fábrica con la capacidad de llevar la producción y la instalación a una escala global. A diferencia de los talleres tradicionales, contamos con la infraestructura necesaria para gestionar proyectos de gran envergadura sin perder el control de calidad.",
+    "en": "We are a factory with the capacity to take production and installation to a global scale. Unlike traditional workshops, we have the infrastructure required to handle large-scale projects without losing quality control."
+  },
+  "details": [
+    {
+      "es": "Desplazamos y organizamos equipos de instalación en cualquier parte del mundo.",
+      "en": "We deploy and organize installation teams anywhere in the world."
+    },
+    {
+      "es": "Ejecutamos la transición del diseño a la fabricación a gran escala con total fiabilidad.",
+      "en": "We execute the transition from design to large-scale manufacturing with full reliability."
+    },
+    {
+      "es": "Garantizamos soporte a largo plazo con nuestra promesa: «¡Ahí estaremos!» ante cualquier contingencia futura.",
+      "en": "We guarantee long-term support with our promise: «We'll be there!» for any future contingency."
+    }
+  ],
+  "capabilities": [
+    {
+      "es": "CNC de 5 ejes",
+      "en": "5-axis CNC"
+    },
+    {
+      "es": "Línea de lacado robotizada",
+      "en": "Robotic lacquering line"
+    },
+    {
+      "es": "Producción en serie con control unitario",
+      "en": "Series production with per-unit control"
+    },
+    {
+      "es": "Logística internacional puerta a puerta",
+      "en": "International door-to-door logistics"
+    },
+    {
+      "es": "Instalación con equipo propio",
+      "en": "Installation with our own team"
+    },
+    {
+      "es": "Garantía y soporte post-instalación",
+      "en": "Warranty and post-installation support"
+    }
+  ]
+}

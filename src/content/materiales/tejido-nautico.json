@@ -1,0 +1,74 @@
+{
+  "name": {
+    "es": "Tejido Náutico",
+    "en": "Marine Fabric"
+  },
+  "category": "Textiles",
+  "description": {
+    "es": "Textil técnico de grado marino, resistente a UV, salinidad y moho.",
+    "en": "Marine-grade technical textile, resistant to UV, salinity, and mold."
+  },
+  "longDescription": {
+    "es": "Los tejidos náuticos que utilizamos cumplen los más altos estándares de resistencia marina. Mantienen su color y textura tras años de exposición solar directa y ambiente salino. Disponibles en una paleta de colores diseñada para complementar la madera y el metal en entornos costeros.",
+    "en": "The marine fabrics we use meet the highest standards of marine resistance. They keep their color and texture after years of direct solar exposure and salt environment. Available in a color palette designed to complement wood and metal in coastal environments."
+  },
+  "image": "/images/materials/tejido-nautico.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Resistencia UV",
+        "en": "UV resistance"
+      },
+      "value": {
+        "es": "2.000+ horas",
+        "en": "2,000+ hours"
+      }
+    },
+    {
+      "label": {
+        "es": "Impermeabilidad",
+        "en": "Waterproof"
+      },
+      "value": {
+        "es": "Sí",
+        "en": "Yes"
+      }
+    },
+    {
+      "label": {
+        "es": "Anti-moho",
+        "en": "Anti-mold"
+      },
+      "value": {
+        "es": "Tratamiento integral",
+        "en": "Comprehensive treatment"
+      }
+    },
+    {
+      "label": {
+        "es": "Limpieza",
+        "en": "Cleaning"
+      },
+      "value": {
+        "es": "Agua y jabón",
+        "en": "Water and soap"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Tapicería de exterior",
+      "en": "Outdoor upholstery"
+    },
+    {
+      "es": "Náutica",
+      "en": "Marine"
+    },
+    {
+      "es": "Cojines de terraza",
+      "en": "Terrace cushions"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

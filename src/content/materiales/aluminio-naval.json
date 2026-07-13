@@ -1,0 +1,74 @@
+{
+  "name": {
+    "es": "Aluminio Naval",
+    "en": "Marine Aluminum"
+  },
+  "category": "Metales",
+  "description": {
+    "es": "Aleación de aluminio de grado marino, ligera y resistente a la corrosión.",
+    "en": "Marine-grade aluminum alloy, light and corrosion-resistant."
+  },
+  "longDescription": {
+    "es": "El aluminio naval (aleación 5083) es nuestra elección para proyectos de exterior y entornos marinos donde se necesita combinar ligereza con resistencia extrema a la corrosión. Lo anodizamos con colores personalizados que mantienen su aspecto durante décadas.",
+    "en": "Marine aluminum (alloy 5083) is our choice for outdoor projects and marine environments where lightness must be combined with extreme corrosion resistance. We anodize it in custom colors that keep their look for decades."
+  },
+  "image": "/images/materials/aluminio-naval.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Aleación",
+        "en": "Alloy"
+      },
+      "value": {
+        "es": "5083 / 6082",
+        "en": "5083 / 6082"
+      }
+    },
+    {
+      "label": {
+        "es": "Acabado",
+        "en": "Finish"
+      },
+      "value": {
+        "es": "Anodizado personalizado",
+        "en": "Custom anodized"
+      }
+    },
+    {
+      "label": {
+        "es": "Peso",
+        "en": "Weight"
+      },
+      "value": {
+        "es": "2.66 g/cm³ (ligero)",
+        "en": "2.66 g/cm³ (light)"
+      }
+    },
+    {
+      "label": {
+        "es": "Resistencia",
+        "en": "Resistance"
+      },
+      "value": {
+        "es": "Marina certificada",
+        "en": "Certified marine"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Mobiliario de exterior",
+      "en": "Outdoor furniture"
+    },
+    {
+      "es": "Náutica",
+      "en": "Marine"
+    },
+    {
+      "es": "Estructuras ligeras",
+      "en": "Lightweight structures"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}

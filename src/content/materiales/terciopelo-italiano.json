@@ -1,0 +1,78 @@
+{
+  "name": {
+    "es": "Terciopelo Italiano",
+    "en": "Italian Velvet"
+  },
+  "category": "Textiles",
+  "description": {
+    "es": "Terciopelo de algodón de alta densidad con tacto ultra suave.",
+    "en": "High-density cotton velvet with an ultra-soft touch."
+  },
+  "longDescription": {
+    "es": "Nuestro terciopelo proviene de los mejores telares de Como, Italia. Con una densidad de pelo excepcional, ofrece una profundidad de color y un tacto que no se encuentra en ningún otro textil. Es la elección perfecta para sillas de comedor, sofás y cabeceros donde se busca opulencia contenida.",
+    "en": "Our velvet comes from the best looms in Como, Italy. With exceptional pile density, it offers a depth of color and a touch unmatched by any other textile. It is the perfect choice for dining chairs, sofas, and headboards where contained opulence is sought."
+  },
+  "image": "/images/materials/terciopelo-italiano.jpg",
+  "properties": [
+    {
+      "label": {
+        "es": "Origen",
+        "en": "Origin"
+      },
+      "value": {
+        "es": "Como, Italia",
+        "en": "Como, Italy"
+      }
+    },
+    {
+      "label": {
+        "es": "Composición",
+        "en": "Composition"
+      },
+      "value": {
+        "es": "100% Algodón",
+        "en": "100% Cotton"
+      }
+    },
+    {
+      "label": {
+        "es": "Martindale",
+        "en": "Martindale"
+      },
+      "value": {
+        "es": "50.000+ ciclos",
+        "en": "50,000+ cycles"
+      }
+    },
+    {
+      "label": {
+        "es": "Ancho",
+        "en": "Width"
+      },
+      "value": {
+        "es": "140 cm",
+        "en": "140 cm"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "es": "Sillas de comedor",
+      "en": "Dining chairs"
+    },
+    {
+      "es": "Sofás",
+      "en": "Sofas"
+    },
+    {
+      "es": "Cabeceros",
+      "en": "Headboards"
+    },
+    {
+      "es": "Paneles acústicos",
+      "en": "Acoustic panels"
+    }
+  ],
+  "projects": [],
+  "featured": false
+}
