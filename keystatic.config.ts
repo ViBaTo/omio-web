@@ -3,15 +3,17 @@ import { config, fields, collection, singleton } from '@keystatic/core';
 /**
  * Campo de texto bilingüe: muestra "Etiqueta (ES)" y "Etiqueta (EN)" lado a lado.
  * Modela la estructura `LocalizedString = { es: string; en: string }` de src/data.
+ * Con `required` el panel no deja guardar si falta cualquiera de los dos idiomas.
  */
 function i18nText(
   label: string,
-  opts: { multiline?: boolean; description?: string } = {}
+  opts: { multiline?: boolean; description?: string; required?: boolean } = {}
 ) {
+  const validation = opts.required ? { isRequired: true } : undefined;
   return fields.object(
     {
-      es: fields.text({ label: `${label} (ES)`, multiline: opts.multiline }),
-      en: fields.text({ label: `${label} (EN)`, multiline: opts.multiline }),
+      es: fields.text({ label: `${label} (ES)`, multiline: opts.multiline, validation }),
+      en: fields.text({ label: `${label} (EN)`, multiline: opts.multiline, validation }),
     },
     {
       label,
@@ -93,7 +95,7 @@ export default config({
             description: 'No cambiar si el material ya está publicado: forma parte de la URL.',
           },
         }),
-        name: i18nText('Nombre'),
+        name: i18nText('Nombre', { required: true }),
         category: fields.select({
           label: 'Categoría',
           options: [
@@ -109,6 +111,8 @@ export default config({
         longDescription: i18nText('Descripción larga', { multiline: true }),
         image: fields.image({
           label: 'Imagen',
+          description: 'Obligatoria: sin ella el material no puede publicarse.',
+          validation: { isRequired: true },
           directory: 'public/images/materials',
           publicPath: '/images/materials',
         }),
@@ -160,7 +164,7 @@ export default config({
           ],
           defaultValue: 'artesano',
         }),
-        title: i18nText('Título'),
+        title: i18nText('Título', { required: true }),
         tagline: i18nText('Lema'),
         description: i18nText('Descripción', { multiline: true }),
         details: fields.array(i18nText('Detalle', { multiline: true }), {
@@ -182,7 +186,7 @@ export default config({
       columns: ['slug', 'category'],
       schema: {
         slug: fields.slug({ name: { label: 'Identificador (slug)' } }),
-        title: i18nText('Título'),
+        title: i18nText('Título', { required: true }),
         category: fields.select({
           label: 'Categoría',
           options: [
@@ -206,10 +210,12 @@ export default config({
           ],
           defaultValue: 'artesano',
         }),
-        shortDescription: i18nText('Descripción corta', { multiline: true }),
+        shortDescription: i18nText('Descripción corta', { multiline: true, required: true }),
         longDescription: i18nText('Descripción larga', { multiline: true }),
         heroImage: fields.image({
           label: 'Imagen principal',
+          description: 'Obligatoria: sin ella el proyecto no puede publicarse.',
+          validation: { isRequired: true },
           directory: 'public/images/projects',
           publicPath: '/images/projects',
         }),

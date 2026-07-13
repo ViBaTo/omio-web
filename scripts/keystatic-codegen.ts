@@ -24,8 +24,74 @@ const HEADER = `// ⚠️ ARCHIVO GENERADO AUTOMÁTICAMENTE — NO EDITAR A MANO
 /* eslint-disable */
 `;
 
+/**
+ * Red de seguridad: una entrada guardada a medias (sin imagen o sin título)
+ * NUNCA debe tumbar el build — se aparta con un aviso y el resto de la web se
+ * publica igual. El panel ya valida estos campos, pero el contenido antiguo o
+ * editado fuera del panel puede venir incompleto.
+ */
+function partitionValid<T>(
+  kind: string,
+  entries: T[],
+  missingEssentials: (e: T) => string[]
+): T[] {
+  const valid: T[] = [];
+  for (const e of entries) {
+    const missing = missingEssentials(e);
+    if (missing.length === 0) {
+      valid.push(e);
+    } else {
+      const slug = (e as { slug?: string }).slug ?? '(sin slug)';
+      console.warn(
+        `⚠️ ${kind} "${slug}" OMITIDO de la web (incompleto: falta ${missing.join(', ')}). ` +
+          `Complétalo en el panel /keystatic para publicarlo.`
+      );
+    }
+  }
+  return valid;
+}
+
+/**
+ * Lee una colección entrada a entrada: las que no pasan la validación del
+ * schema (p. ej. guardadas antes de que un campo fuera obligatorio) se apartan
+ * con un aviso en lugar de tumbar todo el codegen, como hace `.all()`.
+ */
+async function readCollectionTolerant(
+  kind: string,
+  collection: {
+    list(): Promise<readonly string[]>;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    read(slug: string): Promise<any>;
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+): Promise<{ slug: string; entry: any }[]> {
+  const slugs = await collection.list();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const out: { slug: string; entry: any }[] = [];
+  for (const slug of slugs) {
+    try {
+      const entry = await collection.read(slug);
+      if (entry) out.push({ slug, entry });
+    } catch (err) {
+      const reason = err instanceof Error ? err.message.replace(/\n/g, ' · ') : String(err);
+      console.warn(
+        `⚠️ ${kind} "${slug}" OMITIDO de la web (${reason}). ` +
+          `Complétalo en el panel /keystatic para publicarlo.`
+      );
+    }
+  }
+  return out;
+}
+
 async function generateMateriales() {
-  const entries = await reader.collections.materiales.all();
+  const entries = partitionValid(
+    'Material',
+    await readCollectionTolerant('Material', reader.collections.materiales),
+    (e) => [
+      ...(e.entry.image ? [] : ['imagen']),
+      ...(e.entry.name?.es ? [] : ['nombre (ES)']),
+    ]
+  );
   const raw = entries.map((e) => ({
     slug: e.slug,
     name: e.entry.name,
@@ -49,7 +115,11 @@ export const MATERIALS_RAW: MaterialI18n[] = ${JSON.stringify(raw, null, 2)};
 }
 
 async function generateServicios() {
-  const entries = await reader.collections.servicios.all();
+  const entries = partitionValid(
+    'Servicio',
+    await readCollectionTolerant('Servicio', reader.collections.servicios),
+    (e) => (e.entry.title?.es ? [] : ['título (ES)'])
+  );
   const raw = entries.map((e) => ({
     slug: e.slug,
     world: e.entry.world,
@@ -70,7 +140,15 @@ export const SERVICES_RAW: ServiceI18n[] = ${JSON.stringify(raw, null, 2)};
 }
 
 async function generateProyectos() {
-  const entries = await reader.collections.proyectos.all();
+  const entries = partitionValid(
+    'Proyecto',
+    await readCollectionTolerant('Proyecto', reader.collections.proyectos),
+    (e) => [
+      ...(e.entry.heroImage ? [] : ['imagen principal']),
+      ...(e.entry.title?.es ? [] : ['título (ES)']),
+      ...(e.entry.shortDescription?.es ? [] : ['descripción corta (ES)']),
+    ]
+  );
   const raw = entries.map((e) => ({
     slug: e.slug,
     title: e.entry.title,
@@ -83,12 +161,14 @@ async function generateProyectos() {
     shortDescription: e.entry.shortDescription,
     longDescription: e.entry.longDescription,
     heroImage: e.entry.heroImage,
-    acts: e.entry.acts.map((a) => ({
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    acts: e.entry.acts.map((a: any) => ({
       id: a.id,
       world: a.world,
       title: a.title,
       body: a.body,
-      images: a.images.map((img) => ({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      images: a.images.map((img: any) => ({
         src: img.src,
         alt: img.alt,
         caption: img.caption?.es || img.caption?.en ? img.caption : undefined,
