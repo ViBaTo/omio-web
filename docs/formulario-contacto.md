@@ -13,21 +13,21 @@ un correo al buzón de OMIO. Hasta julio de 2026 **no enviaba nada**: mostraba
 
 ## Configuración (variables de entorno en Railway)
 
-| Variable | Qué es | Ejemplo |
+| Variable | Qué es | Valor en OMIO |
 |---|---|---|
 | `SMTP_HOST` | Servidor de correo | `mail.omioatelier.com` |
 | `SMTP_PORT` | Puerto: `465` (cifrado directo) o `587` (STARTTLS) | `465` |
-| `SMTP_USER` | Buzón desde el que sale el aviso | `web@omioatelier.com` |
-| `SMTP_PASS` | Su contraseña | — |
+| `SMTP_USER` | Buzón desde el que sale el aviso | `hola@omioatelier.com` |
+| `SMTP_PASS` | Su contraseña | (secreto) |
 | `CONTACTO_DESTINO` | Buzón que recibe las consultas | `hola@omioatelier.com` |
-| `CONTACTO_REMITENTE` | Opcional. Cómo se ve el remitente | `Web OMIO <web@omioatelier.com>` |
+| `CONTACTO_REMITENTE` | Opcional. Cómo se ve el remitente | `Web OMIO <hola@omioatelier.com>` |
 
 Si falta alguna, el envío falla con un error que **dice qué variable falta**, y
 la web muestra al visitante el correo de contacto como alternativa en vez de
 fingir que se ha enviado.
 
-Conviene usar un buzón propio para la web (`web@`) y no el personal de nadie:
-si algún día hay que cambiar la contraseña, no se rompe el correo de una persona.
+El mismo buzón envía y recibe. Si algún día molesta ver los avisos salir de
+`hola@`, se crea un buzón aparte (`web@`) y solo cambian `SMTP_USER`/`SMTP_PASS`.
 
 ## Protecciones
 
@@ -52,3 +52,7 @@ El correo, el teléfono y la ubicación **se editan desde el panel**
 (`/keystatic` → Sección Contacto), sin tocar código. Si el teléfono se deja
 vacío, ese bloque no aparece en la página — mejor sin teléfono que con uno
 que no contesta.
+
+**OMIO no tiene número fijo** (decisión de Vicente Jr., 29-jul-2026): el campo
+va vacío a propósito y la página no muestra bloque de teléfono. Si algún día
+hay un número comercial que alguien atienda, basta escribirlo en el panel.
