@@ -16,6 +16,12 @@ export default function ContactoContent() {
   const phone = t('phone')
   const location = t('location')
 
+  // Una red sin dirección no se pinta: mejor ausencia que un enlace a ninguna parte.
+  const redes = [
+    { nombre: 'Instagram', url: t('instagram') },
+    { nombre: 'LinkedIn', url: t('linkedin') }
+  ].filter((red) => red.url)
+
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -327,34 +333,30 @@ export default function ContactoContent() {
                   </p>
                 </div>
 
-                <div>
-                  <h3
-                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4'
-                    style={{ color: '#8C7732' }}
-                  >
-                    {tPage('socialLabel')}
-                  </h3>
-                  <div className='flex gap-8'>
-                    <a
-                      href='#'
-                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
-                      style={{ color: '#002A3A', opacity: 0.5 }}
-                      target='_blank'
-                      rel='noopener noreferrer'
+                {redes.length > 0 && (
+                  <div>
+                    <h3
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4'
+                      style={{ color: '#8C7732' }}
                     >
-                      Instagram
-                    </a>
-                    <a
-                      href='#'
-                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
-                      style={{ color: '#002A3A', opacity: 0.5 }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      LinkedIn
-                    </a>
+                      {tPage('socialLabel')}
+                    </h3>
+                    <div className='flex gap-8'>
+                      {redes.map((red) => (
+                        <a
+                          key={red.nombre}
+                          href={red.url}
+                          className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
+                          style={{ color: '#002A3A', opacity: 0.5 }}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          {red.nombre}
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </motion.div>
 
               <motion.div

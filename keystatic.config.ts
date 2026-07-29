@@ -64,8 +64,19 @@ export default config({
         }),
         cta: i18nText('Botón (CTA)'),
         email: fields.text({ label: 'Email' }),
-        phone: fields.text({ label: 'Teléfono' }),
+        phone: fields.text({
+          label: 'Teléfono',
+          description: 'Si lo dejas vacío, el teléfono no aparece en la web.',
+        }),
         location: i18nText('Ubicación'),
+        instagram: fields.text({
+          label: 'Instagram (dirección completa)',
+          description: 'Vacío = no se muestra. Ej.: https://www.instagram.com/omio.ad/',
+        }),
+        linkedin: fields.text({
+          label: 'LinkedIn (dirección completa)',
+          description: 'Vacío = no se muestra.',
+        }),
       },
     }),
     textoFooter: singleton({
