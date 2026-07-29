@@ -16,18 +16,57 @@ export default function ContactoContent() {
   const phone = t('phone')
   const location = t('location')
 
+  // Una red sin dirección no se pinta: mejor ausencia que un enlace a ninguna parte.
+  const redes = [
+    { nombre: 'Instagram', url: t('instagram') },
+    { nombre: 'LinkedIn', url: t('linkedin') }
+  ].filter((red) => red.url)
+
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     company: '',
     projectType: '',
-    message: ''
+    message: '',
+    // Campo trampa: las personas no lo ven, los bots lo rellenan.
+    website: ''
   })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [errorKey, setErrorKey] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    if (sending) return
+
+    setSending(true)
+    setErrorKey(null)
+
+    try {
+      const response = await fetch('/api/contacto', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formState)
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+        return
+      }
+
+      const cuerpo = await response.json().catch(() => null)
+      const campo = cuerpo?.campo
+
+      setErrorKey(
+        campo === 'name' || campo === 'email' || campo === 'message'
+          ? `formError_${campo}`
+          : 'formErrorSend'
+      )
+    } catch {
+      setErrorKey('formErrorSend')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -184,14 +223,46 @@ export default function ContactoContent() {
                     />
                   </motion.div>
 
+                  {/* Campo trampa para bots: fuera de la vista y del tabulador. */}
+                  <div aria-hidden='true' className='absolute left-[-9999px] w-px h-px overflow-hidden'>
+                    <label htmlFor='website'>No rellenar</label>
+                    <input
+                      id='website'
+                      name='website'
+                      type='text'
+                      tabIndex={-1}
+                      autoComplete='off'
+                      value={formState.website}
+                      onChange={(e) =>
+                        setFormState({ ...formState, website: e.target.value })
+                      }
+                    />
+                  </div>
+
+                  {errorKey && (
+                    <motion.p
+                      role='alert'
+                      className='font-body text-base'
+                      style={{ color: '#8C2F1F' }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                    >
+                      {errorKey === 'formErrorSend'
+                        ? tPage('formErrorSend', { email })
+                        : tPage(errorKey)}
+                    </motion.p>
+                  )}
+
                   <motion.div variants={fadeInUp} className='pt-4'>
                     <button
                       type='submit'
-                      className='cta-fill inline-flex items-center justify-center px-12 py-5 font-artesano italic text-xl tracking-wide transition-colors duration-500 w-full md:w-auto'
+                      disabled={sending}
+                      aria-busy={sending}
+                      className='cta-fill inline-flex items-center justify-center px-12 py-5 font-artesano italic text-xl tracking-wide transition-colors duration-500 w-full md:w-auto disabled:opacity-50 disabled:cursor-progress'
                       style={{ color: '#8C7732' }}
                       data-cursor='precision'
                     >
-                      {tPage('formSubmit')}
+                      {sending ? tPage('formSending') : tPage('formSubmit')}
                     </button>
                   </motion.div>
                 </form>
@@ -229,21 +300,23 @@ export default function ContactoContent() {
                   </a>
                 </div>
 
-                <div>
-                  <h3
-                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-2'
-                    style={{ color: '#8C7732' }}
-                  >
-                    {tPage('phoneLabel')}
-                  </h3>
-                  <a
-                    href={`tel:${phone.replace(/\s/g, '')}`}
-                    className='font-body text-lg transition-opacity hover:opacity-100'
-                    style={{ color: '#002A3A', opacity: 0.7 }}
-                  >
-                    {phone}
-                  </a>
-                </div>
+                {phone && (
+                  <div>
+                    <h3
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-2'
+                      style={{ color: '#8C7732' }}
+                    >
+                      {tPage('phoneLabel')}
+                    </h3>
+                    <a
+                      href={`tel:${phone.replace(/\s/g, '')}`}
+                      className='font-body text-lg transition-opacity hover:opacity-100'
+                      style={{ color: '#002A3A', opacity: 0.7 }}
+                    >
+                      {phone}
+                    </a>
+                  </div>
+                )}
 
                 <div>
                   <h3
@@ -260,34 +333,30 @@ export default function ContactoContent() {
                   </p>
                 </div>
 
-                <div>
-                  <h3
-                    className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4'
-                    style={{ color: '#8C7732' }}
-                  >
-                    {tPage('socialLabel')}
-                  </h3>
-                  <div className='flex gap-8'>
-                    <a
-                      href='#'
-                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
-                      style={{ color: '#002A3A', opacity: 0.5 }}
-                      target='_blank'
-                      rel='noopener noreferrer'
+                {redes.length > 0 && (
+                  <div>
+                    <h3
+                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mb-4'
+                      style={{ color: '#8C7732' }}
                     >
-                      Instagram
-                    </a>
-                    <a
-                      href='#'
-                      className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
-                      style={{ color: '#002A3A', opacity: 0.5 }}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      LinkedIn
-                    </a>
+                      {tPage('socialLabel')}
+                    </h3>
+                    <div className='flex gap-8'>
+                      {redes.map((red) => (
+                        <a
+                          key={red.nombre}
+                          href={red.url}
+                          className='font-ingeniero text-[11px] tracking-[0.2em] uppercase inline-flex items-center min-h-11 transition-opacity hover:opacity-100'
+                          style={{ color: '#002A3A', opacity: 0.5 }}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          {red.nombre}
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </motion.div>
 
               <motion.div

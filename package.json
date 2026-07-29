@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p ${PORT:-3000}",
     "lint": "eslint",
-    "migrate:content": "tsx scripts/migrate-content.ts"
+    "migrate:content": "tsx scripts/migrate-content.ts",
+    "test": "vitest run"
   },
   "dependencies": {
     "@fontsource/cascadia-code": "^5.2.3",
@@ -22,6 +23,7 @@
     "lenis": "^1.3.18",
     "next": "16.1.6",
     "next-intl": "^4.11.0",
+    "nodemailer": "^9.0.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "three": "^0.183.2"
@@ -29,15 +31,19 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/smtp-server": "^3.5.13",
     "@types/three": "^0.183.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "prettier": "^3.8.3",
+    "smtp-server": "^3.19.2",
     "tailwindcss": "^4",
     "tsx": "^4.22.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.10"
   },
   "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67"
 }

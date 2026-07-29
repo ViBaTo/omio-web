@@ -208,7 +208,12 @@ async function generateTextos() {
     en.hero = { phrases: hero.phrases.map((p) => p.en), location: hero.location.en };
   }
   if (contacta) {
-    const base = { email: contacta.email, phone: contacta.phone };
+    const base = {
+      email: contacta.email,
+      phone: contacta.phone,
+      instagram: contacta.instagram,
+      linkedin: contacta.linkedin,
+    };
     es.contacta = {
       title: contacta.title.es,
       paragraphs: contacta.paragraphs.map((p) => p.es),
