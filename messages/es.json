@@ -235,8 +235,8 @@
       "Si buscas un aliado que no solo entienda tu «qué», sino que comparta tu «porqué», estamos listos para escucharte."
     ],
     "cta": "Hablemos",
-    "email": "info@omiodesign.com",
-    "phone": "+34 960 000 000",
+    "email": "hola@omioatelier.com",
+    "phone": "",
     "location": "Valencia, España"
   },
   "home": {
@@ -452,7 +452,12 @@
         "gastronomia": "Gastronomía",
         "contract": "Contract",
         "otro": "Otro"
-      }
+      },
+      "formSending": "Enviando…",
+      "formError_name": "Escribe tu nombre, por favor.",
+      "formError_email": "Ese correo no parece correcto. Revísalo y volvemos a intentarlo.",
+      "formError_message": "Cuéntanos brevemente qué necesitas.",
+      "formErrorSend": "No hemos podido enviar tu mensaje. Escríbenos a {email} y te contestamos igual de rápido."
     }
   },
   "projectCategories": {

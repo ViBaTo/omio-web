@@ -235,8 +235,8 @@
       "If you're looking for an ally that not only understands your «what», but shares your «why», we're ready to listen."
     ],
     "cta": "Let's talk",
-    "email": "info@omiodesign.com",
-    "phone": "+34 960 000 000",
+    "email": "hola@omioatelier.com",
+    "phone": "",
     "location": "Valencia, Spain"
   },
   "home": {
@@ -452,7 +452,12 @@
         "gastronomia": "Gastronomy",
         "contract": "Contract",
         "otro": "Other"
-      }
+      },
+      "formSending": "Sending…",
+      "formError_name": "Please write your name.",
+      "formError_email": "That email address does not look right. Please check it.",
+      "formError_message": "Tell us briefly what you need.",
+      "formErrorSend": "We could not send your message. Write to us at {email} and we will reply just as fast."
     }
   },
   "projectCategories": {
