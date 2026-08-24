@@ -5,14 +5,14 @@ import { useTranslations } from 'next-intl'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
 
 const GALLERY = [
-  { src: '/images/new/03.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/04.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/05.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/06.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/07.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/08.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/09.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/10.png', aspect: 'aspect-[4/5]' }
+  { src: '/images/new/03.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/04.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/05.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/06.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/07.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/08.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/09.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/10.webp', aspect: 'aspect-[4/5]' }
 ]
 
 export default function HomeAtelier() {

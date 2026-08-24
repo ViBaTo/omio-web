@@ -7,9 +7,9 @@ import { Link } from '@/i18n/navigation'
 import { useIsMobile } from '@/lib/useMediaQuery'
 
 const SLIDES = [
-  '/images/Recurso%201%404x.png',
-  '/images/Recurso%202%404x.png',
-  '/images/Recurso%203%404x.png'
+  '/images/Recurso%201%404x.webp',
+  '/images/Recurso%202%404x.webp',
+  '/images/Recurso%203%404x.webp'
 ]
 
 export default function HomeServicios() {
