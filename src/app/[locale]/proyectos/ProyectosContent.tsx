@@ -10,6 +10,8 @@ import { getProjects, PROJECT_WORLDS, type ProjectFull } from '@/data/projects'
 import type { World } from '@/lib/constants'
 import type { Locale } from '@/i18n/routing'
 import { fadeInUp } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 export default function ProyectosContent() {
   const locale = useLocale() as Locale
@@ -103,13 +105,16 @@ function ProjectListCard({
         >
           <div className='relative overflow-hidden aspect-[16/10]'>
             <motion.div
-              className='w-full h-full bg-cover bg-center'
+              className='absolute inset-0'
               animate={{ scale: isHovered ? 1.05 : 1 }}
               transition={{ duration: 0.6 }}
-              style={{
-                backgroundImage: `url(${project.heroImage})`
-              }}
-            />
+            >
+              <CoverImage
+                src={project.heroImage}
+                alt=''
+                sizes={IMAGE_SIZES.card}
+              />
+            </motion.div>
 
             <div className='absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/70 to-transparent'>
               <p

@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 const GALLERY = [
   { src: '/images/new/03.webp', aspect: 'aspect-[4/5]' },
@@ -73,10 +75,13 @@ export default function HomeAtelier() {
               variants={fadeInUp}
               className={`relative overflow-hidden ${img.aspect}`}
             >
-              <div
-                className='w-full h-full bg-cover bg-center transition-transform duration-[1.2s] hover:scale-[1.04]'
-                style={{ backgroundImage: `url(${img.src})` }}
-              />
+              <div className='absolute inset-0 transition-transform duration-[1.2s] hover:scale-[1.04]'>
+                <CoverImage
+                  src={img.src}
+                  alt=''
+                  sizes={IMAGE_SIZES.atelierGallery}
+                />
+              </div>
             </motion.div>
           ))}
         </motion.div>

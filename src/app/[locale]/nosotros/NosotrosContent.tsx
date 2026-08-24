@@ -6,6 +6,8 @@ import PageHero from '@/components/PageHero'
 import CounterAnimation from '@/components/CounterAnimation'
 import { STATS } from '@/lib/constants'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 interface Value {
   title: string
@@ -48,12 +50,13 @@ export default function NosotrosContent() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div
-              className='aspect-[4/5] w-full bg-cover bg-center'
-              style={{
-                backgroundImage: "url('/images/new/02.webp')"
-              }}
-            />
+            <div className='relative aspect-[4/5] w-full'>
+              <CoverImage
+                src='/images/new/02.webp'
+                alt=''
+                sizes={IMAGE_SIZES.card}
+              />
+            </div>
             <div className='absolute inset-0 texture-artesano opacity-20 mix-blend-overlay' />
           </motion.div>
 

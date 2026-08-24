@@ -5,6 +5,8 @@ import { useTranslations } from 'next-intl'
 import AnimatedText from '@/components/AnimatedText'
 import { Link } from '@/i18n/navigation'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 export default function HomeNosotros() {
   const t = useTranslations('nosotros')
@@ -83,12 +85,13 @@ export default function HomeNosotros() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            <div
-              className='aspect-[4/5] w-full bg-cover bg-center'
-              style={{
-                backgroundImage: "url('/images/new/01.webp')"
-              }}
-            />
+            <div className='relative aspect-[4/5] w-full'>
+              <CoverImage
+                src='/images/new/01.webp'
+                alt=''
+                sizes={IMAGE_SIZES.card}
+              />
+            </div>
             <div className='absolute inset-0 texture-artesano opacity-20 mix-blend-overlay' />
           </motion.div>
         </div>
