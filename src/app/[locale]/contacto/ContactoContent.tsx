@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import posthog from 'posthog-js'
 import PageHero from '@/components/PageHero'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
 
@@ -50,6 +51,9 @@ export default function ContactoContent() {
       })
 
       if (response.ok) {
+        posthog.capture('consulta_enviada', {
+          tipo_proyecto: formState.projectType || 'sin_especificar',
+        })
         setSubmitted(true)
         return
       }
