@@ -20,7 +20,7 @@
     "es": "La intervención en Amazónico Monte-Carlo se concibió como un ejercicio bespoke de arquitectura y decoración dentro de un entorno de hospitality de alta gama. El proyecto reforzó la identidad inmersiva del restaurante a través de elementos artesanales de gran escala inspirados en los paisajes tropicales y la biodiversidad exótica. El objetivo: una atmósfera sensorial donde diseño, artesanía y storytelling coexisten sin costuras.",
     "en": "The intervention for Amazónico Monte-Carlo was conceived as a bespoke architectural and decorative exercise within a high-end hospitality environment. The project enhanced the restaurant’s immersive identity through large-scale handcrafted elements inspired by tropical landscapes and exotic biodiversity. The objective: a sensory atmosphere where design, craftsmanship and storytelling coexist seamlessly."
   },
-  "heroImage": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__hero.jpg",
+  "heroImage": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__hero.webp",
   "featured": true,
   "acts": [
     {
@@ -36,7 +36,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__brief-01.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__brief-01.webp",
           "alt": {
             "es": "Moodboard del concepto Amazónico",
             "en": "Amazónico concept moodboard"
@@ -47,7 +47,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__brief-02.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__brief-02.webp",
           "alt": {
             "es": "Render conceptual del estudio creativo",
             "en": "Creative studio conceptual render"
@@ -72,7 +72,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-01.png",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-01.webp",
           "alt": {
             "es": "Modelo 3D de la pérgola escultórica",
             "en": "Sculptural pergola 3D model"
@@ -83,7 +83,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-02.png",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-02.webp",
           "alt": {
             "es": "Despiece técnico de las aves suspendidas",
             "en": "Suspended birds technical exploded view"
@@ -94,7 +94,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-03.png",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__tech-03.webp",
           "alt": {
             "es": "Planos de fabricación",
             "en": "Fabrication drawings"
@@ -119,7 +119,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-01.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-01.webp",
           "alt": {
             "es": "Fabricación en taller",
             "en": "Workshop manufacturing"
@@ -130,7 +130,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-02.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-02.webp",
           "alt": {
             "es": "Montaje on-site",
             "en": "On-site assembly"
@@ -141,7 +141,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-03.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-03.webp",
           "alt": {
             "es": "Instalación de pérgola",
             "en": "Pergola installation"
@@ -152,7 +152,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-04.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__execution-04.webp",
           "alt": {
             "es": "Acabados artesanales in situ",
             "en": "On-site artisan finishing"
@@ -177,7 +177,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-01.png",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-01.webp",
           "alt": {
             "es": "Vista general del comedor",
             "en": "Dining room overview"
@@ -188,7 +188,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-02.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-02.webp",
           "alt": {
             "es": "Detalle de aves suspendidas",
             "en": "Suspended birds detail"
@@ -199,7 +199,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-03.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-03.webp",
           "alt": {
             "es": "Pérgola escultórica finalizada",
             "en": "Completed sculptural pergola"
@@ -210,7 +210,7 @@
           }
         },
         {
-          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-04.jpg",
+          "src": "/images/projects/amazonico-monte-carlo__amazonico-monte-carlo__result-04.webp",
           "alt": {
             "es": "Atmósfera del restaurante",
             "en": "Restaurant atmosphere"

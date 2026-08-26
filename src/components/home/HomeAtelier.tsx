@@ -3,16 +3,18 @@
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 const GALLERY = [
-  { src: '/images/new/03.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/04.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/05.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/06.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/07.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/08.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/09.png', aspect: 'aspect-[4/5]' },
-  { src: '/images/new/10.png', aspect: 'aspect-[4/5]' }
+  { src: '/images/new/03.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/04.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/05.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/06.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/07.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/08.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/09.webp', aspect: 'aspect-[4/5]' },
+  { src: '/images/new/10.webp', aspect: 'aspect-[4/5]' }
 ]
 
 export default function HomeAtelier() {
@@ -73,10 +75,13 @@ export default function HomeAtelier() {
               variants={fadeInUp}
               className={`relative overflow-hidden ${img.aspect}`}
             >
-              <div
-                className='w-full h-full bg-cover bg-center transition-transform duration-[1.2s] hover:scale-[1.04]'
-                style={{ backgroundImage: `url(${img.src})` }}
-              />
+              <div className='absolute inset-0 transition-transform duration-[1.2s] hover:scale-[1.04]'>
+                <CoverImage
+                  src={img.src}
+                  alt=''
+                  sizes={IMAGE_SIZES.atelierGallery}
+                />
+              </div>
             </motion.div>
           ))}
         </motion.div>

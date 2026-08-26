@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { ProjectImage } from '@/data/projects'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 interface ImageGalleryProps {
   images: ProjectImage[]
@@ -29,11 +31,10 @@ export default function ImageGallery({
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
         >
-          <div
-            className='w-full h-full bg-cover bg-center'
-            style={{
-              backgroundImage: `url(${images[selected].src})`
-            }}
+          <CoverImage
+            src={images[selected].src}
+            alt={images[selected].alt ?? ''}
+            sizes={IMAGE_SIZES.projectGallery}
           />
           {images[selected].caption && (
             <div className='absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent'>
@@ -64,11 +65,10 @@ export default function ImageGallery({
                     : '2px solid transparent'
               }}
             >
-              <div
-                className='w-full h-full bg-cover bg-center'
-                style={{
-                  backgroundImage: `url(${img.src})`
-                }}
+              <CoverImage
+                src={img.src}
+                alt={img.alt ?? ''}
+                sizes={IMAGE_SIZES.thumb}
               />
             </button>
           ))}

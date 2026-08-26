@@ -14,6 +14,8 @@ import { getMaterialsForProject } from '@/data/materials'
 import type { Locale } from '@/i18n/routing'
 import type { World } from '@/lib/constants'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 interface Props {
   project: ProjectFull
@@ -65,12 +67,12 @@ export default function ProjectDetailContent({ project }: Props) {
         style={{ backgroundColor: '#002A3A' }}
       >
         <div className='absolute inset-0'>
-          <div
-            className='w-full h-full bg-cover bg-center'
-            style={{
-              backgroundImage: `url(${project.heroImage})`,
-              opacity: 0.7,
-            }}
+          <CoverImage
+            src={project.heroImage}
+            alt=''
+            sizes={IMAGE_SIZES.fullBleed}
+            priority
+            opacity={0.7}
           />
           <div className='absolute inset-0 bg-gradient-to-t from-[#002A3A] via-[#002A3A]/40 to-[#002A3A]/30' />
         </div>
@@ -440,11 +442,10 @@ function ActImageGrid({
         whileInView='visible'
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div
-          className='w-full h-full bg-cover bg-center'
-          style={{ backgroundImage: `url(${images[0].src})` }}
-          role='img'
-          aria-label={images[0].alt}
+        <CoverImage
+          src={images[0].src}
+          alt={images[0].alt}
+          sizes={IMAGE_SIZES.projectGallery}
         />
         {images[0].caption && (
           <figcaption
@@ -471,11 +472,10 @@ function ActImageGrid({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ delay: i * 0.1 }}
           >
-            <div
-              className='w-full h-full bg-cover bg-center'
-              style={{ backgroundImage: `url(${img.src})` }}
-              role='img'
-              aria-label={img.alt}
+            <CoverImage
+              src={img.src}
+              alt={img.alt}
+              sizes={IMAGE_SIZES.projectGallery}
             />
           </motion.div>
         ))}
@@ -494,11 +494,10 @@ function ActImageGrid({
         whileInView='visible'
         viewport={{ once: true, amount: 0.2 }}
       >
-        <div
-          className='w-full h-full bg-cover bg-center'
-          style={{ backgroundImage: `url(${big.src})` }}
-          role='img'
-          aria-label={big.alt}
+        <CoverImage
+          src={big.src}
+          alt={big.alt}
+          sizes={IMAGE_SIZES.projectGallery}
         />
       </motion.div>
     )
@@ -514,11 +513,10 @@ function ActImageGrid({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ delay: 0.1 + i * 0.1 }}
           >
-            <div
-              className='w-full h-full bg-cover bg-center'
-              style={{ backgroundImage: `url(${img.src})` }}
-              role='img'
-              aria-label={img.alt}
+            <CoverImage
+              src={img.src}
+              alt={img.alt}
+              sizes={IMAGE_SIZES.projectGallery}
             />
           </motion.div>
         ))}
@@ -545,11 +543,10 @@ function ActImageGrid({
           viewport={{ once: true, amount: 0.2 }}
           transition={{ delay: i * 0.08 }}
         >
-          <div
-            className='w-full h-full bg-cover bg-center'
-            style={{ backgroundImage: `url(${img.src})` }}
-            role='img'
-            aria-label={img.alt}
+          <CoverImage
+            src={img.src}
+            alt={img.alt}
+            sizes={IMAGE_SIZES.projectGallery}
           />
         </motion.div>
       ))}

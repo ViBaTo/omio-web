@@ -54,7 +54,7 @@ export default function HeroDoor() {
           loop
           playsInline
           preload='metadata'
-          poster='/images/artesania/IMG_1458.jpg'
+          poster='/images/artesania/IMG_1458.webp'
         >
           <source src='/videos/IMG_1381.mp4' type='video/mp4' />
         </video>
