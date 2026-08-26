@@ -5,6 +5,9 @@ import { POSTHOG_PROXY_PATH } from "./src/lib/posthog-proxy";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   // PostHog captura en /e/ (con barra final). Sin esto Next redirige y se pierde el evento.
   skipTrailingSlashRedirect: true,
   async rewrites() {

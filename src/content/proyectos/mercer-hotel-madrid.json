@@ -20,7 +20,7 @@
     "es": "La intervención en el Mercer Hotel de Madrid representa un ejercicio integral de arquitectura interior bespoke. El proyecto se centró en las áreas sociales públicas, donde estructuras contemporáneas se integraron dentro de un contexto arquitectónico histórico. El objetivo: crear una experiencia sensorial sofisticada a través de la fusión sin costuras entre patrimonio y artesanía de alta gama.",
     "en": "The intervention for the Mercer Hotel in Madrid represents a comprehensive exercise in bespoke interior architecture. The project focused on the public social areas, where contemporary structures were integrated within a historical architectural context. The objective: to create a sophisticated sensory experience through the seamless fusion of heritage and high-end craftsmanship."
   },
-  "heroImage": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__hero.png",
+  "heroImage": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__hero.webp",
   "featured": true,
   "acts": [
     {
@@ -36,7 +36,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__brief-01.png",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__brief-01.webp",
           "alt": {
             "es": "Concepto minimalista del proyecto",
             "en": "Minimalist project concept"
@@ -47,7 +47,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__brief-02.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__brief-02.webp",
           "alt": {
             "es": "Render de la escultura lumínica",
             "en": "Lighting sculpture render"
@@ -72,7 +72,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-01.png",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-01.webp",
           "alt": {
             "es": "Modelo 3D del mostrador en piedra",
             "en": "Stone reception desk 3D model"
@@ -83,7 +83,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-02.png",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-02.webp",
           "alt": {
             "es": "Estructura interna de la escultura lumínica",
             "en": "Lighting sculpture internal framework"
@@ -94,7 +94,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-03.png",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__tech-03.webp",
           "alt": {
             "es": "Despiece geométrico de piedra",
             "en": "Geometric stone exploded view"
@@ -119,7 +119,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-01.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-01.webp",
           "alt": {
             "es": "Producción de los bloques de piedra",
             "en": "Stone blocks production"
@@ -130,7 +130,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-02.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-02.webp",
           "alt": {
             "es": "Montaje del mostrador",
             "en": "Desk assembly"
@@ -141,7 +141,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-03.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-03.webp",
           "alt": {
             "es": "Instalación de la escultura lumínica",
             "en": "Lighting sculpture installation"
@@ -152,7 +152,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-04.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__execution-04.webp",
           "alt": {
             "es": "Ajustes on-site",
             "en": "On-site adjustments"
@@ -177,7 +177,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-02.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-02.webp",
           "alt": {
             "es": "Mostrador de recepción finalizado",
             "en": "Completed reception desk"
@@ -188,7 +188,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-03.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-03.webp",
           "alt": {
             "es": "Vista de la escultura lumínica",
             "en": "Lighting sculpture view"
@@ -199,7 +199,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-04.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-04.webp",
           "alt": {
             "es": "Detalle de la geometría en piedra",
             "en": "Stone geometry detail"
@@ -210,7 +210,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-05.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-05.webp",
           "alt": {
             "es": "Área social",
             "en": "Social area"
@@ -221,7 +221,7 @@
           }
         },
         {
-          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-06.jpg",
+          "src": "/images/projects/mercer-hotel-madrid__mercer-hotel-madrid__result-06.webp",
           "alt": {
             "es": "Seta lumínica acabada",
             "en": "Finished light-canopy sculpture"

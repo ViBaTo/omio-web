@@ -6,6 +6,8 @@ import { Link } from '@/i18n/navigation'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
 import type { Locale } from '@/i18n/routing'
 import { getMaterialBySlug } from '@/data/materials'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 interface FeaturedItem {
   slug: string
@@ -83,10 +85,15 @@ export default function HomeMateriales() {
               <motion.div key={`${item.slug}-${idx}`} variants={fadeInUp}>
                 <Link href={`/materiales/${item.slug}`} className='group block'>
                   <div className='relative overflow-hidden aspect-[3/4]'>
-                    <div
-                      className='w-full h-full transition-transform duration-700 group-hover:scale-105 bg-cover bg-center'
-                      style={{ backgroundImage: `url(${material.image})` }}
-                    />
+                    <div className='absolute inset-0 transition-transform duration-700 group-hover:scale-105'>
+                      {material.image && (
+                        <CoverImage
+                          src={material.image}
+                          alt=''
+                          sizes={IMAGE_SIZES.card}
+                        />
+                      )}
+                    </div>
                   </div>
                   <p
                     className='font-ingeniero text-[11px] tracking-[0.2em] uppercase mt-3'

@@ -8,6 +8,8 @@ import type { Material } from '@/data/materials'
 import { getProjectBySlug } from '@/data/projects'
 import type { Locale } from '@/i18n/routing'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 const CATEGORY_GRADIENTS: Record<string, string> = {
   Maderas: 'linear-gradient(135deg, #5C4033 0%, #8B6914 50%, #3E2723 100%)',
@@ -59,15 +61,22 @@ export default function MaterialDetailContent({ material }: Props) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div
-                className='w-full h-full bg-cover bg-center'
-                style={{
-                  background: material.image
-                    ? `url(${material.image}) center/cover no-repeat`
-                    : CATEGORY_GRADIENTS[material.category] ||
+              {material.image ? (
+                <CoverImage
+                  src={material.image}
+                  alt={material.name}
+                  sizes={IMAGE_SIZES.card}
+                />
+              ) : (
+                <div
+                  className='w-full h-full'
+                  style={{
+                    background:
+                      CATEGORY_GRADIENTS[material.category] ||
                       CATEGORY_GRADIENTS.Acabados
-                }}
-              />
+                  }}
+                />
+              )}
             </motion.div>
 
             <motion.div
@@ -173,12 +182,13 @@ export default function MaterialDetailContent({ material }: Props) {
                     className='group'
                   >
                     <div className='relative overflow-hidden aspect-[16/10]'>
-                      <div
-                        className='w-full h-full transition-transform duration-700 group-hover:scale-105 bg-cover bg-center'
-                        style={{
-                          backgroundImage: `url(${project.heroImage})`
-                        }}
-                      />
+                      <div className='absolute inset-0 transition-transform duration-700 group-hover:scale-105'>
+                        <CoverImage
+                          src={project.heroImage}
+                          alt=''
+                          sizes={IMAGE_SIZES.card}
+                        />
+                      </div>
                       <div className='absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent'>
                         <p
                           className='font-ingeniero text-[11px] tracking-[0.2em] uppercase'

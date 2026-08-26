@@ -20,7 +20,7 @@
     "es": "La intervención en el Grand Hotel Centenari — Marriott Autograph Collection en Valencia representa un ejercicio integral de arquitectura interior bespoke. El proyecto se centró en la transformación del lobby, el restaurante y las áreas de hospitality mediante elementos arquitectónicos a medida inspirados en el patrimonio Art Decó de Valencia y la elegancia de los años 20. El objetivo: una experiencia sensorial donde artesanía, materialidad e identidad arquitectónica coexisten sin fisuras.",
     "en": "The intervention for Grand Hotel Centenari — Marriott Autograph Collection in Valencia represents a comprehensive exercise in bespoke interior architecture. The project focused on the transformation of the lobby, restaurant and hospitality areas through custom-designed architectural elements inspired by Valencia’s Art Deco heritage and the elegance of the 1920s. The objective: a sensory experience where craftsmanship, materiality and architectural identity coexist seamlessly."
   },
-  "heroImage": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__hero.jpg",
+  "heroImage": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__hero.webp",
   "featured": true,
   "acts": [
     {
@@ -36,7 +36,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__brief-01.png",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__brief-01.webp",
           "alt": {
             "es": "Concepto Art Decó del estudio",
             "en": "Studio Art Deco concept"
@@ -47,7 +47,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__brief-02.png",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__brief-02.webp",
           "alt": {
             "es": "Render del lobby propuesto",
             "en": "Proposed lobby render"
@@ -72,7 +72,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-01.png",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-01.webp",
           "alt": {
             "es": "Modelo 3D de columna monumental",
             "en": "Monumental column 3D model"
@@ -83,7 +83,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-02.png",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-02.webp",
           "alt": {
             "es": "Planos del bar counter a medida",
             "en": "Bespoke bar counter drawings"
@@ -94,7 +94,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-03.png",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__tech-03.webp",
           "alt": {
             "es": "Estructura de iluminación suspendida",
             "en": "Suspended lighting structure"
@@ -119,7 +119,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-01.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-01.webp",
           "alt": {
             "es": "Producción de columnas en taller",
             "en": "Columns manufacturing in workshop"
@@ -130,7 +130,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-02.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-02.webp",
           "alt": {
             "es": "Montaje del bar counter",
             "en": "Bar counter assembly"
@@ -141,7 +141,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-03.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-03.webp",
           "alt": {
             "es": "Instalación de iluminación",
             "en": "Lighting installation"
@@ -152,7 +152,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-04.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__execution-04.webp",
           "alt": {
             "es": "Ajuste fino on-site",
             "en": "On-site fine adjustments"
@@ -177,7 +177,7 @@
       },
       "images": [
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-02.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-02.webp",
           "alt": {
             "es": "Lobby finalizado",
             "en": "Completed lobby"
@@ -188,7 +188,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-03.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-03.webp",
           "alt": {
             "es": "Detalle del bar counter",
             "en": "Bar counter detail"
@@ -199,7 +199,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-04.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-04.webp",
           "alt": {
             "es": "Restaurante en operación",
             "en": "Restaurant in operation"
@@ -210,7 +210,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-05.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-05.webp",
           "alt": {
             "es": "Columnas Art Decó iluminadas",
             "en": "Illuminated Art Deco columns"
@@ -221,7 +221,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-06.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-06.webp",
           "alt": {
             "es": "Área social",
             "en": "Social area"
@@ -232,7 +232,7 @@
           }
         },
         {
-          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-07.jpg",
+          "src": "/images/projects/grand-hotel-centenari__grand-hotel-centenari__result-07.webp",
           "alt": {
             "es": "Vista nocturna",
             "en": "Night view"

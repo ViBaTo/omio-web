@@ -7,6 +7,8 @@ import { Link } from '@/i18n/navigation'
 import { getFeaturedProjects, type ProjectFull } from '@/data/projects'
 import type { Locale } from '@/i18n/routing'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 export default function HomeProyectos() {
   const locale = useLocale() as Locale
@@ -119,13 +121,16 @@ function FeaturedProjectCard({
         >
           <div className='relative overflow-hidden aspect-[4/5]'>
             <motion.div
-              className='w-full h-full bg-cover bg-center'
+              className='absolute inset-0'
               animate={{ scale: isHovered ? 1.05 : 1 }}
               transition={{ duration: 0.6 }}
-              style={{
-                backgroundImage: `url(${project.heroImage})`
-              }}
-            />
+            >
+              <CoverImage
+                src={project.heroImage}
+                alt=''
+                sizes={IMAGE_SIZES.card}
+              />
+            </motion.div>
             <div className='absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent'>
               <p
                 className='font-ingeniero text-[11px] tracking-[0.3em] uppercase mb-2'

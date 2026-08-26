@@ -5,11 +5,13 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { useIsMobile } from '@/lib/useMediaQuery'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 const SLIDES = [
-  '/images/Recurso%201%404x.png',
-  '/images/Recurso%202%404x.png',
-  '/images/Recurso%203%404x.png'
+  '/images/Recurso%201%404x.webp',
+  '/images/Recurso%202%404x.webp',
+  '/images/Recurso%203%404x.webp'
 ]
 
 export default function HomeServicios() {
@@ -30,9 +32,11 @@ export default function HomeServicios() {
         <div className='flex flex-col'>
           {SLIDES.map((src) => (
             <div key={src} className='relative aspect-[3/4] w-full'>
-              <div
-                className='absolute inset-0 bg-cover bg-center'
-                style={{ backgroundImage: `url(${src})`, filter: 'grayscale(100%) contrast(1.05)' }}
+              <CoverImage
+                src={src}
+                alt=''
+                sizes={IMAGE_SIZES.fullBleed}
+                className='grayscale contrast-[1.05]'
               />
               <div className='absolute inset-0 texture-artesano opacity-30' />
             </div>
@@ -63,9 +67,11 @@ export default function HomeServicios() {
         <motion.div className='flex h-full will-change-transform' style={{ x, width: `${SLIDES.length * 100}%` }}>
           {SLIDES.map((src) => (
             <div key={src} className='relative h-full shrink-0' style={{ width: `${100 / SLIDES.length}%` }}>
-              <div
-                className='absolute inset-0 bg-cover bg-center'
-                style={{ backgroundImage: `url(${src})`, filter: 'grayscale(100%) contrast(1.05)' }}
+              <CoverImage
+                src={src}
+                alt=''
+                sizes={IMAGE_SIZES.fullBleed}
+                className='grayscale contrast-[1.05]'
               />
               <div className='absolute inset-0 texture-artesano opacity-30' />
             </div>

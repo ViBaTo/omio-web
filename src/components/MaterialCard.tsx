@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import type { Material } from '@/data/materials'
+import CoverImage from '@/components/CoverImage'
+import { IMAGE_SIZES } from '@/lib/images/sizes'
 
 interface MaterialCardProps {
   material: Material
@@ -37,17 +39,27 @@ export default function MaterialCard({ material }: MaterialCardProps) {
       >
         <div className='relative overflow-hidden aspect-[4/5]'>
           <motion.div
-            className='w-full h-full bg-cover bg-center'
+            className='absolute inset-0'
             animate={{ scale: isHovered ? 1.05 : 1 }}
             transition={{ duration: 0.6 }}
-            style={{
-              backgroundImage: `url(${material.image})`,
-              background: material.image
-                ? `url(${material.image}) center/cover no-repeat`
-                : CATEGORY_GRADIENTS[material.category] ||
-                  CATEGORY_GRADIENTS.Acabados
-            }}
-          />
+          >
+            {material.image ? (
+              <CoverImage
+                src={material.image}
+                alt={material.name}
+                sizes={IMAGE_SIZES.card}
+              />
+            ) : (
+              <div
+                className='w-full h-full'
+                style={{
+                  background:
+                    CATEGORY_GRADIENTS[material.category] ||
+                    CATEGORY_GRADIENTS.Acabados
+                }}
+              />
+            )}
+          </motion.div>
           <motion.div
             className='absolute inset-0 flex items-center justify-center'
             initial={{ opacity: 0 }}
