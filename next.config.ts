@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  webpack: (config) => {
+    config.resolve.alias.canvas = false;
+    return config;
+  },
   // PostHog captura en /e/ (con barra final). Sin esto Next redirige y se pierde el evento.
   skipTrailingSlashRedirect: true,
   async rewrites() {

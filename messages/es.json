@@ -16,6 +16,10 @@
       "title": "Materiales — OMIO Atelier & Design",
       "description": "Descubre nuestra selección de materiales: maderas nobles, metales trabajados, piedras naturales y textiles de la más alta calidad."
     },
+    "catalogos": {
+      "title": "Catálogos — OMIO Atelier & Design",
+      "description": "Consulta y descarga los catálogos de OMIO. Piezas, materiales y posibilidades, en un mismo documento."
+    },
     "proyectos": {
       "title": "Proyectos — OMIO Atelier & Design",
       "description": "Cada proyecto es una historia. Descubre nuestra cartera de proyectos en hospitality, residencial, gastronomía y contract."
@@ -59,6 +63,7 @@
     "nosotros": "NOSOTROS",
     "servicios": "SERVICIOS",
     "materiales": "MATERIALES",
+    "catalogos": "CATÁLOGOS",
     "proyectos": "PROYECTOS",
     "proceso": "PROCESO",
     "contacto": "CONTACTO"
@@ -341,8 +346,27 @@
       "breadcrumb": "Materiales",
       "notFoundTitle": "Material no encontrado"
     },
-    "proyectos": {
+    "catalogos": {
       "heroNumber": "04",
+      "heroLabel": "CATÁLOGOS",
+      "heroTitle": "La Memoria de Nuestras Piezas",
+      "heroSubtitle": "Consulta cada catálogo en pantalla o descárgalo. Un documento para imaginar, especificar y compartir lo que OMIO puede materializar.",
+      "emptyState": "Los catálogos se publicarán aquí pronto.",
+      "viewCatalog": "Ver catálogo",
+      "downloadPdf": "Descargar PDF",
+      "breadcrumb": "Catálogos",
+      "notFoundTitle": "Catálogo no encontrado",
+      "pageOf": "Página {current} de {total}",
+      "previousPage": "Página anterior",
+      "nextPage": "Página siguiente",
+      "zoomIn": "Acercar",
+      "zoomOut": "Alejar",
+      "fitWidth": "Ajustar al ancho",
+      "viewerError": "No hemos podido mostrar el catálogo en el visor. Puedes descargarlo para abrirlo en tu dispositivo.",
+      "loadingViewer": "Cargando catálogo…"
+    },
+    "proyectos": {
+      "heroNumber": "05",
       "heroLabel": "PROYECTOS",
       "heroTitle": "Cada Proyecto, una Historia",
       "heroSubtitle": "Nuestra cartera refleja el éxito de fusionar tres mundos: el artesano, el ingeniero y la fábrica. Nos especializamos en contract global de alta gama.",
@@ -362,7 +386,7 @@
       "notFoundTitle": "Proyecto no encontrado"
     },
     "proceso": {
-      "heroNumber": "05",
+      "heroNumber": "06",
       "heroLabel": "PROCESO",
       "heroTitle": "Del Concepto a la Instalación",
       "heroSubtitle": "Un sistema probado de cinco fases que minimiza riesgos y maximiza la calidad. Cada fase es un compromiso de transparencia con nuestro cliente.",
@@ -433,7 +457,7 @@
       "ctaButton": "Hablemos"
     },
     "contacto": {
-      "heroNumber": "06",
+      "heroNumber": "07",
       "heroLabel": "CONTACTO",
       "formNameLabel": "Nombre",
       "formEmailLabel": "Email",

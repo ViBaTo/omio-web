@@ -73,7 +73,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-5 lg:gap-7">
           {NAV_PAGES.map((link) => {
             const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
             return (

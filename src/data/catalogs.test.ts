@@ -4,6 +4,7 @@ import {
   catalogsFromRaw,
   catalogBySlug,
   catalogSlugs,
+  catalogDownloadName,
   type CatalogI18n,
 } from './catalogs'
 
@@ -92,5 +93,11 @@ describe('catalogSlugs', () => {
       'mobiliario-2025',
       'iluminacion-2024',
     ])
+  })
+})
+
+describe('catalogDownloadName', () => {
+  test('usa el slug con extensión pdf', () => {
+    expect(catalogDownloadName('mobiliario-2025')).toBe('mobiliario-2025.pdf')
   })
 })

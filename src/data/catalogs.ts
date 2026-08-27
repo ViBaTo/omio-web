@@ -69,6 +69,10 @@ export function catalogSlugs(raw: CatalogI18n[]): string[] {
   return raw.map((c) => c.slug);
 }
 
+export function catalogDownloadName(slug: string): string {
+  return `${slug}.pdf`;
+}
+
 export function getCatalogs(locale: Locale): Catalog[] {
   return catalogsFromRaw(CATALOGS_RAW, locale);
 }
