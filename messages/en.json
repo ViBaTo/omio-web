@@ -363,7 +363,8 @@
       "zoomOut": "Zoom out",
       "fitWidth": "Fit width",
       "fitScreen": "Fit to screen",
-      "navHint": "Turn pages with ← → or by swiping",
+      "navHintKeyboard": "Turn pages with the ← → arrow keys",
+      "navHintTouch": "Swipe or tap the arrows to turn pages",
       "viewerError": "We couldn't display the catalogue in the viewer. You can download it to open it on your device.",
       "loadingViewer": "Loading catalogue…"
     },

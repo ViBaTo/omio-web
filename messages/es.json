@@ -363,7 +363,8 @@
       "zoomOut": "Alejar",
       "fitWidth": "Ajustar al ancho",
       "fitScreen": "Ajustar a pantalla",
-      "navHint": "Pasa página con ← → o deslizando",
+      "navHintKeyboard": "Pasa página con las flechas ← → del teclado",
+      "navHintTouch": "Desliza con el dedo o toca las flechas para pasar página",
       "viewerError": "No hemos podido mostrar el catálogo en el visor. Puedes descargarlo para abrirlo en tu dispositivo.",
       "loadingViewer": "Cargando catálogo…"
     },
