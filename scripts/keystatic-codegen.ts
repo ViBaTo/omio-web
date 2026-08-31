@@ -12,7 +12,7 @@ import { createReader } from '@keystatic/core/reader';
 import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import keystaticConfig from '../keystatic.config';
-import { catalogMissingEssentials } from '../src/data/catalogs';
+import { catalogMissingEssentials } from '../src/data/catalogs.schema';
 
 const ROOT = process.cwd();
 const OUT_DIR = join(ROOT, 'src/data/_generated');

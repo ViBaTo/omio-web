@@ -1,39 +1,11 @@
 import type { Locale } from '@/i18n/routing';
 import { CATALOGS_RAW } from './_generated/catalogs.generated';
+import type { Catalog, CatalogI18n } from './catalogs.schema';
 
-type LocalizedString = { es: string; en: string };
-
-export interface CatalogI18n {
-  slug: string;
-  title: LocalizedString;
-  description: LocalizedString;
-  cover: string;
-  file: string;
-  year?: number;
-}
-
-export interface Catalog {
-  slug: string;
-  title: string;
-  description: string;
-  cover: string;
-  file: string;
-  year?: number;
-}
-
-export interface CatalogEssentialsInput {
-  title?: { es?: string | null; en?: string | null } | null;
-  cover?: string | null;
-  file?: string | null;
-}
-
-export function catalogMissingEssentials(entry: CatalogEssentialsInput): string[] {
-  const missing: string[] = [];
-  if (!entry.title?.es?.trim()) missing.push('título (ES)');
-  if (!entry.cover) missing.push('portada');
-  if (!entry.file) missing.push('PDF');
-  return missing;
-}
+// Los tipos y la validación viven en ./catalogs.schema (sin datos) para que el
+// codegen pueda usarlos sin depender de _generated, que él mismo produce.
+export type { Catalog, CatalogI18n, CatalogEssentialsInput } from './catalogs.schema';
+export { catalogMissingEssentials } from './catalogs.schema';
 
 export function localizeCatalog(c: CatalogI18n, locale: Locale): Catalog {
   return {
