@@ -1,0 +1,13 @@
+{
+  "title": {
+    "es": "Cerámica",
+    "en": "Ceramics"
+  },
+  "description": {
+    "es": "Dossier de cerámica para interior y exterior: piezas hechas a mano, cocidas a alta temperatura, para arquitectos, hoteles e interioristas.",
+    "en": "Ceramics dossier for interiors and exteriors: handmade pieces fired at high temperature, for architects, hotels and interior designers."
+  },
+  "year": 2024,
+  "cover": "/images/catalogos/ceramica/cover.webp",
+  "file": "/catalogos/ceramica/file.pdf"
+}
