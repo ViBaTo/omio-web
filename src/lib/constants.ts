@@ -33,6 +33,7 @@ export const NAV_PAGES: NavLink[] = [
   { href: '/nosotros', labelKey: 'nosotros', world: 'artesano' },
   { href: '/servicios', labelKey: 'servicios', world: 'fabrica' },
   { href: '/materiales', labelKey: 'materiales', world: 'artesano' },
+  { href: '/catalogos', labelKey: 'catalogos', world: 'artesano' },
   { href: '/proyectos', labelKey: 'proyectos', world: 'fabrica' },
   { href: '/proceso', labelKey: 'proceso', world: 'ingeniero' },
   { href: '/contacto', labelKey: 'contacto', world: 'artesano' }

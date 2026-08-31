@@ -25,10 +25,12 @@
     "next": "16.1.6",
     "next-intl": "^4.11.0",
     "nodemailer": "^9.0.3",
+    "pdfjs-dist": "5.4.296",
     "posthog-js": "^1.418.13",
     "posthog-node": "^5.51.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-pdf": "^10.5.0",
     "three": "^0.183.2"
   },
   "devDependencies": {

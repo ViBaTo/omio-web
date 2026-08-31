@@ -16,6 +16,10 @@
       "title": "Materials — OMIO Atelier & Design",
       "description": "Discover our material selection: noble woods, worked metals, natural stones, and the highest quality textiles."
     },
+    "catalogos": {
+      "title": "Catalogues — OMIO Atelier & Design",
+      "description": "Browse and download OMIO catalogues. Pieces, materials, and possibilities in a single document."
+    },
     "proyectos": {
       "title": "Projects — OMIO Atelier & Design",
       "description": "Every project is a story. Discover our portfolio in hospitality, residential, gastronomy, and contract."
@@ -59,6 +63,7 @@
     "nosotros": "ABOUT",
     "servicios": "SERVICES",
     "materiales": "MATERIALS",
+    "catalogos": "CATALOGUES",
     "proyectos": "PROJECTS",
     "proceso": "PROCESS",
     "contacto": "CONTACT"
@@ -341,8 +346,27 @@
       "breadcrumb": "Materials",
       "notFoundTitle": "Material not found"
     },
-    "proyectos": {
+    "catalogos": {
       "heroNumber": "04",
+      "heroLabel": "CATALOGUES",
+      "heroTitle": "The Record of Our Pieces",
+      "heroSubtitle": "Browse each catalogue on screen or download it. A document to imagine, specify, and share what OMIO can bring to life.",
+      "emptyState": "Catalogues will be published here soon.",
+      "viewCatalog": "View catalogue",
+      "downloadPdf": "Download PDF",
+      "breadcrumb": "Catalogues",
+      "notFoundTitle": "Catalogue not found",
+      "pageOf": "Page {current} of {total}",
+      "previousPage": "Previous page",
+      "nextPage": "Next page",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "fitWidth": "Fit width",
+      "viewerError": "We couldn't display the catalogue in the viewer. You can download it to open it on your device.",
+      "loadingViewer": "Loading catalogue…"
+    },
+    "proyectos": {
+      "heroNumber": "05",
       "heroLabel": "PROJECTS",
       "heroTitle": "Every Project, a Story",
       "heroSubtitle": "Our portfolio reflects the success of merging three worlds: the craftsman, the engineer, and the factory. We specialize in high-end global contract.",
@@ -362,7 +386,7 @@
       "notFoundTitle": "Project not found"
     },
     "proceso": {
-      "heroNumber": "05",
+      "heroNumber": "06",
       "heroLabel": "PROCESS",
       "heroTitle": "From Concept to Installation",
       "heroSubtitle": "A proven five-phase system that minimizes risk and maximizes quality. Each phase is a transparency commitment to our client.",
@@ -433,7 +457,7 @@
       "ctaButton": "Let's talk"
     },
     "contacto": {
-      "heroNumber": "06",
+      "heroNumber": "07",
       "heroLabel": "CONTACT",
       "formNameLabel": "Name",
       "formEmailLabel": "Email",
