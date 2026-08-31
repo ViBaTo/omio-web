@@ -362,6 +362,8 @@
       "zoomIn": "Acercar",
       "zoomOut": "Alejar",
       "fitWidth": "Ajustar al ancho",
+      "fitScreen": "Ajustar a pantalla",
+      "navHint": "Pasa página con ← → o deslizando",
       "viewerError": "No hemos podido mostrar el catálogo en el visor. Puedes descargarlo para abrirlo en tu dispositivo.",
       "loadingViewer": "Cargando catálogo…"
     },

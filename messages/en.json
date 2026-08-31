@@ -362,6 +362,8 @@
       "zoomIn": "Zoom in",
       "zoomOut": "Zoom out",
       "fitWidth": "Fit width",
+      "fitScreen": "Fit to screen",
+      "navHint": "Turn pages with ← → or by swiping",
       "viewerError": "We couldn't display the catalogue in the viewer. You can download it to open it on your device.",
       "loadingViewer": "Loading catalogue…"
     },
