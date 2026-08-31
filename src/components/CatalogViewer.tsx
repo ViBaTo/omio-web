@@ -5,6 +5,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import { useTranslations } from 'next-intl'
 import type { Catalog } from '@/data/catalogs'
 import { renderWidth, type FitMode } from '@/lib/pdf/fit'
+import { useIsTouch } from '@/lib/useMediaQuery'
 import CatalogDownloadLink from './CatalogDownloadLink'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -26,8 +27,9 @@ interface CatalogViewerProps {
 
 export default function CatalogViewer({ catalog }: CatalogViewerProps) {
   const tPage = useTranslations('pages.catalogos')
+  const isTouch = useIsTouch()
   const stageRef = useRef<HTMLDivElement>(null)
-  const touchStartX = useRef<number | null>(null)
+  const touchStart = useRef<{ x: number; y: number } | null>(null)
 
   const [stage, setStage] = useState({ width: 720, height: 520 })
   const [pageSize, setPageSize] = useState({ width: 0, height: 0 })
@@ -185,9 +187,9 @@ export default function CatalogViewer({ catalog }: CatalogViewerProps) {
 
         <span
           className='w-full md:w-auto text-center font-ingeniero text-[10px] tracking-[0.15em] uppercase'
-          style={{ color: '#F3ECEB', opacity: 0.55 }}
+          style={{ color: '#F3ECEB', opacity: 0.7 }}
         >
-          {tPage('navHint')}
+          {isTouch ? tPage('navHintTouch') : tPage('navHintKeyboard')}
         </span>
       </div>
 
@@ -196,15 +198,24 @@ export default function CatalogViewer({ catalog }: CatalogViewerProps) {
           ref={stageRef}
           className='absolute inset-0 overflow-auto flex items-center justify-center p-4'
           onTouchStart={(e) => {
-            touchStartX.current = e.touches[0]?.clientX ?? null
+            const t = e.touches[0]
+            touchStart.current = t ? { x: t.clientX, y: t.clientY } : null
           }}
           onTouchEnd={(e) => {
-            const start = touchStartX.current
-            touchStartX.current = null
-            if (start == null) return
-            const delta = (e.changedTouches[0]?.clientX ?? start) - start
-            if (Math.abs(delta) < SWIPE_THRESHOLD) return
-            goTo(delta < 0 ? page + 1 : page - 1)
+            const start = touchStart.current
+            touchStart.current = null
+            const end = e.changedTouches[0]
+            if (!start || !end) return
+
+            // Con la página ampliada, el dedo sirve para moverla por dentro.
+            const el = stageRef.current
+            if (el && el.scrollWidth > el.clientWidth) return
+
+            const dx = end.clientX - start.x
+            const dy = end.clientY - start.y
+            if (Math.abs(dx) < SWIPE_THRESHOLD) return
+            if (Math.abs(dx) <= Math.abs(dy)) return
+            goTo(dx < 0 ? page + 1 : page - 1)
           }}
         >
           <Document
