@@ -12,6 +12,7 @@ import { createReader } from '@keystatic/core/reader';
 import { mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import keystaticConfig from '../keystatic.config';
+import { catalogMissingEssentials } from '../src/data/catalogs.schema';
 
 const ROOT = process.cwd();
 const OUT_DIR = join(ROOT, 'src/data/_generated');
@@ -193,6 +194,30 @@ export const PROJECTS_RAW: ProjectFullI18n[] = ${JSON.stringify(raw, null, 2)};
  * secciones gestionadas (hero, contacta, footer); el resto del archivo se
  * preserva intacto, manteniendo el orden de claves.
  */
+async function generateCatalogos() {
+  const entries = partitionValid(
+    'Catálogo',
+    await readCollectionTolerant('Catálogo', reader.collections.catalogos),
+    (e) => catalogMissingEssentials(e.entry)
+  );
+  const raw = entries.map((e) => ({
+    slug: e.slug,
+    title: e.entry.title,
+    description: e.entry.description ?? { es: '', en: '' },
+    cover: e.entry.cover,
+    file: e.entry.file,
+    year: e.entry.year || undefined,
+  }));
+
+  const file = `${HEADER}
+import type { CatalogI18n } from '../catalogs';
+
+export const CATALOGS_RAW: CatalogI18n[] = ${JSON.stringify(raw, null, 2)};
+`;
+  writeFileSync(join(OUT_DIR, 'catalogs.generated.ts'), file, 'utf8');
+  console.log(`✅ catalogs.generated.ts — ${raw.length} catálogos`);
+}
+
 async function generateTextos() {
   const hero = await reader.singletons.textoHero.read();
   const contacta = await reader.singletons.textoContacta.read();
@@ -244,6 +269,7 @@ async function main() {
   await generateMateriales();
   await generateServicios();
   await generateProyectos();
+  await generateCatalogos();
   await generateTextos();
 }
 

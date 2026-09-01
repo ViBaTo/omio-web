@@ -35,7 +35,7 @@ export default config({
   ui: {
     brand: { name: 'OMIO' },
     navigation: {
-      Contenido: ['proyectos', 'materiales', 'servicios'],
+      Contenido: ['proyectos', 'materiales', 'catalogos', 'servicios'],
       'Textos de la web': ['textoHero', 'textoContacta', 'textoFooter'],
     },
   },
@@ -146,6 +146,43 @@ export default config({
           itemLabel: (props) => props.value || 'Proyecto',
         }),
         featured: fields.checkbox({ label: 'Destacado en portada', defaultValue: false }),
+      },
+    }),
+
+    catalogos: collection({
+      label: 'Catálogos',
+      slugField: 'slug',
+      path: 'src/content/catalogos/*',
+      format: 'json',
+      columns: ['slug', 'year'],
+      schema: {
+        slug: fields.slug({
+          name: {
+            label: 'Identificador (slug)',
+            description: 'No cambiar si el catálogo ya está publicado: forma parte de la URL.',
+          },
+        }),
+        title: i18nText('Título', { required: true }),
+        description: i18nText('Descripción corta', { multiline: true }),
+        year: fields.integer({
+          label: 'Año',
+          description: 'Opcional. Los catálogos se ordenan del más reciente al más antiguo.',
+        }),
+        cover: fields.image({
+          label: 'Portada',
+          description: 'Obligatoria: es la imagen de la tarjeta en el listado.',
+          validation: { isRequired: true },
+          directory: 'public/images/catalogos',
+          publicPath: '/images/catalogos',
+        }),
+        file: fields.file({
+          label: 'PDF',
+          description:
+            'Catálogo en PDF. Recomendado menos de 20 MB: el archivo se guarda en el repositorio, como las fotos.',
+          validation: { isRequired: true },
+          directory: 'public/catalogos',
+          publicPath: '/catalogos',
+        }),
       },
     }),
 

@@ -1,0 +1,13 @@
+{
+  "title": {
+    "es": "Portfolio A3",
+    "en": "A3 Portfolio"
+  },
+  "description": {
+    "es": "Libro apaisado de proyectos OMIO en hospitality: lobbies, iluminación monumental y piezas a medida en hoteles de España y el mundo.",
+    "en": "Landscape book of OMIO hospitality projects: lobbies, monumental lighting and bespoke pieces in hotels across Spain and beyond."
+  },
+  "year": 2022,
+  "cover": "/images/catalogos/portfolio-a3/cover.webp",
+  "file": "/catalogos/portfolio-a3/file.pdf"
+}

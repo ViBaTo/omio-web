@@ -4,6 +4,7 @@ export const IMAGE_SIZES = {
   fullBleed: '100vw',
   atelierGallery: '(max-width: 768px) 50vw, 25vw',
   card: '(max-width: 768px) 100vw, 50vw',
+  catalogCard: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw',
   projectGallery: '(max-width: 768px) 100vw, 70vw',
   thumb: '112px',
 } as const
