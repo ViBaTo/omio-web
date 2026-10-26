@@ -1,10 +1,13 @@
+import http from 'node:http'
+import { gzipSync } from 'node:zlib'
 import { NextRequest } from 'next/server'
-import { describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vitest'
 import {
   buildClientHeaders,
   buildUpstreamHeaders,
   buildUpstreamUrl,
   getControlOrigin,
+  proxyControlRequest,
   resolvePublicOrigin,
   rewriteLocation,
   rewriteSetCookie,
@@ -103,7 +106,7 @@ describe('buildUpstreamHeaders', () => {
     expect(headers.get('x-forwarded-proto')).toBe('http')
     expect(headers.get('origin')).toBe('http://localhost:3000')
     expect(headers.get('cookie')).toBe('sb-auth=token')
-    expect(headers.get('accept-encoding')).toBeNull()
+    expect(headers.get('accept-encoding')).toBe('identity')
     expect(headers.get('host')).toBeNull()
   })
 })
@@ -189,5 +192,75 @@ describe('buildClientHeaders', () => {
     expect(headers.get('location')).toBe('http://localhost:3000/control/ok')
     expect(headers.get('content-type')).toBe('text/plain')
     expect(headers.getSetCookie()).toEqual(['sb-auth=token; Path=/control'])
+  })
+
+  test('quita content-encoding, content-length y transfer-encoding del upstream', () => {
+    const upstream = new Headers({
+      'content-type': 'text/css; charset=utf-8',
+      'content-encoding': 'gzip',
+      'content-length': '214',
+      'transfer-encoding': 'chunked',
+      etag: '"abc"',
+    })
+
+    const headers = buildClientHeaders(
+      upstream,
+      request('http://localhost:3000/control/_next/static/chunk.css'),
+      'http://127.0.0.1:4000'
+    )
+
+    expect(headers.get('content-type')).toBe('text/css; charset=utf-8')
+    expect(headers.get('etag')).toBe('"abc"')
+    expect(headers.get('content-encoding')).toBeNull()
+    expect(headers.get('content-length')).toBeNull()
+    expect(headers.get('transfer-encoding')).toBeNull()
+  })
+})
+
+describe('proxyControlRequest', () => {
+  let server: http.Server | undefined
+  let seenAcceptEncoding: string | undefined
+
+  afterEach(async () => {
+    if (!server) return
+    await new Promise<void>((resolve, reject) => {
+      server!.close((err) => (err ? reject(err) : resolve()))
+    })
+    server = undefined
+  })
+
+  test('un CSS gzippeado llega plano, sin content-encoding', async () => {
+    const css = 'body{color:red}'
+    const gz = gzipSync(css)
+
+    server = http.createServer((req, res) => {
+      seenAcceptEncoding = req.headers['accept-encoding']
+      res.writeHead(200, {
+        'content-type': 'text/css',
+        'content-encoding': 'gzip',
+        'content-length': String(gz.length),
+      })
+      res.end(gz)
+    })
+
+    const port = await new Promise<number>((resolve) => {
+      server!.listen(0, '127.0.0.1', () => {
+        const addr = server!.address()
+        resolve(typeof addr === 'object' && addr ? addr.port : 0)
+      })
+    })
+
+    const response = await proxyControlRequest(
+      request(`http://localhost:3000/control/_next/static/chunk.css`, {
+        headers: { 'accept-encoding': 'gzip' },
+      }),
+      `http://127.0.0.1:${port}`
+    )
+
+    expect(seenAcceptEncoding).toBe('identity')
+    expect(response.headers.get('content-encoding')).toBeNull()
+    expect(response.headers.get('content-length')).toBeNull()
+    expect(response.headers.get('content-type')).toBe('text/css')
+    expect(await response.text()).toBe(css)
   })
 })
