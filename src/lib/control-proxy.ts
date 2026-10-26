@@ -13,8 +13,6 @@ const REQUEST_HEADER_BLOCKLIST = new Set([
   'transfer-encoding',
   'upgrade',
   'host',
-  // fetch descomprime; si reenviamos accept-encoding el navegador recibiría
-  // un cuerpo ya plano con content-encoding y lo rompería.
   'accept-encoding',
 ])
 
@@ -27,6 +25,11 @@ const RESPONSE_HEADER_BLOCKLIST = new Set([
   'trailers',
   'transfer-encoding',
   'upgrade',
+  // fetch (undici) descomprime el cuerpo y deja content-encoding/length
+  // del wire. Si los copiamos, el navegador intenta descomprimir otra
+  // vez (página sin estilos, "incorrect header check").
+  'content-encoding',
+  'content-length',
 ])
 
 /**
@@ -92,6 +95,9 @@ export function buildUpstreamHeaders(request: NextRequest): Headers {
   headers.set('x-forwarded-host', publicOrigin.host)
   headers.set('x-forwarded-proto', publicOrigin.protocol.replace(/:$/, ''))
   headers.set('x-forwarded-port', publicOrigin.port || defaultPort(publicOrigin.protocol))
+  // identity: que fetch no pida gzip por su cuenta y no descomprima a
+  // espaldas de los headers que reenviamos al navegador.
+  headers.set('accept-encoding', 'identity')
 
   return headers
 }

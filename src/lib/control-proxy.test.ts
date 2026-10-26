@@ -103,7 +103,7 @@ describe('buildUpstreamHeaders', () => {
     expect(headers.get('x-forwarded-proto')).toBe('http')
     expect(headers.get('origin')).toBe('http://localhost:3000')
     expect(headers.get('cookie')).toBe('sb-auth=token')
-    expect(headers.get('accept-encoding')).toBeNull()
+    expect(headers.get('accept-encoding')).toBe('identity')
     expect(headers.get('host')).toBeNull()
   })
 })
@@ -189,5 +189,27 @@ describe('buildClientHeaders', () => {
     expect(headers.get('location')).toBe('http://localhost:3000/control/ok')
     expect(headers.get('content-type')).toBe('text/plain')
     expect(headers.getSetCookie()).toEqual(['sb-auth=token; Path=/control'])
+  })
+
+  test('quita content-encoding, content-length y transfer-encoding del upstream', () => {
+    const upstream = new Headers({
+      'content-type': 'text/css; charset=utf-8',
+      'content-encoding': 'gzip',
+      'content-length': '214',
+      'transfer-encoding': 'chunked',
+      etag: '"abc"',
+    })
+
+    const headers = buildClientHeaders(
+      upstream,
+      request('http://localhost:3000/control/_next/static/chunk.css'),
+      'http://127.0.0.1:4000'
+    )
+
+    expect(headers.get('content-type')).toBe('text/css; charset=utf-8')
+    expect(headers.get('etag')).toBe('"abc"')
+    expect(headers.get('content-encoding')).toBeNull()
+    expect(headers.get('content-length')).toBeNull()
+    expect(headers.get('transfer-encoding')).toBeNull()
   })
 })
