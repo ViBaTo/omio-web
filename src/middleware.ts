@@ -49,9 +49,10 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Excluimos `keystatic` (panel CMS) y `atelier-i` (proxy PostHog, ver
-  // POSTHOG_PROXY_PATH) además de api/_next, para que next-intl no les
-  // añada prefijo de idioma ni los redirija. El matcher tiene que ser
-  // un literal: Next lo analiza en el build.
-  matcher: ['/((?!api|keystatic|atelier-i|_next|_vercel|.*\\..*).*)'],
+  // Excluimos `keystatic` (panel CMS), `atelier-i` (proxy PostHog, ver
+  // POSTHOG_PROXY_PATH) y `control` (proxy al panel, ver control-proxy)
+  // además de api/_next, para que next-intl no les añada prefijo de
+  // idioma ni los redirija. El matcher tiene que ser un literal: Next
+  // lo analiza en el build.
+  matcher: ['/((?!api|keystatic|atelier-i|control|_next|_vercel|.*\\..*).*)'],
 };
